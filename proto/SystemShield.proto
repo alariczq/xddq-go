@@ -1,0 +1,7 @@
+package com.yq.msg.CityMsg;
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message SystemShieldSync {
+  repeated int32 shieldList = 1;
+}

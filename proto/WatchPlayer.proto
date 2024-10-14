@@ -1,0 +1,166 @@
+package com.yq.msg.CityMsg;
+
+import "Common.proto";
+import "EquipmentAdvance.proto";
+import "Attribute.proto";
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+
+message PlayerCharacterImageMsg {
+  optional PlayerBaseDataMsg playerBaseDataMsg = 1;
+  optional int32 equipCloudId = 2;
+  optional int32 equipPetConfigId = 3;
+  optional int32 petSoulShapeLv = 4;
+  optional int32 assistantPetConfigId = 5;
+  optional int32 assistantPetSoulShapeLv = 6;
+  optional int32 petLinkageId = 7;
+}
+message getPlayerDetailDataReq {
+  required int64 playerId = 1;
+  required int64 serverId = 2;
+}
+message getPlayerDetailDataResp {
+  optional int32 ret = 1;
+  optional PlayerDetailDataMsg playerDetailDataMsg = 2;
+}
+message PlayerShowInfoMsg {
+  optional PlayerHeadAndNameMsg headInfo = 1;
+  optional string nickName = 2;
+  optional int32 realmsId = 3;
+  optional int64 fightValue = 4;
+  optional int32 equipCloudId = 5;
+}
+message PlayerHeadDataMsg {
+  optional int64 playerId = 1;
+  optional int32 serverId = 2;
+  optional int32 headIcon = 3;
+  optional string wxHeadUrl = 4;
+  optional int32 equipHeadIconFrame = 5;
+}
+message PlayerHeadAndNameMsg {
+  optional PlayerHeadDataMsg headInfo = 1;
+  optional string nickName = 2;
+}
+message PlayerHeadAndFightMsg {
+  optional PlayerHeadAndNameMsg headInfo = 1;
+  optional int64 fightValue = 2;
+}
+message PlayerAppearanceDataMsg {
+  optional int64 playerId = 1;
+  optional string nickName = 2;
+  optional int32 realmsId = 3;
+  optional string fightValue = 4;
+  optional int32 appearanceId = 5;
+  optional int32 equipCloudId = 6;
+  optional int64 serverId = 7;
+  optional int32 equipPetId = 8;
+  optional int32 petSoulShapeLv = 9;
+  optional int32 petLinkageId = 10;
+}
+message GetTopPlayerInfoReq {}
+message GetTopPlayerInfoResp {
+  required int32 ret = 1;
+  repeated PlayerCharacterImageMsg playerList = 2;
+}
+message PlayerRankDataMsg {
+  required int64 playerId = 1;
+  required string nickName = 2;
+  required int32 realmsId = 3;
+  optional string fightValue = 4;
+  optional int32 appearanceId = 5;
+  optional int32 equipCloudId = 6;
+  optional int64 serverId = 7;
+  optional int32 equipPetId = 8;
+  optional int32 headIcon = 9;
+}
+message getPlayerDetailDataWithGodBodyReq {
+  required int64 playerId = 1;
+  required int64 serverId = 2;
+}
+message getPlayerDetailDataWithGodBodyResp {
+  optional int32 ret = 1;
+  optional PlayerDetailDataWithGodBodyMsg playerDetailDataWithGodBodyMsg = 2;
+}
+message PlayerDetailDataWithGodBodyMsg {
+  optional int32 curUsed = 1;
+  repeated int32 embattle = 2;
+  repeated PlayerGodBodyBattleMainMsg battleMainArr = 3;
+  optional PlayerGodBodyDetailDataMsg playerGodBodyDetailDataMsg = 4;
+}
+message PlayerGodBodyBattleMainMsg {
+  optional string battleMainStr = 1;
+  optional int32 index = 2;
+}
+message PlayerGodBodyDetailDataMsg {
+  required int32 ret = 1;
+  repeated SeparationDataMsg otherSeparationData = 2;
+  repeated MagicDataMsg MagicDataList = 3;
+  repeated PetDataMsg petDataList = 4;
+  repeated SpiritDataMsg spiritDataList = 5;
+  optional EquipmentAdvanceDataMsg equipmentAdvanceData = 6;
+  repeated PlayerEquipCloudDataMsg cloudDataList = 7;
+}
+message GodBodyDetailDataMsg {
+  optional int32 ret = 1;
+  repeated SeparationDataMsg separationData = 2;
+  repeated MagicDataMsg MagicDataList = 3;
+  repeated PetDataMsg petDataList = 4;
+  repeated SpiritDataMsg spiritDataList = 5;
+  optional EquipmentAdvanceDataMsg equipmentAdvanceData = 6;
+  repeated PlayerEquipCloudDataMsg cloudDataList = 7;
+  optional WorldRulePlayerDataMsg worldRuleDataMsg = 8;
+  optional PlayerDetailDataMagicTreasureMsg magicTreasureData = 9;
+  required int32 talentCreateLevel = 12;
+  required int32 soaringState = 13;
+  optional int64 playerId = 14;
+  optional int64 serverId = 15;
+  optional int32 separationIdx = 16;
+  optional int32 realmsId = 17;
+  repeated PetKernelDataMsg petKernelList = 18;
+}
+message getLockedPlayerDetailDataReq {
+  required int64 playerId = 1;
+  required int64 serverId = 2;
+  required int32 systemId = 3;
+}
+message getLockedPlayerDetailDataResp {
+  optional int32 ret = 1;
+  optional PlayerDetailDataMsg playerDetailDataMsg = 2;
+}
+message SearchPlayerMsg {
+  optional int32 online = 1;
+  optional int64 lastLoginTime = 2;
+  optional PlayerBaseDataMsg data = 3;
+  optional string extra = 4;
+}
+message SearchPlayerReq {
+  required string searchKey = 1;
+  optional int64 serverId = 2;
+}
+message SearchPlayerResp {
+  required int32 ret = 1;
+  optional SearchPlayerMsg playerData = 2;
+}
+message CommonSearchPlayerReq {
+  required string searchKey = 1;
+  optional int64 serverId = 2;
+  optional int32 systemId = 3;
+  optional int32 activityId = 4;
+}
+message CommonSearchPlayerResp {
+  required int32 ret = 1;
+  optional SearchPlayerMsg playerData = 2;
+}
+message PlayerPilotShowDataMsg {
+  optional int64 playerId = 1;
+  optional int32 appearanceId = 2;
+  optional int32 equipCloudId = 3;
+}
+message getPlayerPilotShowDataMsgListReq {
+  repeated int64 playerId = 1;
+}
+message getPlayerPilotShowDataMsgListResp {
+  required int32 ret = 1;
+  repeated PlayerPilotShowDataMsg pilotShowMsgList = 2;
+}

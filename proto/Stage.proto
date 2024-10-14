@@ -1,0 +1,15 @@
+package com.yq.msg.CityMsg;
+
+import "Battle.proto";
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+message PlayerStageData {
+  required int32 passStageId = 1;
+  optional int64 monsterFightVal = 2;
+}
+message ChallengeRspMsg {
+  required int32 ret = 1;
+  optional BattleRecordMsg allBattleRecord = 2;
+  optional bool challengeSuccess = 3;
+  optional string rewards = 4;
+}

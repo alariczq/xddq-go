@@ -1,0 +1,41 @@
+package com.yq.msg.CityMsg;
+
+import "Common.proto";
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message WorldRulePerceptionLogMsg {
+  optional int32 programmeIndex = 1;
+  repeated WorldRuleHoleDetailsMsg holeListMsg = 2;
+  optional SkillMsg baseAtt = 3;
+  optional int32 perceptionTimes = 4;
+  optional bool isUpgrade = 5;
+}
+message WorldRulePerceptionReq {
+  required int32 ruleId = 1;
+  repeated int32 lockHoleIndex = 2;
+  optional bool isAdRealize = 3;
+  optional bool isUseKillTimeItem = 4;
+}
+message WorldRulePerceptionResp {
+  required int32 ret = 1;
+}
+message WorldRulePerceptionReplaceReq {
+  required int32 ruleId = 1;
+}
+message WorldRulePerceptionReplaceResp {
+  required int32 ret = 1;
+}
+message WorldRuleGetPerceptionLogReq {
+  required int32 ruleId = 1;
+}
+message WorldRuleGetPerceptionLogResp {
+  required int32 ret = 1;
+  repeated WorldRulePerceptionLogMsg realizeRecordMsg = 2;
+}
+message WorldRuleSwitchProgrammeReq {
+  required int32 programmeIndex = 1;
+}
+message WorldRuleSwitchProgrammeResp {
+  required int32 ret = 1;
+}

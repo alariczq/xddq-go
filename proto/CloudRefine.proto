@@ -1,0 +1,14 @@
+package com.yq.msg.CityMsg;
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message CloudRefineReq {}
+message CloudRefineResp {
+  optional int32 ret = 1;
+  optional bool success = 2;
+  optional int32 skillId = 3;
+}
+message CloudRefineStarLvUpReq {}
+message CloudRefineStarLvUpResp {
+  optional int32 ret = 1;
+}

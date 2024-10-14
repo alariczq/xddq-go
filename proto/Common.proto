@@ -1,0 +1,311 @@
+package com.yq.msg.CityMsg;
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message EquipmentDataMsg {
+  required int64 id = 1;
+  required int32 equipmentId = 2;
+  required int32 level = 3;
+  required int32 quality = 4;
+  repeated AttributeDataMsg attributeList = 5;
+  required int32 src = 6;
+}
+message AttributeDataMsg {
+  required int32 type = 1;
+  required int64 value = 2;
+}
+message PlayerEquipCloudDataMsg {
+  optional int32 equipCloudId = 1;
+  optional int32 stage = 2;
+  optional int32 lv = 3;
+  optional int32 cloudSkinId = 4;
+}
+
+/** 奖励数据 */
+message AwardInfoList {
+  repeated AwardInfo awardInfoList = 1;
+}
+message AwardInfo {
+  optional int32 propId = 1;
+  optional string num = 2;
+  optional string extra = 3;
+}
+message SkillMsg {
+  required int32 skillId = 1;
+  required int32 lv = 2;
+}
+message EquipUniverseSkillMsg {
+  required int32 index = 1;
+  required int32 skillId = 2;
+  optional int32 skillLv = 3;
+}
+message UnionServerIdData {
+  optional int64 unionId = 1;
+  optional int64 serverId = 2;
+}
+message UnionNameServerIdData {
+  optional string unionName = 1;
+  optional int64 serverId = 2;
+}
+message PlayerSuppressAttribute {
+  repeated EquipmentDataMsg equipList = 1;
+  optional int32 preRealms = 2;
+  optional int32 afterRealms = 3;
+  repeated AttributeDataMsg preAttribute = 4;
+  repeated AttributeDataMsg afterAttribute = 5;
+}
+
+message PlayerDetailDataMsg {
+  optional PlayerBaseDataMsg playerBaseDataMsg = 1;
+  repeated AttributeDataMsg playerAttributeDataList = 2;
+  repeated EquipmentDataMsg equipmentList = 3;
+  optional PlayerEquipCloudDataMsg cloudDataMsg = 4;
+  optional PetDataMsg petDataMsg = 5;
+  optional TalentPlayerDataMsg talentPlayerDataMsg = 6;
+  repeated SpiritDataMsg spiritDataMsg = 7;
+  repeated MagicDataMsg equipMagicData = 8;
+  repeated int32 refineLvList = 9;
+  optional int32 equipmentAdvanceLv = 10;
+  optional PlayerDetailDataMagicTreasureMsg magicTreasureData = 11;
+  optional PetDataMsg assistantPet = 12;
+  optional WorldRulePlayerDataMsg worldRuleDataMsg = 13;
+  optional int32 race = 14;
+  repeated PetKernelDataMsg petKernelList = 15;
+  repeated PlayerChaoticPetMsg chaoticPet = 16;
+  optional CloudRefinePlayerDataMsg cloudRefinePlayerData = 17;
+  optional PupilDetailDataMsg pupilDetailData = 18;
+  repeated EquipUniverseSkillMsg equipUniverseSkillData = 19;
+  optional int32 universeLevel = 20;
+}
+
+message PlayerDetailDataMagicTreasureMsg {
+  repeated MagicTreasureDataMsg magicTreasureData = 1;
+}
+
+message PlayerBaseDataMsg {
+  optional int64 playerId = 1;
+  optional int32 headIcon = 2;
+  optional string nickName = 3;
+  optional int32 realmsId = 4;
+  optional int64 fightValue = 5;
+  optional UnionBaseData unionData = 6;
+  optional int32 appearanceId = 7;
+  optional int64 serverId = 8;
+  optional string wxHeadUrl = 9;
+  optional int32 titleId = 10;
+  optional string playerBelong = 11;
+  optional int32 equipHeadIconFrame = 12;
+  optional int32 equipChatBubble = 13;
+  optional int32 medalId = 14;
+  optional int32 cloudId = 15;
+}
+
+message PlayerChaoticPetMsg {
+  optional int32 configId = 1;
+  optional int32 rootLv = 2;
+  optional int32 awakeLv = 3;
+}
+
+message MagicTreasureDataMsg {
+  required int32 magicTreasureId = 1;
+  required int32 starLv = 2;
+  required int32 lv = 3;
+  optional int32 cumulativeNum = 4;
+  optional int32 equipLinkageId = 5;
+}
+
+message UnionBaseData {
+  optional int64 unionId = 1;
+  optional int64 exp = 2;
+  optional int32 flag = 3;
+  optional string name = 4;
+  optional bool isFreedom = 5;
+  optional int32 limitRealmsId = 6;
+  optional int64 serverId = 7;
+  optional int32 memberNum = 8;
+  optional int32 dan = 9;
+  optional int32 danStar = 10;
+  optional bool cross = 11;
+}
+
+message CloudRefinePlayerDataMsg {
+  optional int32 bigType = 1;
+  optional int32 starLv = 2;
+  optional int32 refineLv = 3;
+  repeated CloudRefineSkill refineHoleSkills = 4;
+  repeated AttributeDataMsg cloudRefineAttrDataList = 5;
+  optional int32 exp = 6;
+}
+message CloudRefineSkill {
+  optional int32 skillId = 1;
+  optional int32 skillLv = 2;
+}
+
+message PlayerPetDataMsg {
+  repeated PetPoolDataMsg petPoolData = 1;
+  required int32 petBagCount = 2;
+  repeated PetDataMsg petData = 3;
+  optional int32 equipPetId = 4;
+  required int32 refreshTimes = 5;
+  repeated int32 collectPetId = 6;
+  required int32 freeRefreshTimes = 7;
+  required int32 privilegeTimes = 8;
+  required int32 wishPetId = 9;
+  required int32 wishPetProgress = 10;
+  optional int32 soulShapeResetTimes = 11;
+  repeated PetLinkageDataMsg petLinkageDataMsg = 12;
+  optional PetKernelPlayerDataMsg kernelData = 13;
+  repeated PetFateMsg petFateList = 14;
+  optional int64 forceUnlockTime = 15;
+  repeated PetSkinDataMsg skinData = 16;
+  repeated PetSkinCombineDataMsg skinCombineData = 17;
+}
+message PetLinkageDataMsg {
+  required int32 petConfigId = 1;
+  required int32 linkageId = 2;
+}
+message PetPoolDataMsg {
+  required int32 petId = 1;
+  required bool isGet = 2;
+}
+message PetFateMsg {
+  required int32 fateId = 1;
+  required int32 lv = 2;
+}
+message PetSkinDataMsg {
+  optional int32 petSkinId = 1;
+  optional int32 level = 2;
+}
+message PetSkinCombineDataMsg {
+  required int32 combineId = 1;
+  required int32 level = 2;
+}
+message PetDataMsg {
+  required int32 id = 1;
+  required int32 configId = 2;
+  required int32 lv = 3;
+  required int32 star = 4;
+  repeated PetPassiveSkillMsg petPassiveSkill = 5;
+  optional int32 assistantPetId = 6;
+  optional int32 assistantConfigId = 7;
+  repeated PetPassiveSkillMsg petSoulShapePassiveSkill = 8;
+  repeated int32 waitSelectSkill = 9;
+  optional int32 soulShapeLv = 10;
+  optional int32 assistantPetSoulShapeLv = 11;
+  optional int32 haveWaitRefreshSkill = 12;
+  optional int32 lockState = 13;
+  optional int32 equipLinkageId = 14;
+  optional int32 synergyLinkageId = 15;
+  optional int32 kernelLv = 16;
+  repeated int32 equipKernelId = 17;
+  optional int32 rootLv = 18;
+  optional int32 awakeLv = 19;
+}
+message PetPassiveSkillMsg {
+  required int32 skillId = 1;
+  required int32 lv = 2;
+  optional int32 status = 3;
+}
+
+/// 宠物内核
+message PetKernelPlayerDataMsg {
+  repeated PetKernelDataMsg petKernelData = 1;
+  repeated PetKernelCombineMsg petKernelCombine = 2;
+  required int32 freeDrawTimes = 3;
+  required int32 drawCount = 4;
+  required int32 ensureCount = 5;
+  optional bool pieceShopOpen = 6;
+}
+message PetKernelDataMsg {
+  required int32 kernelId = 1;
+  required int32 attachPet = 2;
+  required int32 star = 3;
+}
+message PetKernelCombineMsg {
+  required int32 combineId = 1;
+  required int32 level = 2;
+}
+
+/// 世界规则
+message WorldRulePlayerDataMsg {
+  repeated WorldRuleDetailsMsg ruleListMsg = 1;
+  optional int32 curRuleProgrammeIdx = 2;
+  optional int32 adTimes = 3;
+  optional SkillMsg baseAtt = 4;
+}
+message WorldRuleDetailsMsg {
+  optional int32 id = 1;
+  optional int32 perceptionTimes = 2;
+  repeated WorldRuleProgrammeDetailsMsg programmeDetailsListMsg = 3;
+}
+message WorldRuleProgrammeDetailsMsg {
+  optional int32 programmeIndex = 1;
+  repeated WorldRuleHoleDetailsMsg holeListMsg = 2;
+}
+message WorldRuleHoleDetailsMsg {
+  optional int32 index = 1;
+  optional WorldRuleHoldAttributeMsg curHoldMsg = 2;
+  optional WorldRuleHoldAttributeMsg perceptionHoldMsg = 3;
+}
+message WorldRuleHoldAttributeMsg {
+  optional int32 quality = 1;
+  optional AttributeDataMsg attributeData = 2;
+}
+
+/// 天赋
+
+message TalentPlayerDataMsg {
+  repeated TalentDataMsg talentData = 1;
+  required int32 talentCreateLevel = 2;
+  required int32 exp = 3;
+  repeated UnDealTalentDataMsg unDealTalentData = 4;
+  required int32 readBookTimes = 5;
+}
+message TalentDataMsg {
+  required int32 type = 1;
+  required int32 talentId = 2;
+  required int32 level = 3;
+  required int32 quality = 4;
+  repeated AttributeDataMsg attributeData = 5;
+  optional int32 skillId = 6;
+}
+message UnDealTalentDataMsg {
+  required TalentDataMsg talentData = 1;
+  repeated AttributeDataMsg playerAttributeData = 2;
+  required int64 fightValue = 3;
+}
+
+/// 灵体
+message SpiritDataMsg {
+  required int32 spiritId = 1;
+  required int32 lv = 2;
+  optional int32 equipLinkageId = 3;
+}
+
+message MagicDataMsg {
+  optional int32 magicId = 1;
+  optional int32 level = 2;
+  optional int32 stage = 3;
+  repeated int32 markList = 4;
+}
+
+message PupilDetailDataMsg {
+  repeated AttributeDataMsg baseAttr = 1;
+  repeated AttributeDataMsg figthAttr = 2;
+  repeated PupilFightDataMsg pupilFightDataList = 3;
+}
+message PupilFightDataMsg {
+  optional int32 posIndex = 1;
+  optional PupilCommonData pupilData = 2;
+  optional PupilCommonData coupleData = 3;
+}
+message PupilCommonData {
+  optional int32 uid = 1;
+  optional int32 quality = 2;
+  repeated int32 fateIdList = 3;
+  optional int32 level = 4;
+  optional string name = 5;
+  optional int32 teacherId = 6;
+  optional int32 job = 7;
+  optional AttributeDataMsg battleAttr = 8;
+}

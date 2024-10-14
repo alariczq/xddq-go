@@ -1,0 +1,12 @@
+package com.yq.msg.CityMsg;
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message ReqGetFundsConditionReward {
+  optional int32 activityId = 1;
+  optional int32 fundType = 2;
+}
+message RspGetFundsConditionReward {
+  optional int32 ret = 1;
+  optional string rewards = 2;
+}

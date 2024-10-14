@@ -1,0 +1,5585 @@
+[
+  {
+    "cmMsgId": 20001,
+    "smMsgId": 1,
+    "comment": "登陆消息",
+    "cmMethod": "ReqLoginMsg",
+    "smMethod": "RspLoginMsg"
+  },
+  {
+    "cmMsgId": 20003,
+    "smMsgId": 3,
+    "comment": "心跳",
+    "cmMethod": "ReqPingMsg",
+    "smMethod": "RspPingMsg"
+  },
+  {
+    "cmMsgId": 20004,
+    "smMsgId": 4,
+    "comment": "预购买",
+    "cmMethod": "PreChargeReq",
+    "smMethod": "PreChargeResp"
+  },
+  {
+    "cmMsgId": 20006,
+    "smMsgId": 6,
+    "comment": "创建角色请求",
+    "cmMethod": "CreateRoleReq",
+    "smMethod": "CreateRoleResp"
+  },
+  {
+    "cmMsgId": 20008,
+    "smMsgId": 8,
+    "comment": "改名",
+    "cmMethod": "ChangeNickNameReq",
+    "smMethod": "ChangeNickNameResp"
+  },
+  {
+    "cmMsgId": 20009,
+    "smMsgId": 9,
+    "comment": "兑换码",
+    "cmMethod": "UseExchangeKeyReq",
+    "smMethod": "UseExchangeKeyResp"
+  },
+  {
+    "cmMsgId": 20019,
+    "smMsgId": 19,
+    "comment": "观看视频广告任务",
+    "cmMethod": "WatchAdReq",
+    "smMethod": "WatchAdResp"
+  },
+  {
+    "cmMsgId": 20020,
+    "smMsgId": 20,
+    "comment": "熊口逃生领奖",
+    "cmMethod": "CutRopeGetRewardReq",
+    "smMethod": "CutRopeGetRewardRsp"
+  },
+  {
+    "cmMsgId": 20031,
+    "smMsgId": 31,
+    "comment": "获取隐私注册协议",
+    "cmMethod": "GetPolicyInfoReq",
+    "smMethod": "GetPolicyInfoRsp"
+  },
+  {
+    "cmMsgId": 20033,
+    "smMsgId": 33,
+    "comment": "获取绑定状态",
+    "cmMethod": "GetBindStatusReq",
+    "smMethod": "GetBindStatusResp"
+  },
+  {
+    "cmMsgId": 20034,
+    "smMsgId": 34,
+    "comment": "生成绑定码",
+    "cmMethod": "GetBindCodeReq",
+    "smMethod": "GetBindCodeResp"
+  },
+  {
+    "cmMsgId": 20035,
+    "smMsgId": 35,
+    "comment": "解绑",
+    "cmMethod": "UntieBindCodeReq",
+    "smMethod": "UntieBindCodeResp"
+  },
+  {
+    "cmMsgId": 20036,
+    "smMsgId": 36,
+    "comment": "获取绑定信息",
+    "cmMethod": "GetBindCodeInfoReq",
+    "smMethod": "GetBindCodeInfoResp"
+  },
+  {
+    "cmMsgId": 20037,
+    "smMsgId": 37,
+    "comment": "注销账号",
+    "cmMethod": "DeletePlayerReq",
+    "smMethod": "DeletePlayerResp"
+  },
+  {
+    "cmMsgId": 20040,
+    "smMsgId": 40,
+    "comment": "获取系统分组信息",
+    "cmMethod": "GetSystemGroupInfoReq",
+    "smMethod": "GetSystemGroupInfoResp"
+  },
+  {
+    "cmMsgId": 20103,
+    "smMsgId": 103,
+    "comment": "请求领取系统解锁奖励",
+    "cmMethod": "GetSysRewardReq",
+    "smMethod": "GetSysRewardResp"
+  },
+  {
+    "cmMsgId": 20105,
+    "smMsgId": 105,
+    "comment": "领取特权卡奖励",
+    "cmMethod": "PrivilegeCardReceiveRewardReq",
+    "smMethod": "PrivilegeCardReceiveRewardRsp"
+  },
+  {
+    "cmMsgId": 20107,
+    "smMsgId": 107,
+    "comment": "切换形象请求",
+    "cmMethod": "ChangePlayerCharaReq",
+    "smMethod": "ChangePlayerCharaResp"
+  },
+  {
+    "cmMsgId": 20109,
+    "smMsgId": 109,
+    "comment": "获取玩家详细数据",
+    "cmMethod": "getPlayerDetailDataReq",
+    "smMethod": "getPlayerDetailDataResp"
+  },
+  {
+    "cmMsgId": 20110,
+    "smMsgId": 110,
+    "comment": "请求聊天",
+    "cmMethod": "WorldChatReqMsg",
+    "smMethod": "WorldChatRespMsg"
+  },
+  {
+    "cmMsgId": 20116,
+    "smMsgId": 116,
+    "comment": "请求活动消息列表",
+    "cmMethod": "ActivityChatReqMsg",
+    "smMethod": "WorldMessageListMsg"
+  },
+  {
+    "cmMsgId": 20118,
+    "smMsgId": 118,
+    "comment": "获取仙树后面飘的玩家信息",
+    "cmMethod": "GetTopPlayerInfoReq",
+    "smMethod": "GetTopPlayerInfoResp"
+  },
+  {
+    "cmMsgId": 20120,
+    "smMsgId": 120,
+    "comment": "穿戴称号",
+    "cmMethod": "UseTitleReq",
+    "smMethod": "UseTitleRsp"
+  },
+  {
+    "cmMsgId": 20123,
+    "smMsgId": 123,
+    "comment": "穿戴称号",
+    "cmMethod": "UseMedalReq",
+    "smMethod": "UseMedalRsp"
+  },
+  {
+    "cmMsgId": 20130,
+    "smMsgId": 130,
+    "comment": "举报玩家",
+    "cmMethod": "WorldChatBlockReqMsg",
+    "smMethod": "WorldChatBlockRespMsg"
+  },
+  {
+    "cmMsgId": 20132,
+    "smMsgId": 132,
+    "comment": "系统聊天列表，请求下发",
+    "cmMethod": "SystemChatReqMsg",
+    "smMethod": "WorldMessageListMsg"
+  },
+  {
+    "cmMsgId": 20133,
+    "smMsgId": 133,
+    "comment": "聊天举报",
+    "cmMethod": "ReportMessageReqMsg",
+    "smMethod": "ReportMessageRespMsg"
+  },
+  {
+    "cmMsgId": 20134,
+    "smMsgId": 134,
+    "comment": "获取玩家(某个系统)锁定的详细数据-请求",
+    "cmMethod": "getLockedPlayerDetailDataReq",
+    "smMethod": "getLockedPlayerDetailDataResp"
+  },
+  {
+    "cmMsgId": 20135,
+    "smMsgId": 135,
+    "comment": "请求飞行员列表数据-请求",
+    "cmMethod": "getPlayerPilotShowDataMsgListReq",
+    "smMethod": "getPlayerPilotShowDataMsgListResp"
+  },
+  {
+    "cmMsgId": 20136,
+    "smMsgId": 136,
+    "comment": "通用搜索玩家",
+    "cmMethod": "CommonSearchPlayerReq",
+    "smMethod": "CommonSearchPlayerResp"
+  },
+  {
+    "cmMsgId": 20141,
+    "smMsgId": 141,
+    "comment": "获取红包信息",
+    "cmMethod": "RedPacketOpenReq",
+    "smMethod": "RedPacketOpenResp"
+  },
+  {
+    "cmMsgId": 20142,
+    "smMsgId": 142,
+    "comment": "领取红包奖励",
+    "cmMethod": "RedPacketDrawReq",
+    "smMethod": "RedPacketDrawResp"
+  },
+  {
+    "cmMsgId": 20150,
+    "smMsgId": 150,
+    "comment": "皮肤羁绊任务领取",
+    "cmMethod": "CollectPlayerCharaReq",
+    "smMethod": "CollectPlayerCharaResp"
+  },
+  {
+    "cmMsgId": 20151,
+    "smMsgId": 151,
+    "comment": "皮肤等级升级",
+    "cmMethod": "UpgradePlayerCharaReq",
+    "smMethod": "UpgradePlayerCharaResp"
+  },
+  {
+    "cmMsgId": 20202,
+    "smMsgId": 202,
+    "comment": "处理装备",
+    "cmMethod": "ReqDealEquipmentMsg",
+    "smMethod": "RspDealEquipmentMsg"
+  },
+  {
+    "cmMsgId": 20203,
+    "smMsgId": 203,
+    "comment": "做梦",
+    "cmMethod": "ReqDreamMsg",
+    "smMethod": "RspDreamMsg"
+  },
+  {
+    "cmMsgId": 20204,
+    "smMsgId": 204,
+    "comment": "境界升级",
+    "cmMethod": "ReqRealmsLeveUpMsg",
+    "smMethod": "RspRealmsLeveUpMsg"
+  },
+  {
+    "cmMsgId": 20205,
+    "smMsgId": 205,
+    "comment": "梦境升级",
+    "cmMethod": "DreamLvUpReq",
+    "smMethod": "DreamLvUpResp"
+  },
+  {
+    "cmMsgId": 20206,
+    "smMsgId": 206,
+    "comment": "梦境升级加速",
+    "cmMethod": "DreamLvUpSpeedUpReq",
+    "smMethod": "DreamLvUpSpeedUpResp"
+  },
+  {
+    "cmMsgId": 20208,
+    "smMsgId": 208,
+    "comment": "获取渡劫成功率",
+    "cmMethod": "GetTribulationSuccessProReq",
+    "smMethod": "GetTribulationSuccessProResp"
+  },
+  {
+    "cmMsgId": 20209,
+    "smMsgId": 209,
+    "comment": "获取未处理装备数据",
+    "cmMethod": "GetUnDealEquipmentMsgReq",
+    "smMethod": "GetUnDealEquipmentMsgResp"
+  },
+  {
+    "cmMsgId": 20211,
+    "smMsgId": 211,
+    "comment": "广告领奖",
+    "cmMethod": "GetAdRewardReq",
+    "smMethod": "GetAdRewardResp"
+  },
+  {
+    "cmMsgId": 20212,
+    "smMsgId": 212,
+    "comment": "斩道也调用这个接口",
+    "cmMethod": "SoaringReq",
+    "smMethod": "SoaringResp"
+  },
+  {
+    "cmMsgId": 20213,
+    "smMsgId": 213,
+    "comment": "设置分身名字",
+    "cmMethod": "SetSeparationNameReq",
+    "smMethod": "SetSeparationNameResp"
+  },
+  {
+    "cmMsgId": 20214,
+    "smMsgId": 214,
+    "comment": "切换分身",
+    "cmMethod": "SwitchSeparationReq",
+    "smMethod": "SwitchSeparationResp"
+  },
+  {
+    "cmMsgId": 20215,
+    "smMsgId": 215,
+    "comment": "获取分身列表数据",
+    "cmMethod": "GetSeparationDataMsgListReq",
+    "smMethod": "GetSeparationDataMsgListResp"
+  },
+  {
+    "cmMsgId": 20251,
+    "smMsgId": 251,
+    "comment": "设置订阅消息",
+    "cmMethod": "SetMessageSubscribeDataReqMsg",
+    "smMethod": "SetMessageSubscribeDataRspMsg"
+  },
+  {
+    "cmMsgId": 20252,
+    "smMsgId": 252,
+    "comment": "微信头像授权",
+    "cmMethod": "AuthorizePlayerHeadReq",
+    "smMethod": "AuthorizePlayerHeadResp"
+  },
+  {
+    "cmMsgId": 20302,
+    "smMsgId": 302,
+    "comment": "使用道具",
+    "cmMethod": "UsePropReq",
+    "smMethod": "UsePropResp"
+  },
+  {
+    "cmMsgId": 20303,
+    "smMsgId": 303,
+    "comment": "合成道具",
+    "cmMethod": "CompoundPropReq",
+    "smMethod": "CompoundPropResp"
+  },
+  {
+    "cmMsgId": 20412,
+    "smMsgId": 412,
+    "comment": "挑战请求",
+    "cmMethod": "RankBattleChallengeReq",
+    "smMethod": "RankBattleChallengeResp"
+  },
+  {
+    "cmMsgId": 20414,
+    "smMsgId": 414,
+    "comment": "妖榜复仇请求",
+    "cmMethod": "RankBattleRevengeReq",
+    "smMethod": "RankBattleRevengeResp"
+  },
+  {
+    "cmMsgId": 20418,
+    "smMsgId": 418,
+    "comment": "获取跨服斗法参与区服",
+    "cmMethod": "RankBattleServerListReq",
+    "smMethod": "RankBattleServerListResp"
+  },
+  {
+    "cmMsgId": 20503,
+    "smMsgId": 503,
+    "comment": "领取任务奖励响应",
+    "cmMethod": "TaskGetRewardReqMsg",
+    "smMethod": "TaskGetRewardRespMsg"
+  },
+  {
+    "cmMsgId": 20553,
+    "smMsgId": 553,
+    "comment": "一键删除邮件",
+    "cmMethod": "MailDeleteAllReq",
+    "smMethod": "MailDeleteAllResp"
+  },
+  {
+    "cmMsgId": 20554,
+    "smMsgId": 554,
+    "comment": "删除邮件",
+    "cmMethod": "MailDeleteReq",
+    "smMethod": "MailDeleteResp"
+  },
+  {
+    "cmMsgId": 20555,
+    "smMsgId": 555,
+    "comment": "一键领取邮件",
+    "cmMethod": "MailGetAllRewardReq",
+    "smMethod": "MailGetAllRewardResp"
+  },
+  {
+    "cmMsgId": 20556,
+    "smMsgId": 556,
+    "comment": "领取邮件",
+    "cmMethod": "MailGetRewardReq",
+    "smMethod": "MailGetRewardResp"
+  },
+  {
+    "cmMsgId": 20557,
+    "smMsgId": 557,
+    "comment": "读取邮件",
+    "cmMethod": "MailReadReq",
+    "smMethod": "MailReadResp"
+  },
+  {
+    "cmMsgId": 20601,
+    "smMsgId": 601,
+    "comment": "购买商品",
+    "cmMethod": "BuyGoodsReq",
+    "smMethod": "BuyGoodsResp"
+  },
+  {
+    "cmMsgId": 20603,
+    "smMsgId": 603,
+    "comment": "商店列表",
+    "cmMethod": "MallRandomGoodsReqMsg",
+    "smMethod": "MallRandomGoodsRespMsg"
+  },
+  {
+    "cmMsgId": 20604,
+    "smMsgId": 604,
+    "comment": "通宝购买请求",
+    "cmMethod": "MallChanceUseReqMsg",
+    "smMethod": "MallChanceUseRespMsg"
+  },
+  {
+    "cmMsgId": 20622,
+    "smMsgId": 622,
+    "comment": "炼化",
+    "cmMethod": "RandomTalentReq",
+    "smMethod": "RandomTalentResp"
+  },
+  {
+    "cmMsgId": 20623,
+    "smMsgId": 623,
+    "comment": "处理神通",
+    "cmMethod": "DealTalentReq",
+    "smMethod": "DealTalentResp"
+  },
+  {
+    "cmMsgId": 20624,
+    "smMsgId": 624,
+    "comment": "阅读妖书",
+    "cmMethod": "ReadBookReq",
+    "smMethod": "ReadBookResp"
+  },
+  {
+    "cmMsgId": 20625,
+    "smMsgId": 625,
+    "comment": "获取未处理神通数据",
+    "cmMethod": "GetUnDealTalentMsgReq",
+    "smMethod": "GetUnDealTalentMsgResp"
+  },
+  {
+    "cmMsgId": 20652,
+    "smMsgId": 652,
+    "comment": "赠礼",
+    "cmMethod": "ReqDestinyGift",
+    "smMethod": "RspDestinyGift"
+  },
+  {
+    "cmMsgId": 20653,
+    "smMsgId": 653,
+    "comment": "游历",
+    "cmMethod": "ReqDestinyTravel",
+    "smMethod": "RspDestinyTravel"
+  },
+  {
+    "cmMsgId": 20654,
+    "smMsgId": 654,
+    "comment": "切磋",
+    "cmMethod": "ReqDestinyChallenge",
+    "smMethod": "RspDestinyChallenge"
+  },
+  {
+    "cmMsgId": 20655,
+    "smMsgId": 655,
+    "comment": "解锁道具仙友",
+    "cmMethod": "ReqUnlockDestinyByItem",
+    "smMethod": "RspUnlockDestinyByItem"
+  },
+  {
+    "cmMsgId": 20657,
+    "smMsgId": 657,
+    "comment": "皮肤解锁",
+    "cmMethod": "ReqUnlockDestinySkinByItem",
+    "smMethod": "RspUnlockDestinySkinByItem"
+  },
+  {
+    "cmMsgId": 20658,
+    "smMsgId": 658,
+    "comment": "强化皮肤",
+    "cmMethod": "ReqEnhanceDestinySkin",
+    "smMethod": "RspEnhanceDestinySkin"
+  },
+  {
+    "cmMsgId": 20659,
+    "smMsgId": 659,
+    "comment": "穿戴皮肤",
+    "cmMethod": "ReqWearDestinySkin",
+    "smMethod": "RspWearDestinySkin"
+  },
+  {
+    "cmMsgId": 20660,
+    "smMsgId": 660,
+    "comment": "切换挚友联动形象",
+    "cmMethod": "DestinySwitchLinkageSkinReq",
+    "smMethod": "DestinySwitchLinkageSkinResp"
+  },
+  {
+    "cmMsgId": 20712,
+    "smMsgId": 712,
+    "comment": "解锁筋斗云请求",
+    "cmMethod": "UnlockCloudReq",
+    "smMethod": "UnlockCloudResp"
+  },
+  {
+    "cmMsgId": 20713,
+    "smMsgId": 713,
+    "comment": "筋斗云升级请求",
+    "cmMethod": "CloudLvUpReq",
+    "smMethod": "CloudLvUpResp"
+  },
+  {
+    "cmMsgId": 20714,
+    "smMsgId": 714,
+    "comment": "筋斗云升阶请求",
+    "cmMethod": "CloudStageUpReq",
+    "smMethod": "CloudStageUpResp"
+  },
+  {
+    "cmMsgId": 20715,
+    "smMsgId": 715,
+    "comment": "筋斗云穿戴请求",
+    "cmMethod": "CloudEquipReq",
+    "smMethod": "CloudEquipResp"
+  },
+  {
+    "cmMsgId": 20716,
+    "smMsgId": 716,
+    "comment": "筋斗云皮肤穿戴请求",
+    "cmMethod": "CloudEquipSkinReq",
+    "smMethod": "CloudEquipSkinResp"
+  },
+  {
+    "cmMsgId": 20717,
+    "smMsgId": 717,
+    "comment": "筋斗云皮肤升级 0-\u003e1 为激活",
+    "cmMethod": "CloudSkinLvUpReq",
+    "smMethod": "CloudSkinLvUpResp"
+  },
+  {
+    "cmMsgId": 20732,
+    "smMsgId": 732,
+    "comment": "请求宝地挑战",
+    "cmMethod": "WildBossChallengeReq",
+    "smMethod": "WildBossChallengeResp"
+  },
+  {
+    "cmMsgId": 20733,
+    "smMsgId": 733,
+    "comment": "请求宝地扫荡",
+    "cmMethod": "WildBossRepeatReq",
+    "smMethod": "WildBossRepeatResp"
+  },
+  {
+    "cmMsgId": 20741,
+    "smMsgId": 741,
+    "comment": "捕捉灵兽请求",
+    "cmMethod": "CatchPetReq",
+    "smMethod": "CatchPetResp"
+  },
+  {
+    "cmMsgId": 20742,
+    "smMsgId": 742,
+    "comment": "刷新灵兽池子请求",
+    "cmMethod": "RefreshPetPoolReq",
+    "smMethod": "RefreshPetPoolResp"
+  },
+  {
+    "cmMsgId": 20743,
+    "smMsgId": 743,
+    "comment": "开启灵兽背包格子请求",
+    "cmMethod": "AddPetBagCountReq",
+    "smMethod": "AddPetBagCountResp"
+  },
+  {
+    "cmMsgId": 20744,
+    "smMsgId": 744,
+    "comment": "灵兽放生请求",
+    "cmMethod": "ReleasePetReq",
+    "smMethod": "ReleasePetResp"
+  },
+  {
+    "cmMsgId": 20745,
+    "smMsgId": 745,
+    "comment": "灵兽升级请求",
+    "cmMethod": "PetLevelUpReq",
+    "smMethod": "PetLevelUpResp"
+  },
+  {
+    "cmMsgId": 20746,
+    "smMsgId": 746,
+    "comment": "灵兽吞噬请求",
+    "cmMethod": "PetGobbleUpReq",
+    "smMethod": "PetGobbleUpResp"
+  },
+  {
+    "cmMsgId": 20747,
+    "smMsgId": 747,
+    "comment": "携带灵兽请求",
+    "cmMethod": "EquipPetReq",
+    "smMethod": "EquipPetResp"
+  },
+  {
+    "cmMsgId": 20748,
+    "smMsgId": 748,
+    "comment": "携带灵兽请求",
+    "cmMethod": "PetResetReq",
+    "smMethod": "PetResetResp"
+  },
+  {
+    "cmMsgId": 20749,
+    "smMsgId": 749,
+    "comment": "灵兽心愿选择",
+    "cmMethod": "ChooseWishPetReq",
+    "smMethod": "ChooseWishPetResp"
+  },
+  {
+    "cmMsgId": 20750,
+    "smMsgId": 750,
+    "comment": "灵兽协助",
+    "cmMethod": "PetAssistantReq",
+    "smMethod": "PetAssistantResp"
+  },
+  {
+    "cmMsgId": 20751,
+    "smMsgId": 751,
+    "comment": "灵兽塑魂",
+    "cmMethod": "PetSoulShapeReq",
+    "smMethod": "PetSoulShapeResp"
+  },
+  {
+    "cmMsgId": 20752,
+    "smMsgId": 752,
+    "comment": "灵兽塑魂技能选择",
+    "cmMethod": "SelectSoulShapeSkillReq",
+    "smMethod": "SelectSoulShapeSkillResp"
+  },
+  {
+    "cmMsgId": 20753,
+    "smMsgId": 753,
+    "comment": "灵兽洗练界面",
+    "cmMethod": "PetSkillRefreshViewReq",
+    "smMethod": "PetSkillRefreshViewResp"
+  },
+  {
+    "cmMsgId": 20754,
+    "smMsgId": 754,
+    "comment": "灵兽洗练",
+    "cmMethod": "PetSkillRefreshReq",
+    "smMethod": "PetSkillRefreshResp"
+  },
+  {
+    "cmMsgId": 20755,
+    "smMsgId": 755,
+    "comment": "灵兽洗练结果处理",
+    "cmMethod": "PetSkillRefreshResultReq",
+    "smMethod": "PetSkillRefreshResultResp"
+  },
+  {
+    "cmMsgId": 20756,
+    "smMsgId": 756,
+    "comment": "灵兽加锁",
+    "cmMethod": "PetLockStateReq",
+    "smMethod": "PetLockStateResp"
+  },
+  {
+    "cmMsgId": 20757,
+    "smMsgId": 757,
+    "comment": "切换灵兽联动形象",
+    "cmMethod": "PetSwitchLinkageSkinReq",
+    "smMethod": "PetSwitchLinkageSkinResp"
+  },
+  {
+    "cmMsgId": 20758,
+    "smMsgId": 758,
+    "comment": "灵兽新版上锁（需要密码解锁）",
+    "cmMethod": "PetLockReq",
+    "smMethod": "PetLockResp"
+  },
+  {
+    "cmMsgId": 20764,
+    "smMsgId": 764,
+    "comment": "选择加成请求",
+    "cmMethod": "SelectBuffReq",
+    "smMethod": "SelectBuffResp"
+  },
+  {
+    "cmMsgId": 20766,
+    "smMsgId": 766,
+    "comment": "获取选择选项",
+    "cmMethod": "GetSelectOptionReq",
+    "smMethod": "GetSelectOptionResp"
+  },
+  {
+    "cmMsgId": 20767,
+    "smMsgId": 767,
+    "comment": "保存选择选项",
+    "cmMethod": "SaveSelectOptionReq",
+    "smMethod": "SaveSelectOptionResp"
+  },
+  {
+    "cmMsgId": 20801,
+    "smMsgId": 801,
+    "comment": "获取排行列表",
+    "cmMethod": "GetRankListReq",
+    "smMethod": "GetRankListResp"
+  },
+  {
+    "cmMsgId": 20802,
+    "smMsgId": 802,
+    "comment": "首充领取奖励",
+    "cmMethod": "GetMallRewardReq",
+    "smMethod": "GetMallRewardResp"
+  },
+  {
+    "cmMsgId": 20803,
+    "smMsgId": 803,
+    "comment": "查看联盟积分",
+    "cmMethod": "GetUnionMemberScoreReq",
+    "smMethod": "GetUnionMemberScoreRsp"
+  },
+  {
+    "cmMsgId": 20822,
+    "smMsgId": 822,
+    "comment": "精怪抽取请求",
+    "cmMethod": "SpiritDrawReq",
+    "smMethod": "SpiritDrawResp"
+  },
+  {
+    "cmMsgId": 20823,
+    "smMsgId": 823,
+    "comment": "精怪解锁请求",
+    "cmMethod": "SpiritUnlockReq",
+    "smMethod": "SpiritUnlockResp"
+  },
+  {
+    "cmMsgId": 20824,
+    "smMsgId": 824,
+    "comment": "精怪升级请求",
+    "cmMethod": "SpiritLvUpReq",
+    "smMethod": "SpiritLvUpResp"
+  },
+  {
+    "cmMsgId": 20825,
+    "smMsgId": 825,
+    "comment": "切换出战队伍请求",
+    "cmMethod": "SwitchBattleTeamReq",
+    "smMethod": "SwitchBattleTeamResp"
+  },
+  {
+    "cmMsgId": 20826,
+    "smMsgId": 826,
+    "comment": "精怪上下阵请求",
+    "cmMethod": "SpiritBattleReq",
+    "smMethod": "SpiritBattleResp"
+  },
+  {
+    "cmMsgId": 20827,
+    "smMsgId": 827,
+    "comment": "精怪共鸣等级提升",
+    "cmMethod": "SpiritCombineLvUpReq",
+    "smMethod": "SpiritCombineLvUpResp"
+  },
+  {
+    "cmMsgId": 20828,
+    "smMsgId": 828,
+    "comment": "切换精怪联动形象",
+    "cmMethod": "SpiritSwitchLinkageSkinReq",
+    "smMethod": "SpiritSwitchLinkageSkinResp"
+  },
+  {
+    "cmMsgId": 20829,
+    "smMsgId": 829,
+    "comment": "精怪等级解锁展示",
+    "cmMethod": "SpiritLevelUnlockShowReq",
+    "smMethod": "SpiritLevelUnlockShowResp"
+  },
+  {
+    "cmMsgId": 21003,
+    "smMsgId": 1003,
+    "comment": "请求活动通用数据",
+    "cmMethod": "ReqGetActivityDetail",
+    "smMethod": "RspGetActivityDetail"
+  },
+  {
+    "cmMsgId": 21004,
+    "smMsgId": 1004,
+    "comment": "领取活动任务条件奖励",
+    "cmMethod": "ReqGetActivityConditionReward",
+    "smMethod": "RspGetActivityConditionReward"
+  },
+  {
+    "cmMsgId": 21005,
+    "smMsgId": 1005,
+    "comment": "购买活动商品",
+    "cmMethod": "ReqBuyActivityGoods",
+    "smMethod": "RspBuyActivityGoods"
+  },
+  {
+    "cmMsgId": 21006,
+    "smMsgId": 1006,
+    "comment": "领取活动排行奖励",
+    "cmMethod": "ReqGetActivityRankReward",
+    "smMethod": "RespGetActivityRankReward"
+  },
+  {
+    "cmMsgId": 21010,
+    "smMsgId": 1010,
+    "comment": "领取基金活动任务条件奖励",
+    "cmMethod": "ReqGetFundsConditionReward",
+    "smMethod": "RspGetFundsConditionReward"
+  },
+  {
+    "cmMsgId": 21013,
+    "smMsgId": 1013,
+    "comment": "运势抽奖请求",
+    "cmMethod": "LuckyDrawReq",
+    "smMethod": "LuckyDrawResp"
+  },
+  {
+    "cmMsgId": 21014,
+    "smMsgId": 1014,
+    "comment": "自选礼包选择道具",
+    "cmMethod": "SelectItemsReq",
+    "smMethod": "SelectItemsResp"
+  },
+  {
+    "cmMsgId": 21016,
+    "smMsgId": 1016,
+    "comment": "活动分享任务完成请求",
+    "cmMethod": "ReqShareTaskDone",
+    "smMethod": "RespShareTaskDone"
+  },
+  {
+    "cmMsgId": 21017,
+    "smMsgId": 1017,
+    "comment": "请求榜单状态",
+    "cmMethod": "ReqGetActivityRankState",
+    "smMethod": "RespGetActivityRankState"
+  },
+  {
+    "cmMsgId": 21022,
+    "smMsgId": 1022,
+    "comment": "通过数组一次性领取活动任务条件奖励",
+    "cmMethod": "ReqGetActivityConditionRewardByArr",
+    "smMethod": "RspGetActivityConditionReward"
+  },
+  {
+    "cmMsgId": 21023,
+    "smMsgId": 1023,
+    "comment": "妖市觅宝抽奖",
+    "cmMethod": "SeekTreasureDrawReq",
+    "smMethod": "SeekTreasureDrawResp"
+  },
+  {
+    "cmMsgId": 21024,
+    "smMsgId": 1024,
+    "comment": "妖市觅宝界面",
+    "cmMethod": "SeekTreasureViewReq",
+    "smMethod": "SeekTreasureViewResp"
+  },
+  {
+    "cmMsgId": 21025,
+    "smMsgId": 1025,
+    "comment": "选择稀有奖励",
+    "cmMethod": "SeekTreasureChooseRareRewardReq",
+    "smMethod": "SeekTreasureChooseRareRewardResp"
+  },
+  {
+    "cmMsgId": 21028,
+    "smMsgId": 1028,
+    "comment": "选择稀有奖励",
+    "cmMethod": "SeekTreasureSelectRewardReqMsg",
+    "smMethod": "SeekTreasureSelectRewardRespMsg"
+  },
+  {
+    "cmMsgId": 21030,
+    "smMsgId": 1030,
+    "comment": "论坛分享",
+    "cmMethod": "ReqShareTaskDone",
+    "smMethod": "RespShareTaskDone"
+  },
+  {
+    "cmMsgId": 21031,
+    "smMsgId": 1031,
+    "comment": "游戏圈分享",
+    "cmMethod": "ReqShareTaskDone",
+    "smMethod": "RespShareTaskDone"
+  },
+  {
+    "cmMsgId": 21032,
+    "smMsgId": 1032,
+    "comment": "自选商品选中协议",
+    "cmMethod": "SelectActivityGoodsReq",
+    "smMethod": "SelectActivityGoodsResp"
+  },
+  {
+    "cmMsgId": 21033,
+    "smMsgId": 1033,
+    "comment": "领取活动战令任务奖励",
+    "cmMethod": "ReqGetActivityConditionReward",
+    "smMethod": "RspGetActivityConditionReward"
+  },
+  {
+    "cmMsgId": 21034,
+    "smMsgId": 1034,
+    "comment": "活动任务自选商品",
+    "cmMethod": "SelectActivityConditionGoodsReq",
+    "smMethod": "SelectActivityConditionGoodsResp"
+  },
+  {
+    "cmMsgId": 21040,
+    "smMsgId": 1040,
+    "comment": "请求竞猜数据",
+    "cmMethod": "ReqGuessInfoLoadMsg",
+    "smMethod": "RespGuessInfoLoadMsg"
+  },
+  {
+    "cmMsgId": 21041,
+    "smMsgId": 1041,
+    "comment": "竞猜押注",
+    "cmMethod": "ReqGuessMsg",
+    "smMethod": "RespGuessMsg"
+  },
+  {
+    "cmMsgId": 21042,
+    "smMsgId": 1042,
+    "comment": "领取竞猜奖励",
+    "cmMethod": "ReqGuessRewardMsg",
+    "smMethod": "RespGuessRewardMsg"
+  },
+  {
+    "cmMsgId": 21043,
+    "smMsgId": 1043,
+    "comment": "查看竞猜奖励名单",
+    "cmMethod": "ReqGuessResultDetailMsg",
+    "smMethod": "RespGuessResultDetailMsg"
+  },
+  {
+    "cmMsgId": 21045,
+    "smMsgId": 1045,
+    "comment": "领取跨服获得内置的 妖盟充值活动的奖励",
+    "cmMethod": "ReceiveCrossUnionRechargeRewardReq",
+    "smMethod": "ReceiveCrossUnionRechargeRewardResp"
+  },
+  {
+    "cmMsgId": 21046,
+    "smMsgId": 1046,
+    "comment": "查看自己所属妖盟的参与名单",
+    "cmMethod": "ActivityGetJoinMemberListReq",
+    "smMethod": "ActivityGetJoinMemberListRsp"
+  },
+  {
+    "cmMsgId": 21047,
+    "smMsgId": 1047,
+    "comment": "从PC打开",
+    "cmMethod": "ReqShareTaskDone",
+    "smMethod": "RespShareTaskDone"
+  },
+  {
+    "cmMsgId": 21052,
+    "smMsgId": 1052,
+    "comment": "进入福地",
+    "cmMethod": "HomelandEnterReq",
+    "smMethod": "HomelandEnterResp"
+  },
+  {
+    "cmMsgId": 21053,
+    "smMsgId": 1053,
+    "comment": "福地管理界面",
+    "cmMethod": "HomelandManageReq",
+    "smMethod": "HomelandManageResp"
+  },
+  {
+    "cmMsgId": 21054,
+    "smMsgId": 1054,
+    "comment": "福地升级",
+    "cmMethod": "HomelandLevelUpReq",
+    "smMethod": "HomelandLevelUpResp"
+  },
+  {
+    "cmMsgId": 21055,
+    "smMsgId": 1055,
+    "comment": "福地刷新资源",
+    "cmMethod": "HomelandRefreshReq",
+    "smMethod": "HomelandRefreshResp"
+  },
+  {
+    "cmMsgId": 21056,
+    "smMsgId": 1056,
+    "comment": "福地购买鼠宝",
+    "cmMethod": "HomelandBuyWorkerReq",
+    "smMethod": "HomelandBuyWorkerResp"
+  },
+  {
+    "cmMsgId": 21057,
+    "smMsgId": 1057,
+    "comment": "福地日志",
+    "cmMethod": "HomelandGetRecordReq",
+    "smMethod": "HomelandGetRecordResp"
+  },
+  {
+    "cmMsgId": 21058,
+    "smMsgId": 1058,
+    "comment": "福地探寻",
+    "cmMethod": "HomelandExploreReq",
+    "smMethod": "HomelandExploreResp"
+  },
+  {
+    "cmMsgId": 21059,
+    "smMsgId": 1059,
+    "comment": "福地探寻刷新",
+    "cmMethod": "HomelandRefreshExploreReq",
+    "smMethod": "HomelandRefreshExploreResp"
+  },
+  {
+    "cmMsgId": 21060,
+    "smMsgId": 1060,
+    "comment": "福地派遣鼠宝",
+    "cmMethod": "HomelandDispatchWorkerReq",
+    "smMethod": "HomelandDispatchWorkerResp"
+  },
+  {
+    "cmMsgId": 21061,
+    "smMsgId": 1061,
+    "comment": "福地派遣鼠宝预览",
+    "cmMethod": "HomelandDispatchPreviewReq",
+    "smMethod": "HomelandDispatchPreviewResp"
+  },
+  {
+    "cmMsgId": 21063,
+    "smMsgId": 1063,
+    "comment": "离开福地",
+    "cmMethod": "HomelandLeaveReq",
+    "smMethod": "HomelandLeaveResp"
+  },
+  {
+    "cmMsgId": 21065,
+    "smMsgId": 1065,
+    "comment": "福地获取奖励",
+    "cmMethod": "HomelandGetRewardReq",
+    "smMethod": "HomelandGetRewardResp"
+  },
+  {
+    "cmMsgId": 21067,
+    "smMsgId": 1067,
+    "comment": "福地聚宝盆领奖",
+    "cmMethod": "CornucopiaGetRewardReq",
+    "smMethod": "CornucopiaGetRewardRsp"
+  },
+  {
+    "cmMsgId": 21068,
+    "smMsgId": 1068,
+    "comment": "福地鼠鼠自动采集",
+    "cmMethod": "HomelandAutoDispatchWorkerReq",
+    "smMethod": "HomelandAutoDispatchWorkerRsp"
+  },
+  {
+    "cmMsgId": 21069,
+    "smMsgId": 1069,
+    "comment": "福地鼠宝总管试用",
+    "cmMethod": "HomelandUseFreeMouseManagerReq",
+    "smMethod": "HomelandUseFreeMouseManagerRsp"
+  },
+  {
+    "cmMsgId": 21070,
+    "smMsgId": 1070,
+    "comment": "鼠鼠总管保存设置",
+    "cmMethod": "HomelandSaveSettingsReq",
+    "smMethod": "HomelandSaveSettingsRsp"
+  },
+  {
+    "cmMsgId": 21071,
+    "smMsgId": 1071,
+    "comment": "桃源一键召回小妖",
+    "cmMethod": "HomelandDispatchAllWorkerReq",
+    "smMethod": "HomelandDispatchAllWorkerResp"
+  },
+  {
+    "cmMsgId": 21101,
+    "smMsgId": 1101,
+    "comment": "请求报名",
+    "cmMethod": "BallGVGApplicationReqMsg",
+    "smMethod": "BallGVGApplicationRespMsg"
+  },
+  {
+    "cmMsgId": 21102,
+    "smMsgId": 1102,
+    "comment": "请求报名期战力排名",
+    "cmMethod": "BallGVGAbilityRankNumReqMsg",
+    "smMethod": "BallGVGAbilityRankNumRespMsg"
+  },
+  {
+    "cmMsgId": 21103,
+    "smMsgId": 1103,
+    "comment": "进入pvp活动请求协议",
+    "cmMethod": "BallGVGEnterActivityReqMsg",
+    "smMethod": "BallGVGEnterActivityRespMsg"
+  },
+  {
+    "cmMsgId": 21104,
+    "smMsgId": 1104,
+    "comment": "进入宝地(房间)请求协议",
+    "cmMethod": "BallGVGEnterPlaceReqMsg",
+    "smMethod": "BallGVGEnterPlaceRespMsg"
+  },
+  {
+    "cmMsgId": 21105,
+    "smMsgId": 1105,
+    "comment": "离开当前房间请求协议",
+    "cmMethod": "BallGVGLeavePlaceReqMsg",
+    "smMethod": "BallGVGLeavePlaceRespMsg"
+  },
+  {
+    "cmMsgId": 21106,
+    "smMsgId": 1106,
+    "comment": "移动协议",
+    "cmMethod": "BallGVGMoveReqMsg",
+    "smMethod": "BallGVGMoveRespMsg"
+  },
+  {
+    "cmMsgId": 21107,
+    "smMsgId": 1107,
+    "comment": "攻击协议",
+    "cmMethod": "BallGVGAttackReqMsg",
+    "smMethod": "BallGVGAttackRespMsg"
+  },
+  {
+    "cmMsgId": 21108,
+    "smMsgId": 1108,
+    "comment": "任命宗主权限",
+    "cmMethod": "BallGVGAppointMajorUserReqMsg",
+    "smMethod": "BallGVGAppointMajorUserRespMsg"
+  },
+  {
+    "cmMsgId": 21109,
+    "smMsgId": 1109,
+    "comment": "标记地点(重复标记视为取消标记)",
+    "cmMethod": "BallGVGMarkPlaceReqMsg",
+    "smMethod": "BallGVGMarkPlaceRespMsg"
+  },
+  {
+    "cmMsgId": 21111,
+    "smMsgId": 1111,
+    "comment": "获取所有房间数据",
+    "cmMethod": "BallGVGGetPlaceInfoReqMsg",
+    "smMethod": "BallGVGGetPlaceInfoRespMsg"
+  },
+  {
+    "cmMsgId": 21113,
+    "smMsgId": 1113,
+    "comment": "请求宗门玩家列表",
+    "cmMethod": "BallGVGGetUserRankReqMsg",
+    "smMethod": "BallGVGGetUserRankRespMsg"
+  },
+  {
+    "cmMsgId": 21126,
+    "smMsgId": 1126,
+    "comment": "请求报名期妖盟战力排行",
+    "cmMethod": "BallGVGAbilityRankReqMsg",
+    "smMethod": "BallGVGAbilityRankRespMsg"
+  },
+  {
+    "cmMsgId": 21128,
+    "smMsgId": 1128,
+    "comment": "获取参与妖盟的名字",
+    "cmMethod": "BallGVGUnionNameListReqMsg",
+    "smMethod": "BallGVGUnionNameListRespMsg"
+  },
+  {
+    "cmMsgId": 21129,
+    "smMsgId": 1129,
+    "comment": "获取上古遗迹妖盟成员信息",
+    "cmMethod": "BallGVGGetUnionUserListReqMsg",
+    "smMethod": "BallGVGGetUnionUserListRespMsg"
+  },
+  {
+    "cmMsgId": 21131,
+    "smMsgId": 1131,
+    "comment": "上古遗迹红点",
+    "cmMethod": "BallGVGRedDotReqMsg",
+    "smMethod": "BallGVGRedDotRespMsg"
+  },
+  {
+    "cmMsgId": 21421,
+    "smMsgId": 1421,
+    "comment": "仙缘进度领奖",
+    "cmMethod": "XyFundGetRewardReq",
+    "smMethod": "XyFundGetRewardResp"
+  },
+  {
+    "cmMsgId": 21501,
+    "smMsgId": 1501,
+    "comment": "获取商会同名姓名列表",
+    "cmMethod": "ReqUnionSameNameListMsg",
+    "smMethod": "RspUnionSameNameListMsg"
+  },
+  {
+    "cmMsgId": 21511,
+    "smMsgId": 1511,
+    "comment": "获取商会充值列表",
+    "cmMethod": "UnionRechargeUserReqMsg",
+    "smMethod": "UnionRechargeUserRspMsg"
+  },
+  {
+    "cmMsgId": 22101,
+    "smMsgId": 2101,
+    "comment": "创建妖盟",
+    "cmMethod": "ReqUnionCreate",
+    "smMethod": "RspUnionCreate"
+  },
+  {
+    "cmMsgId": 22102,
+    "smMsgId": 2102,
+    "comment": "进入妖盟",
+    "cmMethod": "ReqUnionEnter",
+    "smMethod": "RspUnionEnter"
+  },
+  {
+    "cmMsgId": 22103,
+    "smMsgId": 2103,
+    "comment": "获取妖盟列表",
+    "cmMethod": "ReqUnionList",
+    "smMethod": "RspUnionList"
+  },
+  {
+    "cmMsgId": 22104,
+    "smMsgId": 2104,
+    "comment": "加入妖盟",
+    "cmMethod": "ReqUnionJoin",
+    "smMethod": "RspUnionJoin"
+  },
+  {
+    "cmMsgId": 22105,
+    "smMsgId": 2105,
+    "comment": "随机加入妖盟",
+    "cmMethod": "ReqUnionRandomJoin",
+    "smMethod": "RspUnionRandomJoin"
+  },
+  {
+    "cmMsgId": 22106,
+    "smMsgId": 2106,
+    "comment": "妖盟详情",
+    "cmMethod": "ReqUnionDetail",
+    "smMethod": "RspUnionDetail"
+  },
+  {
+    "cmMsgId": 22107,
+    "smMsgId": 2107,
+    "comment": "职位变更",
+    "cmMethod": "ReqUnionPosition",
+    "smMethod": "RspUnionPosition"
+  },
+  {
+    "cmMsgId": 22108,
+    "smMsgId": 2108,
+    "comment": "获取申请加入妖盟的玩家列表",
+    "cmMethod": "ReqUnionApplyPlayerList",
+    "smMethod": "RspUnionApplyPlayerList"
+  },
+  {
+    "cmMsgId": 22109,
+    "smMsgId": 2109,
+    "comment": "设置随机加入状态",
+    "cmMethod": "ReqUnionRandomState",
+    "smMethod": "RspUnionRandomState"
+  },
+  {
+    "cmMsgId": 22110,
+    "smMsgId": 2110,
+    "comment": "设置入盟限制等级",
+    "cmMethod": "ReqUnionLimitRealmsId",
+    "smMethod": "RspUnionLimitRealmsId"
+  },
+  {
+    "cmMsgId": 22111,
+    "smMsgId": 2111,
+    "comment": "清理所有申请玩家",
+    "cmMethod": "ReqUnionClearApply",
+    "smMethod": "RspUnionClearApply"
+  },
+  {
+    "cmMsgId": 22112,
+    "smMsgId": 2112,
+    "comment": "通过新玩家的申请",
+    "cmMethod": "ReqUnionPassApply",
+    "smMethod": "RspUnionPassApply"
+  },
+  {
+    "cmMsgId": 22113,
+    "smMsgId": 2113,
+    "comment": "解散妖盟",
+    "cmMethod": "ReqUnionRemove",
+    "smMethod": "RspUnionRemove"
+  },
+  {
+    "cmMsgId": 22114,
+    "smMsgId": 2114,
+    "comment": "退出妖盟",
+    "cmMethod": "ReqUnionExit",
+    "smMethod": "RspUnionExit"
+  },
+  {
+    "cmMsgId": 22115,
+    "smMsgId": 2115,
+    "comment": "获取妖盟动态",
+    "cmMethod": "ReqUnionTrends",
+    "smMethod": "RspUnionTrends"
+  },
+  {
+    "cmMsgId": 22116,
+    "smMsgId": 2116,
+    "comment": "妖盟信息修改",
+    "cmMethod": "ReqUnionModify",
+    "smMethod": "RspUnionModify"
+  },
+  {
+    "cmMsgId": 22117,
+    "smMsgId": 2117,
+    "comment": "获取每日任务列表",
+    "cmMethod": "ReqUnionDailyTask",
+    "smMethod": "RspUnionDailyTask"
+  },
+  {
+    "cmMsgId": 22118,
+    "smMsgId": 2118,
+    "comment": "领取每日任务奖励",
+    "cmMethod": "ReqUnionGetDailyTask",
+    "smMethod": "RspUnionGetDailyTask"
+  },
+  {
+    "cmMsgId": 22120,
+    "smMsgId": 2120,
+    "comment": "每日任务捐献",
+    "cmMethod": "ReqUnionDailyDonate",
+    "smMethod": "RspUnionDailyDonate"
+  },
+  {
+    "cmMsgId": 22121,
+    "smMsgId": 2121,
+    "comment": "获取每日任务成员完成进度",
+    "cmMethod": "ReqUnionDailyProgress",
+    "smMethod": "RspUnionDailyProgress"
+  },
+  {
+    "cmMsgId": 22122,
+    "smMsgId": 2122,
+    "comment": "逐出妖盟",
+    "cmMethod": "ReqUnionEviction",
+    "smMethod": "RspUnionEviction"
+  },
+  {
+    "cmMsgId": 22123,
+    "smMsgId": 2123,
+    "comment": "加入的妖盟列表(我没有妖盟时的列表)",
+    "cmMethod": "ReqUnionJoinList",
+    "smMethod": "RspUnionJoinList"
+  },
+  {
+    "cmMsgId": 22125,
+    "smMsgId": 2125,
+    "comment": "获取妖盟协助列表",
+    "cmMethod": "GetUnionHelpDataListReq",
+    "smMethod": "GetUnionHelpDataListResp"
+  },
+  {
+    "cmMsgId": 22126,
+    "smMsgId": 2126,
+    "comment": "请求妖盟协助",
+    "cmMethod": "RequestUnionHelpReq",
+    "smMethod": "RequestUnionHelpResp"
+  },
+  {
+    "cmMsgId": 22127,
+    "smMsgId": 2127,
+    "comment": "执行妖盟协助",
+    "cmMethod": "UnionHelpReq",
+    "smMethod": "UnionHelpResp"
+  },
+  {
+    "cmMsgId": 22128,
+    "smMsgId": 2128,
+    "comment": "获取妖盟协助状态",
+    "cmMethod": "GetUnionHelpStateReq",
+    "smMethod": "GetUnionHelpStateResp"
+  },
+  {
+    "cmMsgId": 22129,
+    "smMsgId": 2129,
+    "comment": "查看妖盟的红点",
+    "cmMethod": "ReqUnionWatchRedDot",
+    "smMethod": "RspUnionWatchRedDot"
+  },
+  {
+    "cmMsgId": 22166,
+    "smMsgId": 2166,
+    "comment": "砍价",
+    "cmMethod": "CutPriceBargainReqMsg",
+    "smMethod": "CutPriceBargainRespMsg"
+  },
+  {
+    "cmMsgId": 22167,
+    "smMsgId": 2167,
+    "comment": "砍价购买",
+    "cmMethod": "CutPriceBuyReqMsg",
+    "smMethod": "CutPriceBuyRespMsg"
+  },
+  {
+    "cmMsgId": 22401,
+    "smMsgId": 2401,
+    "comment": "绑定邀请码",
+    "cmMethod": "ReqBindInviteCode",
+    "smMethod": "RspBindInviteCode"
+  },
+  {
+    "cmMsgId": 22402,
+    "smMsgId": 2402,
+    "comment": "获取绑定他人的邀请码",
+    "cmMethod": "ReqGetBindInviteCode",
+    "smMethod": "RspGetBindInviteCode"
+  },
+  {
+    "cmMsgId": 23702,
+    "smMsgId": 3702,
+    "comment": "请求挑战者列表",
+    "cmMethod": "ReqHeroRankFightPlayerList",
+    "smMethod": "RspHeroRankFightPlayerList"
+  },
+  {
+    "cmMsgId": 23703,
+    "smMsgId": 3703,
+    "comment": "请求挑战玩家",
+    "cmMethod": "ReqHeroRankFight",
+    "smMethod": "RspHeroRankFight"
+  },
+  {
+    "cmMsgId": 23704,
+    "smMsgId": 3704,
+    "comment": "请求扫荡玩家",
+    "cmMethod": "ReqHeroRankClear",
+    "smMethod": "RspHeroRankClear"
+  },
+  {
+    "cmMsgId": 23706,
+    "smMsgId": 3706,
+    "comment": "请求领取成就奖励",
+    "cmMethod": "ReqHeroRankGetAchieve",
+    "smMethod": "RspHeroRankGetAchieve"
+  },
+  {
+    "cmMsgId": 23707,
+    "smMsgId": 3707,
+    "comment": "请求购买体力",
+    "cmMethod": "ReqHeroRankBuyEnergy",
+    "smMethod": "RspHeroRankBuyEnergy"
+  },
+  {
+    "cmMsgId": 24101,
+    "smMsgId": 4101,
+    "comment": "抽奖",
+    "cmMethod": "ReqPetDreamLandDraw",
+    "smMethod": "RspPetDreamLandDraw"
+  },
+  {
+    "cmMsgId": 24102,
+    "smMsgId": 4102,
+    "comment": "区域解锁",
+    "cmMethod": "ReqPetDreamLandAdventurePlaceUnlock",
+    "smMethod": "RspPetDreamLandAdventurePlaceUnlock"
+  },
+  {
+    "cmMsgId": 24103,
+    "smMsgId": 4103,
+    "comment": "坑位解锁",
+    "cmMethod": "ReqPetDreamLandAdventureSlotUnlock",
+    "smMethod": "RspPetDreamLandAdventurePlaceSlot"
+  },
+  {
+    "cmMsgId": 24104,
+    "smMsgId": 4104,
+    "comment": "灵兽派遣",
+    "cmMethod": "ReqPetDreamLandAdventureDispatch",
+    "smMethod": "RspPetDreamLandAdventureDispatch"
+  },
+  {
+    "cmMsgId": 24105,
+    "smMsgId": 4105,
+    "comment": "领取收益",
+    "cmMethod": "ReqPetDreamLandAdventureGetAward",
+    "smMethod": "RspPetDreamLandAdventureGetAward"
+  },
+  {
+    "cmMsgId": 24201,
+    "smMsgId": 4201,
+    "comment": "刷新邪祟",
+    "cmMethod": "RefreshEvilThingReq",
+    "smMethod": "RefreshEvilThingResp"
+  },
+  {
+    "cmMsgId": 24202,
+    "smMsgId": 4202,
+    "comment": "镇压邪祟",
+    "cmMethod": "BattleEviThingReq",
+    "smMethod": "BattleEvilThingResp"
+  },
+  {
+    "cmMsgId": 24401,
+    "smMsgId": 4401,
+    "comment": "装备神通",
+    "cmMethod": "MagicEquipReq",
+    "smMethod": "MagicEquipResp"
+  },
+  {
+    "cmMsgId": 24402,
+    "smMsgId": 4402,
+    "comment": "重置神通",
+    "cmMethod": "MagicResetReq",
+    "smMethod": "MagicResetResp"
+  },
+  {
+    "cmMsgId": 24403,
+    "smMsgId": 4403,
+    "comment": "进阶神通",
+    "cmMethod": "MagicStageUpReq",
+    "smMethod": "MagicStageUpResp"
+  },
+  {
+    "cmMsgId": 24404,
+    "smMsgId": 4404,
+    "comment": "升级神通",
+    "cmMethod": "MagicLvUpReq",
+    "smMethod": "MagicLvUpResp"
+  },
+  {
+    "cmMsgId": 24405,
+    "smMsgId": 4405,
+    "comment": "装备印记",
+    "cmMethod": "MagicEquipMarkReq",
+    "smMethod": "MagicEquipMarkResp"
+  },
+  {
+    "cmMsgId": 24406,
+    "smMsgId": 4406,
+    "comment": "卸下印记",
+    "cmMethod": "MagicUnsnatchMarkReq",
+    "smMethod": "MagicUnsnatchMarkResp"
+  },
+  {
+    "cmMsgId": 24407,
+    "smMsgId": 4407,
+    "comment": "融合神通印记",
+    "cmMethod": "MagicFusionMarkReq",
+    "smMethod": "MagicFusionMarkResp"
+  },
+  {
+    "cmMsgId": 24408,
+    "smMsgId": 4408,
+    "comment": "衍化",
+    "cmMethod": "MagicDerivationReq",
+    "smMethod": "MagicDerivationResp"
+  },
+  {
+    "cmMsgId": 24409,
+    "smMsgId": 4409,
+    "comment": "升级组合",
+    "cmMethod": "MagicCombineLvUpReq",
+    "smMethod": "MagicCombineLvUpResp"
+  },
+  {
+    "cmMsgId": 24410,
+    "smMsgId": 4410,
+    "comment": "切换预设",
+    "cmMethod": "MagicSwitchPresetsReq",
+    "smMethod": "MagicSwitchPresetsResp"
+  },
+  {
+    "cmMsgId": 24411,
+    "smMsgId": 4411,
+    "comment": "一键突破神通",
+    "cmMethod": "MagicStageUpAllReq",
+    "smMethod": "MagicStageUpResp"
+  },
+  {
+    "cmMsgId": 24412,
+    "smMsgId": 4412,
+    "comment": "获取预设神通列表",
+    "cmMethod": "GetPresetMagicInfoReq",
+    "smMethod": "GetPresetMagicInfoResp"
+  },
+  {
+    "cmMsgId": 24413,
+    "smMsgId": 4413,
+    "comment": "拆卸装备的印记",
+    "cmMethod": "UnEquipStoneReq",
+    "smMethod": "UnEquipStoneResp"
+  },
+  {
+    "cmMsgId": 24501,
+    "smMsgId": 4501,
+    "comment": "添加储存数据",
+    "cmMethod": "SaveToServiceReq",
+    "smMethod": "SaveToServiceRsp"
+  },
+  {
+    "cmMsgId": 24802,
+    "smMsgId": 4802,
+    "comment": "仙宫点赞同步",
+    "cmMethod": "PalaceWorshipReq",
+    "smMethod": "PalaceWorshipRsp"
+  },
+  {
+    "cmMsgId": 24803,
+    "smMsgId": 4803,
+    "comment": "仙宫外部数据请求",
+    "cmMethod": "EnterPalaceReq",
+    "smMethod": "EnterPalaceRsp"
+  },
+  {
+    "cmMsgId": 24804,
+    "smMsgId": 4804,
+    "comment": "仙宫内部数据请求",
+    "cmMethod": "EnterPalaceInnerReq",
+    "smMethod": "EnterPalaceInnerRsp"
+  },
+  {
+    "cmMsgId": 24805,
+    "smMsgId": 4805,
+    "comment": "仙名录数据请求",
+    "cmMethod": "PalaceInnerBookReq",
+    "smMethod": "PalaceInnerBookRsp"
+  },
+  {
+    "cmMsgId": 24806,
+    "smMsgId": 4806,
+    "comment": "执行仙宫送福",
+    "cmMethod": "SendGiftReq",
+    "smMethod": "SendGiftRsp"
+  },
+  {
+    "cmMsgId": 24807,
+    "smMsgId": 4807,
+    "comment": "仙宫送福领奖",
+    "cmMethod": "GetSendGiftRewardReq",
+    "smMethod": "GetSendGiftRewardRsp"
+  },
+  {
+    "cmMsgId": 24810,
+    "smMsgId": 4810,
+    "comment": "获得当前已开启的天宫称号id",
+    "cmMethod": "GetTitleIdListReq",
+    "smMethod": "GetTitleIdListRsp"
+  },
+  {
+    "cmMsgId": 24857,
+    "smMsgId": 4857,
+    "comment": "仙宫获得成就奖励",
+    "cmMethod": "PalaceAchievementGetRewardReq",
+    "smMethod": "PalaceAchievementGetRewardRsp"
+  },
+  {
+    "cmMsgId": 25001,
+    "smMsgId": 5001,
+    "comment": "蛮荒 进入活动页",
+    "cmMethod": "ManHuangEnterPanelReqMsg",
+    "smMethod": "ManHuangEnterPanelRespMsg"
+  },
+  {
+    "cmMsgId": 25002,
+    "smMsgId": 5002,
+    "comment": "蛮荒 创建队伍",
+    "cmMethod": "ManHuangCreateTeamReqMsg",
+    "smMethod": "ManHuangCreateTeamRespMsg"
+  },
+  {
+    "cmMsgId": 25003,
+    "smMsgId": 5003,
+    "comment": "蛮荒 获取队伍列表",
+    "cmMethod": "ManHuangGetTeamListReqMsg",
+    "smMethod": "ManHuangGetTeamListRespMsg"
+  },
+  {
+    "cmMsgId": 25004,
+    "smMsgId": 5004,
+    "comment": "蛮荒 查看队伍数据",
+    "cmMethod": "ManHuangGetTeamInfoReqMsg",
+    "smMethod": "ManHuangGetTeamInfoRespMsg"
+  },
+  {
+    "cmMsgId": 25005,
+    "smMsgId": 5005,
+    "comment": "蛮荒 加入队伍",
+    "cmMethod": "ManHuangJoinTeamReqMsg",
+    "smMethod": "ManHuangJoinTeamRespMsg"
+  },
+  {
+    "cmMsgId": 25006,
+    "smMsgId": 5006,
+    "comment": "蛮荒 取消申请队伍",
+    "cmMethod": "ManHuangCancelTeamApplyReqMsg",
+    "smMethod": "ManHuangCancelTeamApplyRespMsg"
+  },
+  {
+    "cmMsgId": 25007,
+    "smMsgId": 5007,
+    "comment": "蛮荒 解散/退出队伍",
+    "cmMethod": "ManHuangQuitTeamReqMsg",
+    "smMethod": "ManHuangQuitTeamRespMsg"
+  },
+  {
+    "cmMsgId": 25008,
+    "smMsgId": 5008,
+    "comment": "蛮荒 退出活动",
+    "cmMethod": "ManHuangLeavePanelReqMsg",
+    "smMethod": "ManHuangLeavePanelRespMsg"
+  },
+  {
+    "cmMsgId": 25009,
+    "smMsgId": 5009,
+    "comment": "蛮荒 玩家申请入队同意",
+    "cmMethod": "ManHuangApplyJoinTeamAgreeReqMsg",
+    "smMethod": "ManHuangApplyJoinTeamAgreeRespMsg"
+  },
+  {
+    "cmMsgId": 25010,
+    "smMsgId": 5010,
+    "comment": "蛮荒 玩家申请入队一键拒绝",
+    "cmMethod": "ManHuangApplyJoinTeamRefusedReqMsg",
+    "smMethod": "ManHuangApplyJoinTeamRefusedRespMsg"
+  },
+  {
+    "cmMsgId": 25011,
+    "smMsgId": 5011,
+    "comment": "蛮荒 踢出队伍",
+    "cmMethod": "ManHuangKickOutTeamReqMsg",
+    "smMethod": "ManHuangKickOutTeamRespMsg"
+  },
+  {
+    "cmMsgId": 25012,
+    "smMsgId": 5012,
+    "comment": "蛮荒 进入区域",
+    "cmMethod": "ManHuangEnterRegionReqMsg",
+    "smMethod": "ManHuangEnterRegionRespMsg"
+  },
+  {
+    "cmMsgId": 25013,
+    "smMsgId": 5013,
+    "comment": "蛮荒 探索",
+    "cmMethod": "ManHuangExploreReqMsg",
+    "smMethod": "ManHuangExploreRespMsg"
+  },
+  {
+    "cmMsgId": 25014,
+    "smMsgId": 5014,
+    "comment": "蛮荒 执行探索事件 ",
+    "cmMethod": "ManHuangEventHandleReqMsg",
+    "smMethod": "ManHuangEventHandleRespMsg"
+  },
+  {
+    "cmMsgId": 25015,
+    "smMsgId": 5015,
+    "comment": "蛮荒 action探索事件(标记，绕过) ",
+    "cmMethod": "ManHuangEventActionReqMsg",
+    "smMethod": "ManHuangEventActionRespMsg"
+  },
+  {
+    "cmMsgId": 25016,
+    "smMsgId": 5016,
+    "comment": "蛮荒 日志-队友互助 ",
+    "cmMethod": "ManHuangLogHelpReqMsg",
+    "smMethod": "ManHuangLogHelpRespMsg"
+  },
+  {
+    "cmMsgId": 25017,
+    "smMsgId": 5017,
+    "comment": "蛮荒 日志-战场日志 ",
+    "cmMethod": "ManHuangLogBattlegroundReqMsg",
+    "smMethod": "ManHuangLogBattlegroundRespMsg"
+  },
+  {
+    "cmMsgId": 25018,
+    "smMsgId": 5018,
+    "comment": "蛮荒 日志-个人日志 ",
+    "cmMethod": "ManHuangLogPersonReqMsg",
+    "smMethod": "ManHuangLogPersonRespMsg"
+  },
+  {
+    "cmMsgId": 25019,
+    "smMsgId": 5019,
+    "comment": "蛮荒 排行-个人 ",
+    "cmMethod": "ManHuangRankPersonReqMsg",
+    "smMethod": "ManHuangRankPersonRespMsg"
+  },
+  {
+    "cmMsgId": 25020,
+    "smMsgId": 5020,
+    "comment": "蛮荒 排行-队伍 ",
+    "cmMethod": "ManHuangRankTeamReqMsg",
+    "smMethod": "ManHuangRankTeamRespMsg"
+  },
+  {
+    "cmMsgId": 25025,
+    "smMsgId": 5025,
+    "comment": "蛮荒 恢复体力",
+    "cmMethod": "ManHuangRecoverEnergyReqMsg",
+    "smMethod": "ManHuangRecoverEnergyRespMsg"
+  },
+  {
+    "cmMsgId": 25026,
+    "smMsgId": 5026,
+    "comment": "蛮荒 执行协助",
+    "cmMethod": "ManHuangHelpActionAttReqMsg",
+    "smMethod": "ManHuangHelpActionAttRespMsg"
+  },
+  {
+    "cmMsgId": 25027,
+    "smMsgId": 5027,
+    "comment": "蛮荒 开宝箱",
+    "cmMethod": "ManHuangOpenBoxReqMsg",
+    "smMethod": "ManHuangOpenBoxRespMsg"
+  },
+  {
+    "cmMsgId": 25028,
+    "smMsgId": 5028,
+    "comment": "蛮荒 领取协助奖励",
+    "cmMethod": "ManHuangHelpActionRewardReqMsg",
+    "smMethod": "ManHuangHelpActionRewardRespMsg"
+  },
+  {
+    "cmMsgId": 25030,
+    "smMsgId": 5030,
+    "comment": "蛮荒 发送同步玩家信息协议",
+    "cmMethod": "ManHuangGetUserDataReqMsg",
+    "smMethod": "ManHuangGetUserDataRespMsg"
+  },
+  {
+    "cmMsgId": 25501,
+    "smMsgId": 5501,
+    "comment": "精炼",
+    "cmMethod": "ReqEquipmentRefine",
+    "smMethod": "RespEquipmentRefine"
+  },
+  {
+    "cmMsgId": 25502,
+    "smMsgId": 5502,
+    "comment": "进阶",
+    "cmMethod": "ReqEquipmentAdvance",
+    "smMethod": "RespEquipmentAdvance"
+  },
+  {
+    "cmMsgId": 25503,
+    "smMsgId": 5503,
+    "comment": "技能解锁",
+    "cmMethod": "ReqEquipmentActivate",
+    "smMethod": "RespEquipmentActivate"
+  },
+  {
+    "cmMsgId": 25601,
+    "smMsgId": 5601,
+    "comment": "进入秘境",
+    "cmMethod": "SecretTowerEnterReq",
+    "smMethod": "SecretTowerEnterRsp"
+  },
+  {
+    "cmMsgId": 25602,
+    "smMsgId": 5602,
+    "comment": "挑战怪物",
+    "cmMethod": "SecretTowerFightReq",
+    "smMethod": "SecretTowerFightResp"
+  },
+  {
+    "cmMsgId": 25603,
+    "smMsgId": 5603,
+    "comment": "领取阶段奖励",
+    "cmMethod": "SecretTowerGetStageRewardReq",
+    "smMethod": "SecretTowerGetStageRewardRsp"
+  },
+  {
+    "cmMsgId": 25604,
+    "smMsgId": 5604,
+    "comment": "查看怪物属性",
+    "cmMethod": "SecretTowerViewMonsterAttrReq",
+    "smMethod": "SecretTowerViewMonsterAttrResp"
+  },
+  {
+    "cmMsgId": 25606,
+    "smMsgId": 5606,
+    "comment": "查看秘境成就",
+    "cmMethod": "SecretTowerAchievementReq",
+    "smMethod": "SecretTowerAchievementRsp"
+  },
+  {
+    "cmMsgId": 25607,
+    "smMsgId": 5607,
+    "comment": "领取成就奖励",
+    "cmMethod": "SecretTowerGetAchiRewardReq",
+    "smMethod": "SecretTowerGetAchiRewardRsp"
+  },
+  {
+    "cmMsgId": 25801,
+    "smMsgId": 5801,
+    "comment": "进入妖邪讨伐",
+    "cmMethod": "UnionBossInfoReqMsg",
+    "smMethod": "UnionBossInfoRespMsg"
+  },
+  {
+    "cmMsgId": 25802,
+    "smMsgId": 5802,
+    "comment": "布阵",
+    "cmMethod": "UnionBossBuffReqMsg",
+    "smMethod": "UnionBossBuffRespMsg"
+  },
+  {
+    "cmMsgId": 25803,
+    "smMsgId": 5803,
+    "comment": "查看讨伐奖励",
+    "cmMethod": "UnionBossRewardReqMsg",
+    "smMethod": "UnionBossRewardRespMsg"
+  },
+  {
+    "cmMsgId": 25804,
+    "smMsgId": 5804,
+    "comment": "领取讨伐奖励",
+    "cmMethod": "UnionBossRewardReceiveReqMsg",
+    "smMethod": "UnionBossRewardReceiveRespMsg"
+  },
+  {
+    "cmMsgId": 25805,
+    "smMsgId": 5805,
+    "comment": "挑战",
+    "cmMethod": "UnionBossBattleReqMsg",
+    "smMethod": "UnionBossBattleRespMsg"
+  },
+  {
+    "cmMsgId": 25806,
+    "smMsgId": 5806,
+    "comment": "领取讨伐成就奖励",
+    "cmMethod": "UnionBossAchieveRewardReqMsg",
+    "smMethod": "UnionBossAchieveRewardRespMsg"
+  },
+  {
+    "cmMsgId": 25809,
+    "smMsgId": 5809,
+    "comment": "请求已布阵玩家信息",
+    "cmMethod": "UnionBossAddBuffPlayerReqMsg",
+    "smMethod": "UnionBossAddBuffPlayerRespMsg"
+  },
+  {
+    "cmMsgId": 26302,
+    "smMsgId": 6302,
+    "comment": "法宝抽取",
+    "cmMethod": "MagicTreasureDrawReq",
+    "smMethod": "MagicTreasureDrawRsp"
+  },
+  {
+    "cmMsgId": 26303,
+    "smMsgId": 6303,
+    "comment": "法宝升级",
+    "cmMethod": "MagicTreasureLvUpReq",
+    "smMethod": "MagicTreasureLvUpRsp"
+  },
+  {
+    "cmMsgId": 26304,
+    "smMsgId": 6304,
+    "comment": "法宝激活",
+    "cmMethod": "MagicTreasureActiveReq",
+    "smMethod": "MagicTreasureActiveRsp"
+  },
+  {
+    "cmMsgId": 26305,
+    "smMsgId": 6305,
+    "comment": "法宝升星",
+    "cmMethod": "MagicTreasureStarUpReq",
+    "smMethod": "MagicTreasureStarUpRsp"
+  },
+  {
+    "cmMsgId": 26307,
+    "smMsgId": 6307,
+    "comment": "法宝形象切换",
+    "cmMethod": "MagicTreasureSwitchLinkageSkinReq",
+    "smMethod": "MagicTreasureSwitchLinkageSkinResp"
+  },
+  {
+    "cmMsgId": 200021,
+    "smMsgId": 21,
+    "comment": "小游戏领奖",
+    "cmMethod": "ReceiveMiniGamesRewardReq",
+    "smMethod": "ReceiveMiniGamesRewardResp"
+  },
+  {
+    "cmMsgId": 200022,
+    "smMsgId": 22,
+    "comment": "秘境挑战",
+    "cmMethod": "StageMapChallengeReq",
+    "smMethod": "StageMapChallengeRsp"
+  },
+  {
+    "cmMsgId": 200023,
+    "smMsgId": 23,
+    "comment": "禁地试炼领奖",
+    "cmMethod": "ForbiddenTrailsGetRewardReq",
+    "smMethod": "ForbiddenTrailsGetRewardResp"
+  },
+  {
+    "cmMsgId": 200024,
+    "smMsgId": 24,
+    "comment": "西天救援进入",
+    "cmMethod": "EnterWestJourneyReq",
+    "smMethod": "EnterWestJourneyResp"
+  },
+  {
+    "cmMsgId": 200026,
+    "smMsgId": 26,
+    "comment": "西天救援领奖",
+    "cmMethod": "GetWestJourneyRewardReq",
+    "smMethod": "GetWestJourneyRewardResp"
+  },
+  {
+    "cmMsgId": 201604,
+    "smMsgId": 1604,
+    "comment": "查看本分组妖盟详情",
+    "cmMethod": "ReqUnionDetail",
+    "smMethod": "RspUnionDetail"
+  },
+  {
+    "cmMsgId": 201630,
+    "smMsgId": 1630,
+    "comment": "获取分组评级排行",
+    "cmMethod": "UnionPlayerGradeRankReqMsg",
+    "smMethod": "UnionPlayerGradeRankRespMsg"
+  },
+  {
+    "cmMsgId": 201650,
+    "smMsgId": 1650,
+    "comment": "评级人数分配设置",
+    "cmMethod": "UnionMemberGradeSettingReq",
+    "smMethod": "UnionMemberGradeSettingResp"
+  },
+  {
+    "cmMsgId": 201651,
+    "smMsgId": 1651,
+    "comment": "获取妖盟跨服信息",
+    "cmMethod": "GetCrossUnionGroupServersReq",
+    "smMethod": "GetCrossUnionGroupServersResp"
+  },
+  {
+    "cmMsgId": 201654,
+    "smMsgId": 1654,
+    "comment": "发布招募信息",
+    "cmMethod": "UnionPublishRecruitReqMsg",
+    "smMethod": "UnionPublishRecruitRespMsg"
+  },
+  {
+    "cmMsgId": 203205,
+    "smMsgId": 3205,
+    "comment": "移除黑名单",
+    "cmMethod": "RemoveBlackReqMsg",
+    "smMethod": "RemoveBlackRespMsg"
+  },
+  {
+    "cmMsgId": 203206,
+    "smMsgId": 3206,
+    "comment": "获取黑名单列表",
+    "cmMethod": "GetBlackPlayerListReqMsg",
+    "smMethod": "GetBlackPlayerListRespMsg"
+  },
+  {
+    "cmMsgId": 203208,
+    "smMsgId": 3208,
+    "comment": "检测消息是否有效",
+    "cmMethod": "WorldMessageCheckEffectiveReq",
+    "smMethod": "WorldMessageCheckEffectiveRsp"
+  },
+  {
+    "cmMsgId": 205301,
+    "smMsgId": 5301,
+    "comment": "进入妖盟乱斗",
+    "cmMethod": "UnionBattleEnterReq",
+    "smMethod": "UnionBattleEnterRsp"
+  },
+  {
+    "cmMsgId": 205302,
+    "smMsgId": 5302,
+    "comment": "查看自己所属联盟的参与名单",
+    "cmMethod": "UnionBattleGetJoinMemberListReq",
+    "smMethod": "UnionBattleGetJoinMemberListRsp"
+  },
+  {
+    "cmMsgId": 205303,
+    "smMsgId": 5303,
+    "comment": "匹配",
+    "cmMethod": "UnionBattleMatchReq",
+    "smMethod": "UnionBattleMatchRsp"
+  },
+  {
+    "cmMsgId": 205304,
+    "smMsgId": 5304,
+    "comment": "挑战",
+    "cmMethod": "UnionBattleChallengeReq",
+    "smMethod": "UnionBattleChallengeRsp"
+  },
+  {
+    "cmMsgId": 205306,
+    "smMsgId": 5306,
+    "comment": "查看战报信息",
+    "cmMethod": "UnionBattleGetReportReq",
+    "smMethod": "UnionBattleGetReportRsp"
+  },
+  {
+    "cmMsgId": 205307,
+    "smMsgId": 5307,
+    "comment": "购买buff",
+    "cmMethod": "UnionBattleBuyOpenBuffReq",
+    "smMethod": "UnionBattleBuyOpenBuffRsp"
+  },
+  {
+    "cmMsgId": 205308,
+    "smMsgId": 5308,
+    "comment": "选择buff",
+    "cmMethod": "UnionBattleSelectBuffReq",
+    "smMethod": "UnionBattleSelectBuffRsp"
+  },
+  {
+    "cmMsgId": 205309,
+    "smMsgId": 5309,
+    "comment": "获取本次挑战的回放列表",
+    "cmMethod": "UnionBattleGetPlayBackListReq",
+    "smMethod": "UnionBattleGetPlayBackListRsp"
+  },
+  {
+    "cmMsgId": 205310,
+    "smMsgId": 5310,
+    "comment": "领取联盟成就奖励",
+    "cmMethod": "UnionBattleReceiveUnionAchieveRewardReq",
+    "smMethod": "UnionBattleReceiveUnionAchieveRewardRsp"
+  },
+  {
+    "cmMsgId": 205312,
+    "smMsgId": 5312,
+    "comment": "查看联盟积分",
+    "cmMethod": "UnionBattleGetUnionMemberScoreReq",
+    "smMethod": "UnionBattleGetUnionMemberScoreRsp"
+  },
+  {
+    "cmMsgId": 205313,
+    "smMsgId": 5313,
+    "comment": "红点",
+    "cmMethod": "UnionBattleRedDotReqMsg",
+    "smMethod": "UnionBattleRedDotRespMsg"
+  },
+  {
+    "cmMsgId": 205935,
+    "smMsgId": 5935,
+    "comment": "领奖期 冠军弹窗",
+    "cmMethod": "AskDingGetChampionInfoReq",
+    "smMethod": "AskDingGetChampionInfoResp"
+  },
+  {
+    "cmMsgId": 206001,
+    "smMsgId": 6001,
+    "comment": "查询据点战基础信息",
+    "cmMethod": "UnionAreaWarReqMsg",
+    "smMethod": "UnionAreaWarRespMsg"
+  },
+  {
+    "cmMsgId": 206003,
+    "smMsgId": 6003,
+    "comment": "请求查看分组",
+    "cmMethod": "UnionAreaWarGroupReqMsg",
+    "smMethod": "UnionAreaWarGroupRespMsg"
+  },
+  {
+    "cmMsgId": 206004,
+    "smMsgId": 6004,
+    "comment": "请求防守人列表",
+    "cmMethod": "UnionAreaWarDefendersReqMsg",
+    "smMethod": "UnionAreaWarDefendersRespMsg"
+  },
+  {
+    "cmMsgId": 206005,
+    "smMsgId": 6005,
+    "comment": "刷新防守人列表",
+    "cmMethod": "UnionAreaWarDefendersUpdateReqMsg",
+    "smMethod": "UnionAreaWarDefendersUpdateRespMsg"
+  },
+  {
+    "cmMsgId": 206006,
+    "smMsgId": 6006,
+    "comment": "获取据点列表",
+    "cmMethod": "UnionAreWarListReqMsg",
+    "smMethod": "UnionAreaWarListRespMsg"
+  },
+  {
+    "cmMsgId": 206007,
+    "smMsgId": 6007,
+    "comment": "刷新据点列表",
+    "cmMethod": "UnionAreWarListUpdateReqMsg",
+    "smMethod": "UnionAreaWarListUpdateRespMsg"
+  },
+  {
+    "cmMsgId": 206009,
+    "smMsgId": 6009,
+    "comment": "请求战斗场景攻击",
+    "cmMethod": "UnionAreaWarAttackReqMsg",
+    "smMethod": "UnionAreaWarAttackRespMsg"
+  },
+  {
+    "cmMsgId": 206011,
+    "smMsgId": 6011,
+    "comment": "建设(捐献)",
+    "cmMethod": "UnionAreaWarDevelopReqMsg",
+    "smMethod": "UnionAreaWarDevelopRespMsg"
+  },
+  {
+    "cmMsgId": 206013,
+    "smMsgId": 6013,
+    "comment": "加载宝库信息",
+    "cmMethod": "UnionAreaWarTreasuryReqMsg",
+    "smMethod": "UnionAreaWarTreasuryRespMsg"
+  },
+  {
+    "cmMsgId": 206014,
+    "smMsgId": 6014,
+    "comment": "宝库抽奖",
+    "cmMethod": "UnionAreaWarTreasuryDrawReqMsg",
+    "smMethod": "UnionAreaWarTreasuryDrawRespMsg"
+  },
+  {
+    "cmMsgId": 206015,
+    "smMsgId": 6015,
+    "comment": "请求召唤神龙",
+    "cmMethod": "UnionAreaWarSummonDragonReqMsg",
+    "smMethod": "UnionAreaWarSummonDragonRespMsg"
+  },
+  {
+    "cmMsgId": 206016,
+    "smMsgId": 6016,
+    "comment": "查询据点战膜拜",
+    "cmMethod": "UnionAreaWarWorshipReq",
+    "smMethod": "UnionAreaWarWorshipRsp"
+  },
+  {
+    "cmMsgId": 206019,
+    "smMsgId": 6019,
+    "comment": "请求战斗场景数据",
+    "cmMethod": "UnionAreaWarFightSceneReqMsg",
+    "smMethod": "UnionAreaWarFightSceneRespMsg"
+  },
+  {
+    "cmMsgId": 206020,
+    "smMsgId": 6020,
+    "comment": "请求捐献建设数据",
+    "cmMethod": "UnionAreaWarConstructReqMsg",
+    "smMethod": "UnionAreaWarConstructRespMsg"
+  },
+  {
+    "cmMsgId": 206021,
+    "smMsgId": 6021,
+    "comment": "请求战报数据",
+    "cmMethod": "UnionAreaWarReportReqMsg",
+    "smMethod": "UnionAreaWarReportRespMsg"
+  },
+  {
+    "cmMsgId": 206022,
+    "smMsgId": 6022,
+    "comment": "请求战报伤害详情数据",
+    "cmMethod": "UnionAreaWarReportDetailReqMsg",
+    "smMethod": "UnionAreaWarReportDetailRespMsg"
+  },
+  {
+    "cmMsgId": 206023,
+    "smMsgId": 6023,
+    "comment": "请求联盟伤害数据",
+    "cmMethod": "UnionAreaWarUnionDamageReqMsg",
+    "smMethod": "UnionAreaWarUnionDamageRespMsg"
+  },
+  {
+    "cmMsgId": 206024,
+    "smMsgId": 6024,
+    "comment": "请求竞猜界面数据",
+    "cmMethod": "UnionAreaWarBetDataReqMsg",
+    "smMethod": "UnionAreaWarBetDataRespMsg"
+  },
+  {
+    "cmMsgId": 206025,
+    "smMsgId": 6025,
+    "comment": "请求竞猜选择",
+    "cmMethod": "UnionAreaWarBetSelectReqMsg",
+    "smMethod": "UnionAreaWarBetSelectRespMsg"
+  },
+  {
+    "cmMsgId": 206026,
+    "smMsgId": 6026,
+    "comment": "请求竞猜奖励",
+    "cmMethod": "UnionAreaWarBetRewardReqMsg",
+    "smMethod": "UnionAreaWarBetRewardRespMsg"
+  },
+  {
+    "cmMsgId": 206027,
+    "smMsgId": 6027,
+    "comment": "查看自己所属联盟的参与名单",
+    "cmMethod": "UnionAreaWarGetJoinMemberListReq",
+    "smMethod": "UnionAreaWarGetJoinMemberListRsp"
+  },
+  {
+    "cmMsgId": 206029,
+    "smMsgId": 6029,
+    "comment": "请求查看联盟分段位伤害信息",
+    "cmMethod": "UnionAreaWarUnionGroupDamageReqMsg",
+    "smMethod": "UnionAreaWarUnionGroupDamageRespMsg"
+  },
+  {
+    "cmMsgId": 206030,
+    "smMsgId": 6030,
+    "comment": "请求红点信息",
+    "cmMethod": "UnionAreaWarRedDotReqMsg",
+    "smMethod": "UnionAreaWarRedDotRespMsg"
+  },
+  {
+    "cmMsgId": 206031,
+    "smMsgId": 6031,
+    "comment": "请求查看竞猜结果的获奖玩家列表",
+    "cmMethod": "UnionAreaWarGuessPlayersReqMsg",
+    "smMethod": "UnionAreaWarGuessPlayersRespMsg"
+  },
+  {
+    "cmMsgId": 206032,
+    "smMsgId": 6032,
+    "comment": "查看所有段位的分组数量",
+    "cmMethod": "UnionAreaWarDanGroupCountReq",
+    "smMethod": "UnionAreaWarDanGroupCountResp"
+  },
+  {
+    "cmMsgId": 206101,
+    "smMsgId": 6101,
+    "comment": "进入活动",
+    "cmMethod": "AskWayEnterReq",
+    "smMethod": "AskWayEnterRsp"
+  },
+  {
+    "cmMsgId": 206102,
+    "smMsgId": 6102,
+    "comment": "斗法匹配",
+    "cmMethod": "AskWayMatchReq",
+    "smMethod": "AskWayMatchRsp"
+  },
+  {
+    "cmMsgId": 206103,
+    "smMsgId": 6103,
+    "comment": "斗法战斗",
+    "cmMethod": "AskWayBattleReq",
+    "smMethod": "AskWayBattleRsp"
+  },
+  {
+    "cmMsgId": 206104,
+    "smMsgId": 6104,
+    "comment": "获取战报",
+    "cmMethod": "AskWayGetReportReq",
+    "smMethod": "AskWayGetReportRsp"
+  },
+  {
+    "cmMsgId": 206105,
+    "smMsgId": 6105,
+    "comment": "斗法战斗回放",
+    "cmMethod": "AskWayBattleReplyReq",
+    "smMethod": "AskWayBattleReplyRsp"
+  },
+  {
+    "cmMsgId": 206106,
+    "smMsgId": 6106,
+    "comment": "领取段位奖励",
+    "cmMethod": "AskWayReceiveTierRewardReq",
+    "smMethod": "AskWayReceiveTierRewardRsp"
+  },
+  {
+    "cmMsgId": 206107,
+    "smMsgId": 6107,
+    "comment": "领取斗法榜单积分奖励",
+    "cmMethod": "AskWayReceiveScoreRewardReq",
+    "smMethod": "AskWayReceiveScoreRewardRsp"
+  },
+  {
+    "cmMsgId": 206108,
+    "smMsgId": 6108,
+    "comment": "购买挑战令道具",
+    "cmMethod": "AskWayBuyFightTicketReq",
+    "smMethod": "AskWayBuyFightTicketRsp"
+  },
+  {
+    "cmMsgId": 206109,
+    "smMsgId": 6109,
+    "comment": "查看玩家数据",
+    "cmMethod": "AskWayGetPlayerDetailReq",
+    "smMethod": "AskWayGetPlayerDetailRsp"
+  },
+  {
+    "cmMsgId": 206110,
+    "smMsgId": 6110,
+    "comment": "领取竞猜币",
+    "cmMethod": "AskWayGetGuessCoinReq",
+    "smMethod": "AskWayGetGuessCoinRsp"
+  },
+  {
+    "cmMsgId": 206111,
+    "smMsgId": 6111,
+    "comment": "登天竞猜",
+    "cmMethod": "AskWayToSkyGuessReq",
+    "smMethod": "AskWayToSkyGuessRsp"
+  },
+  {
+    "cmMsgId": 206112,
+    "smMsgId": 6112,
+    "comment": "登天战斗回放",
+    "cmMethod": "AskWayToSkyBattleReplyReq",
+    "smMethod": "AskWayToSkyBattleReplyRsp"
+  },
+  {
+    "cmMsgId": 206113,
+    "smMsgId": 6113,
+    "comment": "朝拜",
+    "cmMethod": "AskWayWorshipReq",
+    "smMethod": "AskWayWorshipRsp"
+  },
+  {
+    "cmMsgId": 206114,
+    "smMsgId": 6114,
+    "comment": "领取登天榜单奖励",
+    "cmMethod": "AskWayReceiveToSkyRankRewardReq",
+    "smMethod": "AskWayReceiveToSkyRankRewardRsp"
+  },
+  {
+    "cmMsgId": 206115,
+    "smMsgId": 6115,
+    "comment": "往届妖神榜",
+    "cmMethod": "AskWayToSkyRosterReq",
+    "smMethod": "AskWayToSkyRosterRsp"
+  },
+  {
+    "cmMsgId": 206116,
+    "smMsgId": 6116,
+    "comment": "获取登天期组别数据",
+    "cmMethod": "AskWayToSkyGetBattleResultReq",
+    "smMethod": "AskWayToSkyGetBattleResultRsp"
+  },
+  {
+    "cmMsgId": 206117,
+    "smMsgId": 6117,
+    "comment": "获取竞猜信息",
+    "cmMethod": "AskWayGetGuessInfoReq",
+    "smMethod": "AskWayGetGuessInfoRsp"
+  },
+  {
+    "cmMsgId": 206118,
+    "smMsgId": 6118,
+    "comment": "获取登天战报数据",
+    "cmMethod": "AskWayToSkyGetReportReq",
+    "smMethod": "AskWayToSkyGetReportRsp"
+  },
+  {
+    "cmMsgId": 206132,
+    "smMsgId": 6132,
+    "comment": "获取海报数据",
+    "cmMethod": "AskWayGetGetCurStateInfoReq",
+    "smMethod": "AskWayGetGetCurStateInfoRsp"
+  },
+  {
+    "cmMsgId": 206701,
+    "smMsgId": 6701,
+    "comment": "妖盟夺位战主界面",
+    "cmMethod": "UnionFightMainReq",
+    "smMethod": "UnionFightMainRsp"
+  },
+  {
+    "cmMsgId": 206702,
+    "smMsgId": 6702,
+    "comment": "妖盟夺位战报名",
+    "cmMethod": "UnionFightApplyReq",
+    "smMethod": "UnionFightApplyRsp"
+  },
+  {
+    "cmMsgId": 206703,
+    "smMsgId": 6703,
+    "comment": "妖盟夺位战进入战斗界面",
+    "cmMethod": "UnionFightEnterReq",
+    "smMethod": "UnionFightEnterRsp"
+  },
+  {
+    "cmMsgId": 206704,
+    "smMsgId": 6704,
+    "comment": "妖盟夺位战请战",
+    "cmMethod": "UnionFightRequestReq",
+    "smMethod": "UnionFightRequestRsp"
+  },
+  {
+    "cmMsgId": 206705,
+    "smMsgId": 6705,
+    "comment": "妖盟夺位战上阵",
+    "cmMethod": "UnionFightPositionReq",
+    "smMethod": "UnionFightPositionRsp"
+  },
+  {
+    "cmMsgId": 206706,
+    "smMsgId": 6706,
+    "comment": "妖盟夺位战下阵",
+    "cmMethod": "UnionFightUnPositionReq",
+    "smMethod": "UnionFightUnPositionRsp"
+  },
+  {
+    "cmMsgId": 206707,
+    "smMsgId": 6707,
+    "comment": "妖盟夺位战小组排行",
+    "cmMethod": "UnionFightGroupRankReq",
+    "smMethod": "UnionFightGroupRankRsp"
+  },
+  {
+    "cmMsgId": 206708,
+    "smMsgId": 6708,
+    "comment": "妖盟夺位战离开",
+    "cmMethod": "UnionFightLeaveReq"
+  },
+  {
+    "cmMsgId": 206709,
+    "smMsgId": 6709,
+    "comment": "妖盟夺位战至尊榜",
+    "cmMethod": "UnionFightSupremacyListReq",
+    "smMethod": "UnionFightSupremacyListRsp"
+  },
+  {
+    "cmMsgId": 206710,
+    "smMsgId": 6710,
+    "comment": "妖盟夺位战膜拜",
+    "cmMethod": "UnionFightWorshipReq",
+    "smMethod": "UnionFightWorshipRsp"
+  },
+  {
+    "cmMsgId": 206711,
+    "smMsgId": 6711,
+    "comment": "妖盟夺位战回放",
+    "cmMethod": "UnionFightFightPlaybackReq",
+    "smMethod": "UnionFightFightPlaybackRsp"
+  },
+  {
+    "cmMsgId": 206712,
+    "smMsgId": 6712,
+    "comment": "妖盟夺位战对战记录",
+    "cmMethod": "UnionFightRecordReq",
+    "smMethod": "UnionFightRecordRsp"
+  },
+  {
+    "cmMsgId": 206713,
+    "smMsgId": 6713,
+    "comment": "妖盟夺位战历史最高",
+    "cmMethod": "UnionFightGetHistoryDataReq",
+    "smMethod": "UnionFightGetHistoryDataRsp"
+  },
+  {
+    "cmMsgId": 206714,
+    "smMsgId": 6714,
+    "comment": "妖盟夺位战获取锁定属性",
+    "cmMethod": "UnionFightGetLockedDetailReq",
+    "smMethod": "UnionFightGetLockedDetailRsp"
+  },
+  {
+    "cmMsgId": 206715,
+    "smMsgId": 6715,
+    "comment": "妖盟夺位战设置锁定状态",
+    "cmMethod": "UnionFightChangeLockStatusReq",
+    "smMethod": "UnionFightChangeLockStatusRsp"
+  },
+  {
+    "cmMsgId": 206716,
+    "smMsgId": 6716,
+    "comment": "妖盟夺位战今日详情",
+    "cmMethod": "UnionFightGetTodayResultReq",
+    "smMethod": "UnionFightGetTodayResultRsp"
+  },
+  {
+    "cmMsgId": 206717,
+    "smMsgId": 6717,
+    "comment": "获取妖盟排行列表",
+    "cmMethod": "UnionFightGetUnionRankListReq",
+    "smMethod": "RspUnionList"
+  },
+  {
+    "cmMsgId": 206801,
+    "smMsgId": 6801,
+    "comment": "基础信息",
+    "cmMethod": "GodIslandBaseInfoReqMsg",
+    "smMethod": "GodIslandBaseInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206802,
+    "smMsgId": 6802,
+    "comment": "查看分组",
+    "cmMethod": "GodIslandGroupReqMsg",
+    "smMethod": "GodIslandGroupRespMsg"
+  },
+  {
+    "cmMsgId": 206803,
+    "smMsgId": 6803,
+    "comment": "请求妖盟建筑战报",
+    "cmMethod": "GodIslandReportReqMsg",
+    "smMethod": "GodIslandReportRespMsg"
+  },
+  {
+    "cmMsgId": 206804,
+    "smMsgId": 6804,
+    "comment": "请求妖盟建筑战报详情数据",
+    "cmMethod": "GodIslandReportDetailReqMsg",
+    "smMethod": "GodIslandReportDetailRespMsg"
+  },
+  {
+    "cmMsgId": 206805,
+    "smMsgId": 6805,
+    "comment": "请求联盟战功数据",
+    "cmMethod": "GodIslandUnionDamageReqMsg",
+    "smMethod": "GodIslandUnionDamageRespMsg"
+  },
+  {
+    "cmMsgId": 206806,
+    "smMsgId": 6806,
+    "comment": "查看自己所属联盟的参与名单",
+    "cmMethod": "GodIslandGetJoinMemberListReq",
+    "smMethod": "GodIslandGetJoinMemberListRsp"
+  },
+  {
+    "cmMsgId": 206807,
+    "smMsgId": 6807,
+    "comment": "妖盟分段位伤害信息",
+    "cmMethod": "GodIslandUnionGroupDamageReqMsg",
+    "smMethod": "GodIslandUnionGroupDamageRespMsg"
+  },
+  {
+    "cmMsgId": 206808,
+    "smMsgId": 6808,
+    "comment": "红点信息",
+    "cmMethod": "GodIslandRedDotReqMsg",
+    "smMethod": "GodIslandRedDotRespMsg"
+  },
+  {
+    "cmMsgId": 206809,
+    "smMsgId": 6809,
+    "comment": "点赞",
+    "cmMethod": "GodIslandWorshipReq",
+    "smMethod": "GodIslandWorshipResp"
+  },
+  {
+    "cmMsgId": 206810,
+    "smMsgId": 6810,
+    "comment": "请求个人战报",
+    "cmMethod": "GodIslandPlayerReportReqMsg",
+    "smMethod": "GodIslandPlayerReportRespMsg"
+  },
+  {
+    "cmMsgId": 206811,
+    "smMsgId": 6811,
+    "comment": "妖力转灵力",
+    "cmMethod": "GodIslandUpdatePowerReq",
+    "smMethod": "GodIslandUpdatePowerResp"
+  },
+  {
+    "cmMsgId": 206812,
+    "smMsgId": 6812,
+    "comment": "查看妖盟战功列表",
+    "cmMethod": "GodIslandUnionBattleScoreListReq",
+    "smMethod": "GodIslandUnionBattleScoreListResp"
+  },
+  {
+    "cmMsgId": 206813,
+    "smMsgId": 6813,
+    "comment": "灵液领取记录",
+    "cmMethod": "GodIslandLiquidReceiveRecordReq",
+    "smMethod": "GodIslandLiquidReceiveRecordResp"
+  },
+  {
+    "cmMsgId": 206814,
+    "smMsgId": 6814,
+    "comment": "妖盟成员战功统计",
+    "cmMethod": "GodIslandUnionMemberScoreListReq",
+    "smMethod": "GodIslandUnionMemberScoreListResp"
+  },
+  {
+    "cmMsgId": 206819,
+    "smMsgId": 6819,
+    "comment": "活动心跳",
+    "cmMethod": "GodIslandHeartBeatReqMsg",
+    "smMethod": "GodIslandHeartBeatRespMsg"
+  },
+  {
+    "cmMsgId": 206820,
+    "smMsgId": 6820,
+    "comment": "游戏基础信息",
+    "cmMethod": "GodIslandGameInfoReqMsg",
+    "smMethod": "GodIslandGameInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206823,
+    "smMsgId": 6823,
+    "comment": "游戏大地图城市信息(在滑动地图时候将视野内的城市id发送)",
+    "cmMethod": "GodIslandGameCityInfoReqMsg",
+    "smMethod": "GodIslandGameCityInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206824,
+    "smMsgId": 6824,
+    "comment": "npc事件选择",
+    "cmMethod": "GodIslandGameEventReqMsg",
+    "smMethod": "GodIslandGameEventRespMsg"
+  },
+  {
+    "cmMsgId": 206826,
+    "smMsgId": 6826,
+    "comment": "灵力球信息",
+    "cmMethod": "GodIslandGameSpiritualBallInfoReqMsg",
+    "smMethod": "GodIslandGameSpiritualBallInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206827,
+    "smMsgId": 6827,
+    "comment": "使用灵力球",
+    "cmMethod": "GodIslandGameUseSpiritualBallReqMsg",
+    "smMethod": "GodIslandGameUseSpiritualBallRespMsg"
+  },
+  {
+    "cmMsgId": 206828,
+    "smMsgId": 6828,
+    "comment": "目标城市具体信息",
+    "cmMethod": "GodIslandGameTargetCityInfoReqMsg",
+    "smMethod": "GodIslandGameTargetCityInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206829,
+    "smMsgId": 6829,
+    "comment": "目标城市队列信息",
+    "cmMethod": "GodIslandGameTargetCityLineInfoReqMsg",
+    "smMethod": "GodIslandGameTargetCityLineInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206830,
+    "smMsgId": 6830,
+    "comment": "进攻",
+    "cmMethod": "GodIslandGameAttackReqMsg",
+    "smMethod": "GodIslandGameAttackRespMsg"
+  },
+  {
+    "cmMsgId": 206831,
+    "smMsgId": 6831,
+    "comment": "自动操作 托管",
+    "cmMethod": "GodIslandGameAutoAttackReqMsg",
+    "smMethod": "GodIslandGameAutoAttackRespMsg"
+  },
+  {
+    "cmMsgId": 206832,
+    "smMsgId": 6832,
+    "comment": "行军移动",
+    "cmMethod": "GodIslandGameMoveReqMsg",
+    "smMethod": "GodIslandGameMoveRespMsg"
+  },
+  {
+    "cmMsgId": 206834,
+    "smMsgId": 6834,
+    "comment": "小地图信息",
+    "cmMethod": "GodIslandGameMiniMapInfoReqMsg",
+    "smMethod": "GodIslandGameMiniMapInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206835,
+    "smMsgId": 6835,
+    "comment": "设置联盟类型",
+    "cmMethod": "GodIslandGameSetUnionTypeReqMsg",
+    "smMethod": "GodIslandGameSetUnionTypeRespMsg"
+  },
+  {
+    "cmMsgId": 206836,
+    "smMsgId": 6836,
+    "comment": "联盟种草信息",
+    "cmMethod": "GodIslandGamePlantInfoReqMsg",
+    "smMethod": "GodIslandGamePlantInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206837,
+    "smMsgId": 6837,
+    "comment": "使用仙果 补充灵力球的灵力",
+    "cmMethod": "GodIslandUseFruitReq",
+    "smMethod": "GodIslandUseFruitResp"
+  },
+  {
+    "cmMsgId": 206838,
+    "smMsgId": 6838,
+    "comment": "联盟种草领取果实",
+    "cmMethod": "GodIslandGamePlantReceiveFruitsReqMsg",
+    "smMethod": "GodIslandGamePlantReceiveFruitsRespMsg"
+  },
+  {
+    "cmMsgId": 206839,
+    "smMsgId": 6839,
+    "comment": "联盟种草浇水",
+    "cmMethod": "GodIslandGamePlantWaterReqMsg",
+    "smMethod": "GodIslandGamePlantWaterRespMsg"
+  },
+  {
+    "cmMsgId": 206840,
+    "smMsgId": 6840,
+    "comment": "灵晶数据加载",
+    "cmMethod": "GodIslandCrystalInfoReqMsg",
+    "smMethod": "GodIslandCrystalInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206841,
+    "smMsgId": 6841,
+    "comment": "领取灵晶",
+    "cmMethod": "GodIslandCrystalReceiveReqMsg",
+    "smMethod": "GodIslandCrystalReceiveRespMsg"
+  },
+  {
+    "cmMsgId": 206842,
+    "smMsgId": 6842,
+    "comment": "联盟指挥信息",
+    "cmMethod": "GodIslandGameStrategyInfoReqMsg",
+    "smMethod": "GodIslandGameStrategyInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206843,
+    "smMsgId": 6843,
+    "comment": "联盟指挥设置",
+    "cmMethod": "GodIslandGameCommanderSetReqMsg",
+    "smMethod": "GodIslandGameCommanderSetRespMsg"
+  },
+  {
+    "cmMsgId": 206844,
+    "smMsgId": 6844,
+    "comment": "联盟指挥设置目标",
+    "cmMethod": "GodIslandGameSetUnionTargetReqMsg",
+    "smMethod": "GodIslandGameSetUnionTargetRespMsg"
+  },
+  {
+    "cmMsgId": 206845,
+    "smMsgId": 6845,
+    "comment": "联盟指挥请求支援",
+    "cmMethod": "GodIslandGameForHelpReqMsg",
+    "smMethod": "GodIslandGameForHelpRespMsg"
+  },
+  {
+    "cmMsgId": 206849,
+    "smMsgId": 6849,
+    "comment": "加速行军",
+    "cmMethod": "GodIslandGameAcclerateMoveMsg",
+    "smMethod": "GodIslandGameAcclerateMoveRespMsg"
+  },
+  {
+    "cmMsgId": 206851,
+    "smMsgId": 6851,
+    "comment": "联盟发送灵液",
+    "cmMethod": "GodIslandGameSendLiquidReqMsg",
+    "smMethod": "GodIslandGameSendLiquidRespMsg"
+  },
+  {
+    "cmMsgId": 206852,
+    "smMsgId": 6852,
+    "comment": "联盟灵液发送记录",
+    "cmMethod": "GodIslandGameSendLiquidRecordReqMsg",
+    "smMethod": "GodIslandGameSendLiquidRecordRespMsg"
+  },
+  {
+    "cmMsgId": 206855,
+    "smMsgId": 6855,
+    "comment": "请求城市界面buff信息",
+    "cmMethod": "GodIslandGameCityBuffInfoReqMsg",
+    "smMethod": "GodIslandGameCityBuffInfoRespMsg"
+  },
+  {
+    "cmMsgId": 206856,
+    "smMsgId": 6856,
+    "comment": "阵亡之后 补兵完成之后从场外回大本营",
+    "cmMethod": "GodIslandBackHomeReq",
+    "smMethod": "GodIslandBackHomeResp"
+  },
+  {
+    "cmMsgId": 206858,
+    "smMsgId": 6858,
+    "comment": "修改盟友",
+    "cmMethod": "GodIslandSetFriendUnionReq",
+    "smMethod": "GodIslandSetFriendUnionResp"
+  },
+  {
+    "cmMsgId": 206902,
+    "smMsgId": 6902,
+    "comment": "星宿试炼战斗",
+    "cmMethod": "StarTrialChallengeReq",
+    "smMethod": "StarTrialChallengeResp"
+  },
+  {
+    "cmMsgId": 206903,
+    "smMsgId": 6903,
+    "comment": "获取日志信息",
+    "cmMethod": "StarTrialRecordReq",
+    "smMethod": "StarTrialRecordResp"
+  },
+  {
+    "cmMsgId": 206904,
+    "smMsgId": 6904,
+    "comment": "战斗回放",
+    "cmMethod": "StarTrialBattleReplyReq",
+    "smMethod": "StarTrialBattleReplyResp"
+  },
+  {
+    "cmMsgId": 206905,
+    "smMsgId": 6905,
+    "comment": "进入星空图鉴信息",
+    "cmMethod": "EnterStarTrialCodexMsgReq",
+    "smMethod": "EnterStarTrialCodexMsgResp"
+  },
+  {
+    "cmMsgId": 206906,
+    "smMsgId": 6906,
+    "comment": "获取详细图鉴击败信息",
+    "cmMethod": "PlayerStarTrialCodexMsgReq",
+    "smMethod": "RspPlayerStarTrialCodexMsg"
+  },
+  {
+    "cmMsgId": 206907,
+    "smMsgId": 6907,
+    "comment": "获取Boss属性信息",
+    "cmMethod": "GetBossDetailDataReq",
+    "smMethod": "GetBossDetailDataResp"
+  },
+  {
+    "cmMsgId": 206908,
+    "smMsgId": 6908,
+    "comment": "每日领奖",
+    "cmMethod": "GetDailyFightRewardReq",
+    "smMethod": "GetDailyFightRewardResp"
+  },
+  {
+    "cmMsgId": 206909,
+    "smMsgId": 6909,
+    "comment": "获取分组信息",
+    "cmMethod": "GetStarTrialGroupInfoReq",
+    "smMethod": "GetStarTrialGroupInfoResp"
+  },
+  {
+    "cmMsgId": 206910,
+    "smMsgId": 6910,
+    "comment": "查看玩家详情",
+    "cmMethod": "StarTrialGetPlayerDetailReq",
+    "smMethod": "StarTrialGetPlayerDetailResp"
+  },
+  {
+    "cmMsgId": 206911,
+    "smMsgId": 6911,
+    "comment": "进入星宿试炼",
+    "cmMethod": "StarTrialEnterMainPanelReq",
+    "smMethod": "StarTrialEnterMainPanelResp"
+  },
+  {
+    "cmMsgId": 207001,
+    "smMsgId": 7001,
+    "comment": "进入聚灵阵",
+    "cmMethod": "GatherEnergyEnterNewReq",
+    "smMethod": "GatherEnergyEnterNewResp"
+  },
+  {
+    "cmMsgId": 207003,
+    "smMsgId": 7003,
+    "comment": "开启灵阵界面",
+    "cmMethod": "GatherEnergyOpenViewReq",
+    "smMethod": "GatherEnergyOpenViewResp"
+  },
+  {
+    "cmMsgId": 207004,
+    "smMsgId": 7004,
+    "comment": "开启某个灵阵",
+    "cmMethod": "GatherEnergyOpenReq",
+    "smMethod": "GatherEnergyOpenResp"
+  },
+  {
+    "cmMsgId": 207007,
+    "smMsgId": 7007,
+    "comment": "挑战某人",
+    "cmMethod": "GatherEnergyFightReq",
+    "smMethod": "GatherEnergyFightResp"
+  },
+  {
+    "cmMsgId": 207011,
+    "smMsgId": 7011,
+    "comment": "聚灵阵奖励领取",
+    "cmMethod": "GatherEnergyRewardReq",
+    "smMethod": "GatherEnergyRewardResp"
+  },
+  {
+    "cmMsgId": 207012,
+    "smMsgId": 7012,
+    "comment": "聚灵阵排行榜点赞",
+    "cmMethod": "GatherEnergyLikeReq",
+    "smMethod": "GatherEnergyLikeResp"
+  },
+  {
+    "cmMsgId": 207015,
+    "smMsgId": 7015,
+    "comment": "灵气转换",
+    "cmMethod": "GatherEnergyTransformReq",
+    "smMethod": "GatherEnergyTransformResp"
+  },
+  {
+    "cmMsgId": 207017,
+    "smMsgId": 7017,
+    "comment": "离开聚灵阵",
+    "cmMethod": "GatherEnergyLeaveReq",
+    "smMethod": "GatherEnergyLeaveResp"
+  },
+  {
+    "cmMsgId": 207018,
+    "smMsgId": 7018,
+    "comment": "聚灵阵公告",
+    "cmMethod": "GatherEnergyNoticeReq",
+    "smMethod": "GatherEnergyNoticeResp"
+  },
+  {
+    "cmMsgId": 207019,
+    "smMsgId": 7019,
+    "comment": "聚灵阵获取广告奖励",
+    "cmMethod": "GatherEnergyGetADAwardReq",
+    "smMethod": "GatherEnergyGetADAwardResp"
+  },
+  {
+    "cmMsgId": 207020,
+    "smMsgId": 7020,
+    "comment": "打开聚灵阵一级列表界面（参与人数）",
+    "cmMethod": "GatherEnergyFirstListViewReq",
+    "smMethod": "GatherEnergyFirstListViewResp"
+  },
+  {
+    "cmMsgId": 207021,
+    "smMsgId": 7021,
+    "comment": "打开聚灵阵二级列表界面（参与名字）",
+    "cmMethod": "GatherEnergySecondListViewReq",
+    "smMethod": "GatherEnergySecondListViewResp"
+  },
+  {
+    "cmMsgId": 207022,
+    "smMsgId": 7022,
+    "comment": "打开某个聚灵阵内部",
+    "cmMethod": "GatherEnergyInsideViewNewReq",
+    "smMethod": "GatherEnergyInsideViewNewResp"
+  },
+  {
+    "cmMsgId": 207023,
+    "smMsgId": 7023,
+    "comment": "打开战报界面",
+    "cmMethod": "GatherEnergyFightReportNewReq",
+    "smMethod": "GatherEnergyFightReportNewResp"
+  },
+  {
+    "cmMsgId": 207024,
+    "smMsgId": 7024,
+    "comment": "查询某人参与的阵法",
+    "cmMethod": "GatherEnergySearchNewReq",
+    "smMethod": "GatherEnergySearchNewResp"
+  },
+  {
+    "cmMsgId": 207025,
+    "smMsgId": 7025,
+    "comment": "加入聚灵阵",
+    "cmMethod": "GatherEnergyAttendNewReq",
+    "smMethod": "GatherEnergyAttendNewResp"
+  },
+  {
+    "cmMsgId": 207202,
+    "smMsgId": 7202,
+    "comment": "领取sdk奖励",
+    "cmMethod": "ReceiveSdkRewardReq",
+    "smMethod": "ReceiveSdkRewardRsp"
+  },
+  {
+    "cmMsgId": 207203,
+    "smMsgId": 7203,
+    "comment": "领取qq卡券奖励",
+    "cmMethod": "QQCardGetRewardReq",
+    "smMethod": "QQCardGetRewardRsp"
+  },
+  {
+    "cmMsgId": 207204,
+    "smMsgId": 7204,
+    "comment": "支付宝启动参数",
+    "cmMethod": "AlipayStartParamReq",
+    "smMethod": "AlipayStartParamRsp"
+  },
+  {
+    "cmMsgId": 207205,
+    "smMsgId": 7205,
+    "comment": "Sdk七日登录奖励领取",
+    "cmMethod": "ReceiveSdkDailyRewardReq",
+    "smMethod": "ReceiveSdkDailyRewardRsp"
+  },
+  {
+    "cmMsgId": 207206,
+    "smMsgId": 7206,
+    "comment": "美团启动参数",
+    "cmMethod": "MeiTuanStartParamReq",
+    "smMethod": "MeiTuanStartParamRsp"
+  },
+  {
+    "cmMsgId": 208401,
+    "smMsgId": 8401,
+    "comment": "进入征战诸天",
+    "cmMethod": "SkyWarEnterReq",
+    "smMethod": "SkyWarEnterRsp"
+  },
+  {
+    "cmMsgId": 208402,
+    "smMsgId": 8402,
+    "comment": "刷新对手玩家",
+    "cmMethod": "SkyWarRefreshEnemyReq",
+    "smMethod": "SkyWarRefreshEnemyRsp"
+  },
+  {
+    "cmMsgId": 208403,
+    "smMsgId": 8403,
+    "comment": "斗法",
+    "cmMethod": "SkyWarFightReq",
+    "smMethod": "SkyWarFightRsp"
+  },
+  {
+    "cmMsgId": 208404,
+    "smMsgId": 8404,
+    "comment": "获取排行榜数据",
+    "cmMethod": "SkyWarRankReq",
+    "smMethod": "SkyWarRankRsp"
+  },
+  {
+    "cmMsgId": 208405,
+    "smMsgId": 8405,
+    "comment": "获取日志",
+    "cmMethod": "SkyWarLogReq",
+    "smMethod": "SkyWarLogRsp"
+  },
+  {
+    "cmMsgId": 208406,
+    "smMsgId": 8406,
+    "comment": "战斗回放",
+    "cmMethod": "SkyWarLogPlaybackReq",
+    "smMethod": "SkyWarLogPlaybackRsp"
+  },
+  {
+    "cmMsgId": 208407,
+    "smMsgId": 8407,
+    "comment": "获取布阵详情",
+    "cmMethod": "SkyWarFormationReq",
+    "smMethod": "SkyWarFormationRsp"
+  },
+  {
+    "cmMsgId": 208408,
+    "smMsgId": 8408,
+    "comment": "设置顺位",
+    "cmMethod": "SkyWarSetOrderReq",
+    "smMethod": "SkyWarSetOrderRsp"
+  },
+  {
+    "cmMsgId": 208409,
+    "smMsgId": 8409,
+    "comment": "诸天榜",
+    "cmMethod": "SkyWarSkyRankReq",
+    "smMethod": "SkyWarSkyRankRsp"
+  },
+  {
+    "cmMsgId": 208410,
+    "smMsgId": 8410,
+    "comment": "膜拜",
+    "cmMethod": "SkyWarWorshipReq",
+    "smMethod": "SkyWarWorshipRsp"
+  },
+  {
+    "cmMsgId": 208411,
+    "smMsgId": 8411,
+    "comment": "购买次数(斗法、刷新)",
+    "cmMethod": "SkyWarBuyTimesReq",
+    "smMethod": "SkyWarBuyTimesRsp"
+  },
+  {
+    "cmMsgId": 208501,
+    "smMsgId": 8501,
+    "comment": "妖盟对决-同步妖盟对决数据",
+    "cmMethod": "UnionDuelSyncMsgReq",
+    "smMethod": "SyncUnionDuelMsg"
+  },
+  {
+    "cmMsgId": 208502,
+    "smMsgId": 8502,
+    "comment": "妖盟对决-开启主界面",
+    "cmMethod": "UnionDuelOpenViewReq",
+    "smMethod": "UnionDuelOpenViewResp"
+  },
+  {
+    "cmMsgId": 208511,
+    "smMsgId": 8511,
+    "comment": "妖盟对决-妖盟对决同步数据",
+    "cmMethod": "UnionDuelSyncDataReq",
+    "smMethod": "UnionDuelSyncDataResp"
+  },
+  {
+    "cmMsgId": 208602,
+    "smMsgId": 8602,
+    "comment": "评分完成",
+    "cmMethod": "MarkFinishReq",
+    "smMethod": "MarkFinishResp"
+  },
+  {
+    "cmMsgId": 209001,
+    "smMsgId": 9001,
+    "comment": "法则感悟",
+    "cmMethod": "WorldRulePerceptionReq",
+    "smMethod": "WorldRulePerceptionResp"
+  },
+  {
+    "cmMsgId": 209002,
+    "smMsgId": 9002,
+    "comment": "法则感悟替换",
+    "cmMethod": "WorldRulePerceptionReplaceReq",
+    "smMethod": "WorldRulePerceptionReplaceResp"
+  },
+  {
+    "cmMsgId": 209003,
+    "smMsgId": 9003,
+    "comment": "获取法则感悟记录",
+    "cmMethod": "WorldRuleGetPerceptionLogReq",
+    "smMethod": "WorldRuleGetPerceptionLogResp"
+  },
+  {
+    "cmMsgId": 209004,
+    "smMsgId": 9004,
+    "comment": "切换法则方案",
+    "cmMethod": "WorldRuleSwitchProgrammeReq",
+    "smMethod": "WorldRuleSwitchProgrammeResp"
+  },
+  {
+    "cmMsgId": 209101,
+    "smMsgId": 9101,
+    "comment": "请求法则试炼挑战",
+    "cmMethod": "RuleTrialChallengeReq",
+    "smMethod": "RuleTrialChallengeResp"
+  },
+  {
+    "cmMsgId": 209103,
+    "smMsgId": 9103,
+    "comment": "请求法则试炼一键扫荡",
+    "cmMethod": "RuleTrialRepeatAllReq",
+    "smMethod": "RuleTrialRepeatAllResp"
+  },
+  {
+    "cmMsgId": 209106,
+    "smMsgId": 9106,
+    "comment": "请求法则试炼Boss数据",
+    "cmMethod": "RuleTrialMonsterAttrReq",
+    "smMethod": "RuleTrialMonsterAttrResp"
+  },
+  {
+    "cmMsgId": 209201,
+    "smMsgId": 9201,
+    "comment": "缩时香礼包",
+    "cmMethod": "ADTimeTriggerReq"
+  },
+  {
+    "cmMsgId": 209202,
+    "smMsgId": 9202,
+    "comment": "使用缩时香",
+    "cmMethod": "ADTimeUseReq"
+  },
+  {
+    "cmMsgId": 209570,
+    "smMsgId": 9570,
+    "comment": "九幽争霸数据登录同步",
+    "cmMethod": "HolyLandBattleApplyDataSyncReq",
+    "smMethod": "HolyLandBattleApplyDataSync"
+  },
+  {
+    "cmMsgId": 209601,
+    "smMsgId": 9601,
+    "comment": "补签接口",
+    "cmMethod": "ReqSignInFundRepair",
+    "smMethod": "RspSignInFundRepair"
+  },
+  {
+    "cmMsgId": 209701,
+    "smMsgId": 9701,
+    "comment": "进入山海界面",
+    "cmMethod": "EnterMountainSeaReq",
+    "smMethod": "EnterMountainSeaRsp"
+  },
+  {
+    "cmMsgId": 209702,
+    "smMsgId": 9702,
+    "comment": "组队内部请求",
+    "cmMethod": "EnterMountainSeaTeamReq",
+    "smMethod": "EnterMountainSeaTeamRsp"
+  },
+  {
+    "cmMsgId": 209703,
+    "smMsgId": 9703,
+    "comment": "组队页面请求",
+    "cmMethod": "MountainSeaTeamStartReq",
+    "smMethod": "MountainSeaTeamStartRsp"
+  },
+  {
+    "cmMsgId": 209704,
+    "smMsgId": 9704,
+    "comment": "创建队伍",
+    "cmMethod": "MountainSeaCreateTeamReq",
+    "smMethod": "MountainSeaCreateTeamRsp"
+  },
+  {
+    "cmMsgId": 209705,
+    "smMsgId": 9705,
+    "comment": "获取队伍列表",
+    "cmMethod": "MountainSeaGetTeamListReq",
+    "smMethod": "MountainSeaGetTeamListRsp"
+  },
+  {
+    "cmMsgId": 209706,
+    "smMsgId": 9706,
+    "comment": "查找队伍",
+    "cmMethod": "MountainSeaGetTeamInfoReq",
+    "smMethod": "MountainSeaGetTeamInfoRsp"
+  },
+  {
+    "cmMsgId": 209707,
+    "smMsgId": 9707,
+    "comment": "加入队伍",
+    "cmMethod": "MountainSeaJoinTeamReq",
+    "smMethod": "MountainSeaJoinTeamRsp"
+  },
+  {
+    "cmMsgId": 209708,
+    "smMsgId": 9708,
+    "comment": "取消加入队伍",
+    "cmMethod": "MountainSeaCancelTeamApplyReq",
+    "smMethod": "MountainSeaCancelTeamApplyRsp"
+  },
+  {
+    "cmMsgId": 209709,
+    "smMsgId": 9709,
+    "comment": "同意申请",
+    "cmMethod": "MountainSeaApplyJoinTeamAgreeReq",
+    "smMethod": "MountainSeaApplyJoinTeamAgreeRsp"
+  },
+  {
+    "cmMsgId": 209710,
+    "smMsgId": 9710,
+    "comment": "一键拒绝",
+    "cmMethod": "MountainSeaApplyJoinTeamRefusedReq",
+    "smMethod": "MountainSeaApplyJoinTeamRefusedRsp"
+  },
+  {
+    "cmMsgId": 209711,
+    "smMsgId": 9711,
+    "comment": "退出队伍",
+    "cmMethod": "MountainSeaQuitTeamReq",
+    "smMethod": "MountainSeaQuitTeamRsp"
+  },
+  {
+    "cmMsgId": 209712,
+    "smMsgId": 9712,
+    "comment": "踢出队伍",
+    "cmMethod": "MountainSeaKickOutTeamReq",
+    "smMethod": "MountainSeaKickOutTeamRsp"
+  },
+  {
+    "cmMsgId": 209713,
+    "smMsgId": 9713,
+    "comment": "转让队长",
+    "cmMethod": "MountainSeaChangeLeaderReq",
+    "smMethod": "MountainSeaChangeLeaderRsp"
+  },
+  {
+    "cmMsgId": 209714,
+    "smMsgId": 9714,
+    "comment": "开始准备",
+    "cmMethod": "MountainSeaTeamPrepareReq",
+    "smMethod": "MountainSeaTeamPrepareRsp"
+  },
+  {
+    "cmMsgId": 209715,
+    "smMsgId": 9715,
+    "comment": "匹配",
+    "cmMethod": "MountainSeaMatchMemberReq",
+    "smMethod": "MountainSeaMatchMemberRsp"
+  },
+  {
+    "cmMsgId": 209716,
+    "smMsgId": 9716,
+    "comment": "开始战斗",
+    "cmMethod": "MountainSeaStartBattleReq",
+    "smMethod": "MountainSeaStartBattleRsp"
+  },
+  {
+    "cmMsgId": 209717,
+    "smMsgId": 9717,
+    "comment": "请求玩家数据",
+    "cmMethod": "MountainSeaGetPlayerInfoReq",
+    "smMethod": "MountainSeaGetPlayerInfoRsp"
+  },
+  {
+    "cmMsgId": 209718,
+    "smMsgId": 9718,
+    "comment": "膜拜",
+    "cmMethod": "MountainSeaWorshipReq",
+    "smMethod": "MountainSeaWorshipRsp"
+  },
+  {
+    "cmMsgId": 209719,
+    "smMsgId": 9719,
+    "comment": "战斗回放",
+    "cmMethod": "MountainSeaGetBattleVideoReq",
+    "smMethod": "MountainSeaGetBattleVideoRsp"
+  },
+  {
+    "cmMsgId": 209720,
+    "smMsgId": 9720,
+    "comment": "获取boss信息",
+    "cmMethod": "MountainSeaGetBossInfoReq",
+    "smMethod": "MountainSeaGetBossInfoRsp"
+  },
+  {
+    "cmMsgId": 209721,
+    "smMsgId": 9721,
+    "comment": "请求挑战次数",
+    "cmMethod": "MountainSeaChallengeTimeReq",
+    "smMethod": "MountainSeaChallengeTimeRsp"
+  },
+  {
+    "cmMsgId": 209722,
+    "smMsgId": 9722,
+    "comment": "开始匹配",
+    "cmMethod": "MountainSeaStartMatchReq",
+    "smMethod": "MountainSeaStartMatchRsp"
+  },
+  {
+    "cmMsgId": 209723,
+    "smMsgId": 9723,
+    "comment": "邀请",
+    "cmMethod": "MountainSeaInviteReq",
+    "smMethod": "MountainSeaInviteRsp"
+  },
+  {
+    "cmMsgId": 209724,
+    "smMsgId": 9724,
+    "comment": "离开系统",
+    "cmMethod": "LeaveMountainSeaReq",
+    "smMethod": "LeaveMountainSeaRsp"
+  },
+  {
+    "cmMsgId": 209725,
+    "smMsgId": 9725,
+    "comment": "获取boss妖力",
+    "cmMethod": "MountainSeaGetBossPowerReq",
+    "smMethod": "MountainSeaGetBossPowerRsp"
+  },
+  {
+    "cmMsgId": 209750,
+    "smMsgId": 9750,
+    "comment": "进入布阵界面",
+    "cmMethod": "MountainSeaEnterBattleReq",
+    "smMethod": "MountainSeaEnterBattleResp"
+  },
+  {
+    "cmMsgId": 209752,
+    "smMsgId": 9752,
+    "comment": "进入切换分身界面",
+    "cmMethod": "MountainSeaEnterSwitchSeparationReq",
+    "smMethod": "MountainSeaEnterSwitchSeparationRsp"
+  },
+  {
+    "cmMsgId": 209753,
+    "smMsgId": 9753,
+    "comment": "切换上阵的分身",
+    "cmMethod": "MountainSeaSwitchSeparationReq",
+    "smMethod": "MountainSeaSwitchSeparationRsp"
+  },
+  {
+    "cmMsgId": 209754,
+    "smMsgId": 9754,
+    "comment": "查看分身详细数据",
+    "cmMethod": "MountainSeaSeparationDetailReq",
+    "smMethod": "MountainSeaSeparationDetailRsp"
+  },
+  {
+    "cmMsgId": 209755,
+    "smMsgId": 9755,
+    "comment": "改变参战对象位置",
+    "cmMethod": "MountainSeaChangePosReq",
+    "smMethod": "MountainSeaChangePosRsp"
+  },
+  {
+    "cmMsgId": 209756,
+    "smMsgId": 9756,
+    "comment": "改变装配的队伍技能",
+    "cmMethod": "MountainSeaChangeTeamSkillReq",
+    "smMethod": "MountainSeaChangeTeamSkillRsp"
+  },
+  {
+    "cmMsgId": 209757,
+    "smMsgId": 9757,
+    "comment": "进行战斗",
+    "cmMethod": "MountainSeaDoBattleReq",
+    "smMethod": "MountainSeaDoBattleRsp"
+  },
+  {
+    "cmMsgId": 209783,
+    "smMsgId": 9783,
+    "comment": "邀请列表",
+    "cmMethod": "MountainSeaInviteListReq",
+    "smMethod": "MountainSeaInviteListResp"
+  },
+  {
+    "cmMsgId": 209785,
+    "smMsgId": 9785,
+    "comment": "一键拒绝邀请队伍",
+    "cmMethod": "MountainSeaInviteRefuseReq",
+    "smMethod": "MountainSeaInviteRefuseResp"
+  },
+  {
+    "cmMsgId": 209786,
+    "smMsgId": 9786,
+    "comment": "设置接受指定邀请开关",
+    "cmMethod": "MountainSeaSetAppointReq",
+    "smMethod": "MountainSeaSetAppointResp"
+  },
+  {
+    "cmMsgId": 209787,
+    "smMsgId": 9787,
+    "comment": "加入指定邀请队伍",
+    "cmMethod": "MountainSeaApplyJoinTeamReq",
+    "smMethod": "MountainSeaApplyJoinTeamRsp"
+  },
+  {
+    "cmMsgId": 209901,
+    "smMsgId": 9901,
+    "comment": "疯狂聚宝盆签到",
+    "cmMethod": "ReqGetConditionReward",
+    "smMethod": "RspGetConditionReward"
+  },
+  {
+    "cmMsgId": 210001,
+    "smMsgId": 10001,
+    "comment": "仙友回归-首次分享领奖",
+    "cmMethod": "RegressionShareReq",
+    "smMethod": "RegressionShareResp"
+  },
+  {
+    "cmMsgId": 210002,
+    "smMsgId": 10002,
+    "comment": "仙友回归-抽奖",
+    "cmMethod": "RegressionLotteryReq",
+    "smMethod": "RegressionLotteryResp"
+  },
+  {
+    "cmMsgId": 210003,
+    "smMsgId": 10003,
+    "comment": "仙友回归-绑定回归玩家数据",
+    "cmMethod": "GetRegressionPlayerDataReq",
+    "smMethod": "GetRegressionPlayerDataResp"
+  },
+  {
+    "cmMsgId": 210004,
+    "smMsgId": 10004,
+    "comment": "仙友回归-领取绑定玩家的任务奖励",
+    "cmMethod": "GetRegressionReceiveRewardReq",
+    "smMethod": "GetRegressionReceiveRewardResp"
+  },
+  {
+    "cmMsgId": 210005,
+    "smMsgId": 10005,
+    "comment": "仙友回归-保存自选奖励",
+    "cmMethod": "RegressionSaveSelectItemReq",
+    "smMethod": "RegressionSaveSelectItemResp"
+  },
+  {
+    "cmMsgId": 210601,
+    "smMsgId": 10601,
+    "comment": "妖盟赐福",
+    "cmMethod": "UnionBlessingSendGiftReq",
+    "smMethod": "UnionBlessingSendGiftResp"
+  },
+  {
+    "cmMsgId": 210602,
+    "smMsgId": 10602,
+    "comment": "领取赐福奖励",
+    "cmMethod": "UnionBlessingRewardReqMsg",
+    "smMethod": "UnionBlessingRewardRespMsg"
+  },
+  {
+    "cmMsgId": 210701,
+    "smMsgId": 10701,
+    "comment": "获取签到奖励",
+    "cmMethod": "GoodFortuneGetRewardReq",
+    "smMethod": "GoodFortuneGetRewardRsp"
+  },
+  {
+    "cmMsgId": 210901,
+    "smMsgId": 10901,
+    "comment": "通关请求",
+    "cmMethod": "WestTravelPassGameReq",
+    "smMethod": "WestTravelPassGameResp"
+  },
+  {
+    "cmMsgId": 211001,
+    "smMsgId": 11001,
+    "comment": "使用宴会道具",
+    "cmMethod": "FestivalCelebrationsUseBanquetItemReq",
+    "smMethod": "FestivalCelebrationsUseBanquetItemRsp"
+  },
+  {
+    "cmMsgId": 211002,
+    "smMsgId": 11002,
+    "comment": "领取宴会奖励",
+    "cmMethod": "FestivalCelebrationsDrawBanquetRewardReq",
+    "smMethod": "FestivalCelebrationsDrawBanquetRewardRsp"
+  },
+  {
+    "cmMsgId": 211003,
+    "smMsgId": 11003,
+    "comment": "获取积分详情",
+    "cmMethod": "FestivalCelebrationsGetBanquetScoreDetailReq",
+    "smMethod": "FestivalCelebrationsGetBanquetScoreDetailRsp"
+  },
+  {
+    "cmMsgId": 211004,
+    "smMsgId": 11004,
+    "comment": "使用福缘道具",
+    "cmMethod": "FestivalCelebrationsUseLuckyFateItemReq",
+    "smMethod": "FestivalCelebrationsUseLuckyFateItemRsp"
+  },
+  {
+    "cmMsgId": 211005,
+    "smMsgId": 11005,
+    "comment": "获取签到奖励",
+    "cmMethod": "FestivalCelebrationsGetSignRewardReq",
+    "smMethod": "FestivalCelebrationsGetSignRewardRsp"
+  },
+  {
+    "cmMsgId": 211006,
+    "smMsgId": 11006,
+    "comment": "请求合成",
+    "cmMethod": "FestivalCelebrationsCollectSynthesisReq",
+    "smMethod": "FestivalCelebrationsCollectSynthesisRsp"
+  },
+  {
+    "cmMsgId": 211007,
+    "smMsgId": 11007,
+    "comment": "请求填充",
+    "cmMethod": "FestivalCelebrationsCollectFillReq",
+    "smMethod": "FestivalCelebrationsCollectFillRsp"
+  },
+  {
+    "cmMsgId": 211008,
+    "smMsgId": 11008,
+    "comment": "领取大奖",
+    "cmMethod": "FestivalCelebrationsCollectDrawBigRewardReq",
+    "smMethod": "FestivalCelebrationsCollectDrawBigRewardRsp"
+  },
+  {
+    "cmMsgId": 211009,
+    "smMsgId": 11009,
+    "comment": "获取领取名单",
+    "cmMethod": "FestivalCelebrationsCollectGetClaimListReq",
+    "smMethod": "FestivalCelebrationsCollectGetClaimListRsp"
+  },
+  {
+    "cmMsgId": 211010,
+    "smMsgId": 11010,
+    "comment": "搜索玩家",
+    "cmMethod": "FestivalCelebrationsCollectSearchPlayerReq",
+    "smMethod": "FestivalCelebrationsCollectSearchPlayerRsp"
+  },
+  {
+    "cmMsgId": 211011,
+    "smMsgId": 11011,
+    "comment": "赠送道具",
+    "cmMethod": "FestivalCelebrationsCollectGiveReq",
+    "smMethod": "FestivalCelebrationsCollectGiveRsp"
+  },
+  {
+    "cmMsgId": 211012,
+    "smMsgId": 11012,
+    "comment": "索要道具",
+    "cmMethod": "FestivalCelebrationsCollectAskForReq",
+    "smMethod": "FestivalCelebrationsCollectAskForRsp"
+  },
+  {
+    "cmMsgId": 211013,
+    "smMsgId": 11013,
+    "comment": "领取彩蛋奖励",
+    "cmMethod": "FestivalCelebrationsEasterEggGetRewardReq",
+    "smMethod": "FestivalCelebrationsEasterEggGetRewardRsp"
+  },
+  {
+    "cmMsgId": 211014,
+    "smMsgId": 11014,
+    "comment": "领取赠送五福",
+    "cmMethod": "FestivalCelebrationsCollectGetGivenReq",
+    "smMethod": "FestivalCelebrationsCollectGetGivenResp"
+  },
+  {
+    "cmMsgId": 211015,
+    "smMsgId": 11015,
+    "comment": "领取福源奖励",
+    "cmMethod": "FestivalCelebrationsFuYuanGetRewardReq",
+    "smMethod": "FestivalCelebrationsFuYuanGetRewardResp"
+  },
+  {
+    "cmMsgId": 211016,
+    "smMsgId": 11016,
+    "comment": "获取绑定妖盟成员列表",
+    "cmMethod": "FestivalCelebrationsGetBindUnionMemberDataListReq",
+    "smMethod": "FestivalCelebrationsGetBindUnionMemberDataListRsp"
+  },
+  {
+    "cmMsgId": 211021,
+    "smMsgId": 11021,
+    "comment": "获取周年回忆条目",
+    "cmMethod": "FestivalCelebrationsGetAnnualMemoryReq",
+    "smMethod": "FestivalCelebrationsGetAnnualMemoryRsp"
+  },
+  {
+    "cmMsgId": 211022,
+    "smMsgId": 11022,
+    "comment": "膜拜",
+    "cmMethod": "FestivalCelebrationsWorshipReq",
+    "smMethod": "FestivalCelebrationsWorshipResp"
+  },
+  {
+    "cmMsgId": 211106,
+    "smMsgId": 11106,
+    "comment": "指定邀请",
+    "cmMethod": "DoubleDemonsAppointInviteReq",
+    "smMethod": "DoubleDemonsAppointInviteResp"
+  },
+  {
+    "cmMsgId": 211112,
+    "smMsgId": 11112,
+    "comment": "同意邀请/结为伴侣",
+    "cmMethod": "DoubleDemonsAgreeReq",
+    "smMethod": "DoubleDemonsAgreeResp"
+  },
+  {
+    "cmMsgId": 211113,
+    "smMsgId": 11113,
+    "comment": "一键拒绝",
+    "cmMethod": "DoubleDemonsRefuseReq",
+    "smMethod": "DoubleDemonsRefuseResp"
+  },
+  {
+    "cmMsgId": 211114,
+    "smMsgId": 11114,
+    "comment": "领取赠送奖励",
+    "cmMethod": "DoubleDemonsReceivePresentReq",
+    "smMethod": "DoubleDemonsReceivePresentResp"
+  },
+  {
+    "cmMsgId": 211501,
+    "smMsgId": 11501,
+    "comment": "新春红包 进入系统",
+    "cmMethod": "NewYearRedBagEnterReqMsg",
+    "smMethod": "NewYearRedBagEnterRespMsg"
+  },
+  {
+    "cmMsgId": 211502,
+    "smMsgId": 11502,
+    "comment": "新春红包 退出系统",
+    "cmMethod": "NewYearRedBagExitReqMsg",
+    "smMethod": "NewYearRedBagExitRespMsg"
+  },
+  {
+    "cmMsgId": 211503,
+    "smMsgId": 11503,
+    "comment": "新春红包 打开红包",
+    "cmMethod": "NewYearRedBagOpenReqMsg",
+    "smMethod": "NewYearRedBagOpenRespMsg"
+  },
+  {
+    "cmMsgId": 211702,
+    "smMsgId": 11702,
+    "comment": "穿戴内丹",
+    "cmMethod": "PetKerneCarryReq",
+    "smMethod": "PetKerneCarryResp"
+  },
+  {
+    "cmMsgId": 211703,
+    "smMsgId": 11703,
+    "comment": "内丹升级",
+    "cmMethod": "PetKerneUpLevelReq",
+    "smMethod": "PetKerneUpLevelResp"
+  },
+  {
+    "cmMsgId": 211704,
+    "smMsgId": 11704,
+    "comment": "内丹升星",
+    "cmMethod": "PetKerneUpStarReq",
+    "smMethod": "PetKerneUpStarResp"
+  },
+  {
+    "cmMsgId": 211705,
+    "smMsgId": 11705,
+    "comment": "内丹激活",
+    "cmMethod": "PetKerneActiveReq",
+    "smMethod": "PetKerneActiveResp"
+  },
+  {
+    "cmMsgId": 211706,
+    "smMsgId": 11706,
+    "comment": "抽取灵兽内丹",
+    "cmMethod": "PetKernelDrawReq",
+    "smMethod": "PetKernelDrawResp"
+  },
+  {
+    "cmMsgId": 211707,
+    "smMsgId": 11707,
+    "comment": "内丹共鸣升级或激活",
+    "cmMethod": "PetKerneCombineUpLevelReq",
+    "smMethod": "PetKerneCombineUpLevelResp"
+  },
+  {
+    "cmMsgId": 211801,
+    "smMsgId": 11801,
+    "comment": "进入门徒系统",
+    "cmMethod": "EnterPupilSystemReq",
+    "smMethod": "EnterPupilSystemResp"
+  },
+  {
+    "cmMsgId": 211802,
+    "smMsgId": 11802,
+    "comment": "门徒培养",
+    "cmMethod": "PupilTrainReq",
+    "smMethod": "PupilTrainResp"
+  },
+  {
+    "cmMsgId": 211803,
+    "smMsgId": 11803,
+    "comment": "恢复培养次数",
+    "cmMethod": "PupilSiteTrainTimesRecoverReq",
+    "smMethod": "PupilSiteTrainTimesRecoverResp"
+  },
+  {
+    "cmMsgId": 211804,
+    "smMsgId": 11804,
+    "comment": "门派升级",
+    "cmMethod": "SectLvUpReq",
+    "smMethod": "SectLvUpResp"
+  },
+  {
+    "cmMsgId": 211805,
+    "smMsgId": 11805,
+    "comment": "招收门徒",
+    "cmMethod": "PupilRecruitReq",
+    "smMethod": "PupilRecruitResp"
+  },
+  {
+    "cmMsgId": 211806,
+    "smMsgId": 11806,
+    "comment": "门徒出师",
+    "cmMethod": "PupilGraduateReq",
+    "smMethod": "PupilGraduateResp"
+  },
+  {
+    "cmMsgId": 211807,
+    "smMsgId": 11807,
+    "comment": "获取出师门徒列表",
+    "cmMethod": "PupilGetGraduatedListReq",
+    "smMethod": "PupilGetGraduatedListResp"
+  },
+  {
+    "cmMsgId": 211808,
+    "smMsgId": 11808,
+    "comment": "获取上阵列表",
+    "cmMethod": "PupilGetFightListReq",
+    "smMethod": "PupilGetFightListResp"
+  },
+  {
+    "cmMsgId": 211809,
+    "smMsgId": 11809,
+    "comment": "门徒上阵",
+    "cmMethod": "PupilFightOnReq",
+    "smMethod": "PupilFightOnResp"
+  },
+  {
+    "cmMsgId": 211810,
+    "smMsgId": 11810,
+    "comment": "获取门派统计信息",
+    "cmMethod": "PupilGetSectInfoReq",
+    "smMethod": "PupilGetSectInfoResp"
+  },
+  {
+    "cmMsgId": 211811,
+    "smMsgId": 11811,
+    "comment": "搜索玩家",
+    "cmMethod": "SearchPlayerReq",
+    "smMethod": "SearchPlayerResp"
+  },
+  {
+    "cmMsgId": 211814,
+    "smMsgId": 11814,
+    "comment": "领取广告奖励",
+    "cmMethod": "PupilGetAdRewardReq",
+    "smMethod": "PupilGetAdRewardResp"
+  },
+  {
+    "cmMsgId": 211815,
+    "smMsgId": 11815,
+    "comment": "锁定弟子",
+    "cmMethod": "PupilLockReq",
+    "smMethod": "PupilLockResp"
+  },
+  {
+    "cmMsgId": 211816,
+    "smMsgId": 11816,
+    "comment": "精准查找",
+    "cmMethod": "PupilExactSearchReq",
+    "smMethod": "PupilExactSearchResp"
+  },
+  {
+    "cmMsgId": 211855,
+    "smMsgId": 11855,
+    "comment": "获得出师未结义的门徒列表",
+    "cmMethod": "PupilGraduatedUnMarryListReq",
+    "smMethod": "PupilGraduatedUnMarryListResp"
+  },
+  {
+    "cmMsgId": 211856,
+    "smMsgId": 11856,
+    "comment": "结义记录列表",
+    "cmMethod": "MarriageRecordListReq",
+    "smMethod": "MarriageRecordListResp"
+  },
+  {
+    "cmMsgId": 211857,
+    "smMsgId": 11857,
+    "comment": "获取全服结义请求列表(包括妖盟)",
+    "cmMethod": "MarriageGetServerApplyReq",
+    "smMethod": "MarriageGetServerApplyResp"
+  },
+  {
+    "cmMsgId": 211858,
+    "smMsgId": 11858,
+    "comment": "指定结义推荐玩家请求",
+    "cmMethod": "MarriageRecommendPlayerReq",
+    "smMethod": "MarriageRecommendPlayerResp"
+  },
+  {
+    "cmMsgId": 211859,
+    "smMsgId": 11859,
+    "comment": "获取其他玩家发起的结义请求（别的玩家指定你结义的列表）",
+    "cmMethod": "MarriageGetAppointApplyReq",
+    "smMethod": "MarriageGetAppointApplyResp"
+  },
+  {
+    "cmMsgId": 211860,
+    "smMsgId": 11860,
+    "comment": "处理结义请求",
+    "cmMethod": "MarriageApplyDealReq",
+    "smMethod": "MarriageApplyDealResp"
+  },
+  {
+    "cmMsgId": 211861,
+    "smMsgId": 11861,
+    "comment": "发布结义请求",
+    "cmMethod": "MarriageApplyPublishReq",
+    "smMethod": "MarriageApplyPublishResp"
+  },
+  {
+    "cmMsgId": 211862,
+    "smMsgId": 11862,
+    "comment": "取消结义请求",
+    "cmMethod": "MarriageApplyCancelReq",
+    "smMethod": "MarriageApplyCancelResp"
+  },
+  {
+    "cmMsgId": 211863,
+    "smMsgId": 11863,
+    "comment": "刷新全服结义列表请求",
+    "cmMethod": "MarriageRefreshServerApplyReq",
+    "smMethod": "MarriageRefreshServerApplyResp"
+  },
+  {
+    "cmMsgId": 211864,
+    "smMsgId": 11864,
+    "comment": "设置是否接受指向结义请求",
+    "cmMethod": "MarriageSetAppointReq",
+    "smMethod": "MarriageSetAppointResp"
+  },
+  {
+    "cmMsgId": 212201,
+    "smMsgId": 12201,
+    "comment": "洪荒灵兽灵根升级请求",
+    "cmMethod": "PetRootUpReq",
+    "smMethod": "PetRootUpResp"
+  },
+  {
+    "cmMsgId": 212202,
+    "smMsgId": 12202,
+    "comment": "洪荒灵兽觉醒请求",
+    "cmMethod": "PetAwakeReq",
+    "smMethod": "PetAwakeResp"
+  },
+  {
+    "cmMsgId": 212203,
+    "smMsgId": 12203,
+    "comment": "洪荒灵兽缘分升级请求",
+    "cmMethod": "PetFateUpReq",
+    "smMethod": "PetFateUpResp"
+  },
+  {
+    "cmMsgId": 212204,
+    "smMsgId": 12204,
+    "comment": "切换灵兽皮肤",
+    "cmMethod": "PetSwitchSkinReq",
+    "smMethod": "PetSwitchSkinResp"
+  },
+  {
+    "cmMsgId": 212205,
+    "smMsgId": 12205,
+    "comment": "激活、升级灵兽皮肤",
+    "cmMethod": "PetUpSkinLevelReq",
+    "smMethod": "PetUpSkinLevelResp"
+  },
+  {
+    "cmMsgId": 212206,
+    "smMsgId": 12206,
+    "comment": "激活、升级灵兽羁绊",
+    "cmMethod": "PetUpSkinCombineReq",
+    "smMethod": "PetUpSkinCombineResp"
+  },
+  {
+    "cmMsgId": 212601,
+    "smMsgId": 12601,
+    "comment": "获取微信排行榜白名单",
+    "cmMethod": "GetWechatRankWhiteListReq",
+    "smMethod": "GetWechatRankWhiteListRsp"
+  },
+  {
+    "cmMsgId": 212901,
+    "smMsgId": 12901,
+    "comment": "筋斗云注灵请求",
+    "cmMethod": "CloudRefineReq",
+    "smMethod": "CloudRefineResp"
+  },
+  {
+    "cmMsgId": 212902,
+    "smMsgId": 12902,
+    "comment": "筋斗云注灵渡劫请求",
+    "cmMethod": "CloudRefineStarLvUpReq",
+    "smMethod": "CloudRefineStarLvUpResp"
+  },
+  {
+    "cmMsgId": 213001,
+    "smMsgId": 13001,
+    "comment": "进入游戏",
+    "cmMethod": "ComposeBallEnterGameReq",
+    "smMethod": "ComposeBallEnterGameResp"
+  },
+  {
+    "cmMsgId": 213002,
+    "smMsgId": 13002,
+    "comment": "请求合成",
+    "cmMethod": "ComposeBallComposeReq",
+    "smMethod": "ComposeBallComposeResp"
+  },
+  {
+    "cmMsgId": 213003,
+    "smMsgId": 13003,
+    "comment": "请求使用道具",
+    "cmMethod": "ComposeBallUseItemReq",
+    "smMethod": "ComposeBallUseItemResp"
+  },
+  {
+    "cmMsgId": 213004,
+    "smMsgId": 13004,
+    "comment": "请求增加体力",
+    "cmMethod": "ComposeBallHpItemReq",
+    "smMethod": "ComposeBallHpItemResp"
+  },
+  {
+    "cmMsgId": 213005,
+    "smMsgId": 13005,
+    "comment": "请求结算",
+    "cmMethod": "ComposeBallSettleReq",
+    "smMethod": "ComposeBallSettleResp"
+  },
+  {
+    "cmMsgId": 213101,
+    "smMsgId": 13101,
+    "comment": "进入活动",
+    "cmMethod": "MonopolyEnterActivityReq",
+    "smMethod": "MonopolyEnterActivityResp"
+  },
+  {
+    "cmMsgId": 213102,
+    "smMsgId": 13102,
+    "comment": "进入地图",
+    "cmMethod": "MonopolyEnterMapReq",
+    "smMethod": "MonopolyEnterMapResp"
+  },
+  {
+    "cmMsgId": 213103,
+    "smMsgId": 13103,
+    "comment": "摇色子",
+    "cmMethod": "MonopolyRollDiceReq",
+    "smMethod": "MonopolyRollDiceResp"
+  },
+  {
+    "cmMsgId": 213104,
+    "smMsgId": 13104,
+    "comment": "获取协助列表",
+    "cmMethod": "MonopolyAssistListReq",
+    "smMethod": "MonopolyAssistListResp"
+  },
+  {
+    "cmMsgId": 213105,
+    "smMsgId": 13105,
+    "comment": "使用道具 补充体力",
+    "cmMethod": "MonopolyReplenishStrengthReq",
+    "smMethod": "MonopolyReplenishStrengthResp"
+  },
+  {
+    "cmMsgId": 213107,
+    "smMsgId": 13107,
+    "comment": "协助队友出陷阱",
+    "cmMethod": "MonopolyRescueTrapReq",
+    "smMethod": "MonopolyRescueTrapResp"
+  },
+  {
+    "cmMsgId": 213108,
+    "smMsgId": 13108,
+    "comment": "获取可掠夺的妖盟列表",
+    "cmMethod": "MonopolyRobListReq",
+    "smMethod": "MonopolyRobListResp"
+  },
+  {
+    "cmMsgId": 213110,
+    "smMsgId": 13110,
+    "comment": "掠夺其他妖盟",
+    "cmMethod": "MonopolyRobReq",
+    "smMethod": "MonopolyRobResp"
+  },
+  {
+    "cmMsgId": 213111,
+    "smMsgId": 13111,
+    "comment": "获取妖盟日志列表",
+    "cmMethod": "MonopolyUnionLogListReq",
+    "smMethod": "MonopolyUnionLogListResp"
+  },
+  {
+    "cmMsgId": 213112,
+    "smMsgId": 13112,
+    "comment": "获取玩家日志详情",
+    "cmMethod": "MonopolyPlayerLogDetailReq",
+    "smMethod": "MonopolyPlayerLogDetailResp"
+  },
+  {
+    "cmMsgId": 213113,
+    "smMsgId": 13113,
+    "comment": "协助队友攻击怪物",
+    "cmMethod": "MonopolyAssistAttackMonsterReq",
+    "smMethod": "MonopolyAssistAttackMonsterResp"
+  },
+  {
+    "cmMsgId": 213114,
+    "smMsgId": 13114,
+    "comment": "领取队友帮忙打死怪后的奖励",
+    "cmMethod": "MonopolyReceiveMonsterRewardReq",
+    "smMethod": "MonopolyReceiveMonsterRewardResp"
+  },
+  {
+    "cmMsgId": 213115,
+    "smMsgId": 13115,
+    "comment": "红点详情",
+    "cmMethod": "MonopolyRedPointReqMsg",
+    "smMethod": "MonopolyRedPointRespMsg"
+  },
+  {
+    "cmMsgId": 213116,
+    "smMsgId": 13116,
+    "comment": "遥控骰子",
+    "cmMethod": "MonopolyRemoteRollDiceReq",
+    "smMethod": "MonopolyRemoteRollDiceResp"
+  },
+  {
+    "cmMsgId": 213117,
+    "smMsgId": 13117,
+    "comment": "进入其他妖盟地图，请求详细数据",
+    "cmMethod": "MonopolyEnterRobMapReq",
+    "smMethod": "MonopolyEnterRobMapResp"
+  },
+  {
+    "cmMsgId": 213118,
+    "smMsgId": 13118,
+    "comment": "自动操作解锁",
+    "cmMethod": "MonopolyAutoUnlockReq",
+    "smMethod": "MonopolyAutoUnlockResp"
+  },
+  {
+    "cmMsgId": 213119,
+    "smMsgId": 13119,
+    "comment": "获取天赐福源列表",
+    "cmMethod": "MonopolyBlessingListReq",
+    "smMethod": "MonopolyBlessingListResp"
+  },
+  {
+    "cmMsgId": 213120,
+    "smMsgId": 13120,
+    "comment": "领取天赐祥瑞奖励",
+    "cmMethod": "MonopolyReceiveBlessingReq",
+    "smMethod": "MonopolyReceiveBlessingResp"
+  },
+  {
+    "cmMsgId": 213121,
+    "smMsgId": 13121,
+    "comment": "神行符移动",
+    "cmMethod": "MonopolyQuickMoveReq",
+    "smMethod": "MonopolyQuickMoveResp"
+  },
+  {
+    "cmMsgId": 213122,
+    "smMsgId": 13122,
+    "comment": "暗格移动",
+    "cmMethod": "MonopolyDarkGridMoveReq",
+    "smMethod": "MonopolyDarkGridMoveResp"
+  },
+  {
+    "cmMsgId": 213123,
+    "smMsgId": 13123,
+    "comment": "处理事件同一接口",
+    "cmMethod": "MonopolyEventHandleReq",
+    "smMethod": "MonopolyEventHandleResp"
+  },
+  {
+    "cmMsgId": 213124,
+    "smMsgId": 13124,
+    "comment": "查看怪物详情",
+    "cmMethod": "MonopolyMonsterAttrReq",
+    "smMethod": "MonopolyMonsterAttrResp"
+  },
+  {
+    "cmMsgId": 213125,
+    "smMsgId": 13125,
+    "comment": "获取个人排名",
+    "cmMethod": "MonopolyGetPlayerRankReq",
+    "smMethod": "MonopolyGetPlayerRankResp"
+  },
+  {
+    "cmMsgId": 213126,
+    "smMsgId": 13126,
+    "comment": "获取仇人列表",
+    "cmMethod": "MonopolyGetEnemyListReq",
+    "smMethod": "MonopolyGetEnemyListResp"
+  },
+  {
+    "cmMsgId": 213127,
+    "smMsgId": 13127,
+    "comment": "积分详情",
+    "cmMethod": "MonopolyScoreDetailReq",
+    "smMethod": "MonopolyScoreDetailResp"
+  },
+  {
+    "cmMsgId": 213128,
+    "smMsgId": 13128,
+    "comment": "建筑积分详情",
+    "cmMethod": "MonopolyBuildingScoreDetailReq",
+    "smMethod": "MonopolyBuildingScoreDetailResp"
+  },
+  {
+    "cmMsgId": 213141,
+    "smMsgId": 13141,
+    "comment": "分组内积分详情",
+    "cmMethod": "MonopolyGetGroupDetailReq",
+    "smMethod": "MonopolyGetGroupDetailResp"
+  },
+  {
+    "cmMsgId": 213142,
+    "smMsgId": 13142,
+    "comment": "膜拜",
+    "cmMethod": "MonopolyWorshipReq",
+    "smMethod": "MonopolyWorshipResp"
+  },
+  {
+    "cmMsgId": 213145,
+    "smMsgId": 13145,
+    "comment": "竞猜正确玩家数据",
+    "cmMethod": "MonopolyGuessPlayersReq",
+    "smMethod": "MonopolyGuessPlayersResp"
+  },
+  {
+    "cmMsgId": 213146,
+    "smMsgId": 13146,
+    "comment": "请求竞猜界面数据",
+    "cmMethod": "MonopolyGetGuessDataReq",
+    "smMethod": "MonopolyGetGuessDataResp"
+  },
+  {
+    "cmMsgId": 213147,
+    "smMsgId": 13147,
+    "comment": "请求竞猜选择",
+    "cmMethod": "MonopolyGuessSelectReq",
+    "smMethod": "MonopolyGuessSelectResp"
+  },
+  {
+    "cmMsgId": 213148,
+    "smMsgId": 13148,
+    "comment": "请求竞猜奖励",
+    "cmMethod": "MonopolyGuessRewardReq",
+    "smMethod": "MonopolyGuessRewardResp"
+  },
+  {
+    "cmMsgId": 213250,
+    "smMsgId": 13250,
+    "comment": "镇魔登录同步",
+    "cmMethod": "TownDemonApplyDataSyncReq",
+    "smMethod": "TownDemonApplyDataSync"
+  },
+  {
+    "cmMsgId": 213520,
+    "smMsgId": 13520,
+    "comment": "宴会道具使用",
+    "cmMethod": "UsePeachBanquetItemReq",
+    "smMethod": "UsePeachBanquetItemResp"
+  },
+  {
+    "cmMsgId": 213602,
+    "smMsgId": 13602,
+    "comment": "妖盟悬赏-打开护送地图",
+    "cmMethod": "UnionBountyEnterMapReq",
+    "smMethod": "UnionBountyEnterMapResp"
+  },
+  {
+    "cmMsgId": 213603,
+    "smMsgId": 13603,
+    "comment": "妖盟悬赏-离开护送地图",
+    "cmMethod": "UnionBountyExitMapReq",
+    "smMethod": "UnionBountyExitMapResp"
+  },
+  {
+    "cmMsgId": 213604,
+    "smMsgId": 13604,
+    "comment": "妖盟悬赏-掠夺某个镖车",
+    "cmMethod": "UnionBountyPlunderReq",
+    "smMethod": "UnionBountyPlunderResp"
+  },
+  {
+    "cmMsgId": 213605,
+    "smMsgId": 13605,
+    "comment": "妖盟悬赏-处理悬赏事件",
+    "cmMethod": "UnionBountyDealBountyReq",
+    "smMethod": "UnionBountyDealBountyResp"
+  },
+  {
+    "cmMsgId": 213606,
+    "smMsgId": 13606,
+    "comment": "妖盟悬赏-领取护送镖车奖励",
+    "cmMethod": "UnionBountyGetRewardEscortReq",
+    "smMethod": "UnionBountyGetRewardEscortResp"
+  },
+  {
+    "cmMsgId": 213608,
+    "smMsgId": 13608,
+    "comment": "妖盟悬赏-查找某个玩家的镖车",
+    "cmMethod": "UnionBountyCheckEscortReq",
+    "smMethod": "UnionBountyCheckEscortResp"
+  },
+  {
+    "cmMsgId": 213609,
+    "smMsgId": 13609,
+    "comment": "妖盟悬赏-打开战报",
+    "cmMethod": "UnionBountyGetReportReq",
+    "smMethod": "UnionBountyGetReportResp"
+  },
+  {
+    "cmMsgId": 213611,
+    "smMsgId": 13611,
+    "comment": "妖盟悬赏-战报中打开某个玩家的镖车",
+    "cmMethod": "UnionBountyReportCheckEscortReq",
+    "smMethod": "UnionBountyReportCheckEscortResp"
+  },
+  {
+    "cmMsgId": 213612,
+    "smMsgId": 13612,
+    "comment": "妖盟悬赏-排行榜膜拜",
+    "cmMethod": "UnionBountyWorshipReq",
+    "smMethod": "UnionBountyWorshipResp"
+  },
+  {
+    "cmMsgId": 213613,
+    "smMsgId": 13613,
+    "comment": "妖盟悬赏-刷新护送地图",
+    "cmMethod": "UnionBountyRefreshMapReq",
+    "smMethod": "UnionBountyRefreshMapResp"
+  },
+  {
+    "cmMsgId": 213614,
+    "smMsgId": 13614,
+    "comment": "妖盟悬赏-打开妖盟战报",
+    "cmMethod": "UnionBountyOpenBountyEventReq",
+    "smMethod": "UnionBountyOpenBountyEventResp"
+  },
+  {
+    "cmMsgId": 213615,
+    "smMsgId": 13615,
+    "comment": "妖盟悬赏-反击",
+    "cmMethod": "UnionBountyRetaliateReq",
+    "smMethod": "UnionBountyRetaliateResp"
+  },
+  {
+    "cmMsgId": 213616,
+    "smMsgId": 13616,
+    "comment": "妖盟悬赏-查看联盟积分",
+    "cmMethod": "UnionBountyGetMemberScoreReq",
+    "smMethod": "UnionBountyGetMemberScoreResp"
+  },
+  {
+    "cmMsgId": 213617,
+    "smMsgId": 13617,
+    "comment": "妖盟悬赏-是否有正在押镖",
+    "cmMethod": "UnionBountyHaveEscortReq",
+    "smMethod": "UnionBountyHaveEscortResp"
+  },
+  {
+    "cmMsgId": 213618,
+    "smMsgId": 13618,
+    "comment": "妖盟悬赏-查看镖车详情",
+    "cmMethod": "UnionBountyOpenEscortCartDetailReq",
+    "smMethod": "UnionBountyOpenEscortCartDetailRsp"
+  },
+  {
+    "cmMsgId": 213619,
+    "smMsgId": 13619,
+    "comment": "妖盟悬赏-打开妖兽界面",
+    "cmMethod": "UnionBountyOpenMonsterReq",
+    "smMethod": "UnionBountyOpenMonsterResp"
+  },
+  {
+    "cmMsgId": 213620,
+    "smMsgId": 13620,
+    "comment": "妖盟悬赏-打妖兽",
+    "cmMethod": "UnionBountyAttackMonsterReq",
+    "smMethod": "UnionBountyAttackMonsterResp"
+  },
+  {
+    "cmMsgId": 213621,
+    "smMsgId": 13621,
+    "comment": "妖盟悬赏-邀请",
+    "cmMethod": "UnionBountyAskHelpReq",
+    "smMethod": "UnionBountyAskHelpResp"
+  },
+  {
+    "cmMsgId": 213622,
+    "smMsgId": 13622,
+    "comment": "妖盟悬赏-打开邀请界面",
+    "cmMethod": "UnionBountyOpenAskHelpReq",
+    "smMethod": "UnionBountyOpenAskHelpResp"
+  },
+  {
+    "cmMsgId": 213623,
+    "smMsgId": 13623,
+    "comment": "妖盟悬赏-处理邀请（同意加入、拒绝、一键拒绝）",
+    "cmMethod": "UnionBountyDealAskHelpReq",
+    "smMethod": "UnionBountyDealAskHelpResp"
+  },
+  {
+    "cmMsgId": 213624,
+    "smMsgId": 13624,
+    "comment": "妖盟悬赏-队伍管理（加入队伍、离开队伍、踢出队伍）",
+    "cmMethod": "UnionBountyManageAskHelpReq",
+    "smMethod": "UnionBountyManageAskHelpResp"
+  },
+  {
+    "cmMsgId": 213626,
+    "smMsgId": 13626,
+    "comment": "妖盟悬赏-查看当前妖兽的属性",
+    "cmMethod": "UnionBountyGetMonsterAttributeReq",
+    "smMethod": "UnionBountyGetMonsterAttributeResp"
+  },
+  {
+    "cmMsgId": 213627,
+    "smMsgId": 13627,
+    "comment": "妖盟悬赏-变更参战玩家位置",
+    "cmMethod": "UnionBountyMonsterChangePosReq",
+    "smMethod": "UnionBountyMonsterChangePosRsp"
+  },
+  {
+    "cmMsgId": 213628,
+    "smMsgId": 13628,
+    "comment": "获取当前存在的妖兽",
+    "cmMethod": "UnionBountyGetExistMonsterReq",
+    "smMethod": "UnionBountyGetExistMonsterResp"
+  },
+  {
+    "cmMsgId": 213801,
+    "smMsgId": 13801,
+    "comment": "进入宗门大比",
+    "cmMethod": "EnterPupilRankActivityReq",
+    "smMethod": "EnterPupilRankActivityResp"
+  },
+  {
+    "cmMsgId": 213802,
+    "smMsgId": 13802,
+    "comment": "获取涨幅记录",
+    "cmMethod": "GetIncreaseRecordReq",
+    "smMethod": "GetIncreaseRecordResp"
+  },
+  {
+    "cmMsgId": 213803,
+    "smMsgId": 13803,
+    "comment": "查看 排行榜上玩家的 涨幅记录",
+    "cmMethod": "PupilRankDetailReq",
+    "smMethod": "PupilRankDetailResp"
+  },
+  {
+    "cmMsgId": 214101,
+    "smMsgId": 14101,
+    "comment": "获取世交列表",
+    "cmMethod": "FriendGetListReq",
+    "smMethod": "FriendGetListResp"
+  },
+  {
+    "cmMsgId": 214102,
+    "smMsgId": 14102,
+    "comment": "赠送",
+    "cmMethod": "FriendSendReq",
+    "smMethod": "FriendSendResp"
+  },
+  {
+    "cmMsgId": 214103,
+    "smMsgId": 14103,
+    "comment": "领取",
+    "cmMethod": "FriendReceiveReq",
+    "smMethod": "FriendReceiveResp"
+  },
+  {
+    "cmMsgId": 214104,
+    "smMsgId": 14104,
+    "comment": "一键赠送、领取",
+    "cmMethod": "FriendReceiveAllReq",
+    "smMethod": "FriendReceiveAllResp"
+  },
+  {
+    "cmMsgId": 214105,
+    "smMsgId": 14105,
+    "comment": "删除世交",
+    "cmMethod": "FriendDeleteReq",
+    "smMethod": "FriendDeleteResp"
+  },
+  {
+    "cmMsgId": 214120,
+    "smMsgId": 14120,
+    "comment": "好友消息列表",
+    "cmMethod": "FriendChatReqMsg",
+    "smMethod": "WorldMessageListMsg"
+  },
+  {
+    "cmMsgId": 214208,
+    "smMsgId": 14208,
+    "comment": "飞升仙界-南天门协助",
+    "cmMethod": "FairyLandSouthDoorHelpReq",
+    "smMethod": "FairyLandSouthDoorHelpResp"
+  },
+  {
+    "cmMsgId": 214303,
+    "smMsgId": 14303,
+    "comment": "小世界升级",
+    "cmMethod": "UniverseLevelUpReq",
+    "smMethod": "UniverseLevelUpResp"
+  },
+  {
+    "cmMsgId": 214304,
+    "smMsgId": 14304,
+    "comment": "小世界轮盘抽奖",
+    "cmMethod": "UniverseDrawReq",
+    "smMethod": "UniverseDrawResp"
+  },
+  {
+    "cmMsgId": 214305,
+    "smMsgId": 14305,
+    "comment": "小世界技能激活",
+    "cmMethod": "UniverseSkillUnlockReq",
+    "smMethod": "UniverseSkillUnlockResp"
+  },
+  {
+    "cmMsgId": 214306,
+    "smMsgId": 14306,
+    "comment": "小世界技能上阵",
+    "cmMethod": "EquipUniverseSkillReq",
+    "smMethod": "EquipUniverseSkillResp"
+  },
+  {
+    "cmMsgId": 214307,
+    "smMsgId": 14307,
+    "comment": "小世界技能共鸣激活、升级",
+    "cmMethod": "UniverseSkillCombineLvUpReq",
+    "smMethod": "UniverseSkillCombineLvUpResp"
+  },
+  {
+    "cmMsgId": 214308,
+    "smMsgId": 14308,
+    "comment": "洞察天机抽取",
+    "cmMethod": "UniverseSkillDrawReq",
+    "smMethod": "UniverseSkillDrawResp"
+  },
+  {
+    "cmMsgId": 214309,
+    "smMsgId": 14309,
+    "comment": "小世界技能升级",
+    "cmMethod": "UniverseSkillLvUpReq",
+    "smMethod": "UniverseSkillLvUpResp"
+  },
+  {
+    "cmMsgId": 214310,
+    "smMsgId": 14310,
+    "comment": "天地轮盘二次抽奖",
+    "cmMethod": "UniverseDrawTwiceReq",
+    "smMethod": "UniverseDrawTwiceResp"
+  },
+  {
+    "cmMsgId": 214527,
+    "smMsgId": 14527,
+    "comment": "获取玩家结算信息",
+    "cmMethod": "GodDemonBattleGetPlayerSettlementReq",
+    "smMethod": "GodDemonBattleGetPlayerSettlementResp"
+  },
+  {
+    "cmMsgId": 214528,
+    "smMsgId": 14528,
+    "comment": "获取阵营结算信息",
+    "cmMethod": "GodDemonBattleGetCampSettlementReq",
+    "smMethod": "GodDemonBattleGetCampSettlementResp"
+  },
+  {
+    "cmMsgId": 214698,
+    "smMsgId": 14698,
+    "comment": "画中仙境-检测仙泽",
+    "cmMethod": "CheckFairyPoolReq",
+    "smMethod": "CheckFairyPoolResp"
+  },
+  {
+    "cmMsgId": 215000,
+    "smMsgId": 15000,
+    "comment": "进入活动",
+    "cmMethod": "SkyTradeEnterActivityReq",
+    "smMethod": "SkyTradeEnterActivityResp"
+  },
+  {
+    "cmMsgId": 215001,
+    "smMsgId": 15001,
+    "comment": "进入地图",
+    "cmMethod": "SkyTradeEnterReq",
+    "smMethod": "SkyTradeEnterResp"
+  },
+  {
+    "cmMsgId": 215002,
+    "smMsgId": 15002,
+    "comment": "查看分组信息",
+    "cmMethod": "SkyTradeGroupInfoReq",
+    "smMethod": "SkyTradeGroupInfoResp"
+  },
+  {
+    "cmMsgId": 215003,
+    "smMsgId": 15003,
+    "comment": "加速移动",
+    "cmMethod": "SkyTradeAddSpeedReq",
+    "smMethod": "SkyTradeAddSpeedResp"
+  },
+  {
+    "cmMsgId": 215004,
+    "smMsgId": 15004,
+    "comment": "请求移动",
+    "cmMethod": "SkyTradeGotoPortReq",
+    "smMethod": "SkyTradeGotoPortResp"
+  },
+  {
+    "cmMsgId": 215005,
+    "smMsgId": 15005,
+    "comment": "购买货物",
+    "cmMethod": "SkyTradeDealReq",
+    "smMethod": "SkyTradeDealResp"
+  },
+  {
+    "cmMsgId": 215006,
+    "smMsgId": 15006,
+    "comment": "挑战列表",
+    "cmMethod": "SkyTradeChallengeListReq",
+    "smMethod": "SkyTradeChallengeListResp"
+  },
+  {
+    "cmMsgId": 215007,
+    "smMsgId": 15007,
+    "comment": "请求挑战",
+    "cmMethod": "SkyTradeChallengeReq",
+    "smMethod": "SkyTradeChallengeResp"
+  },
+  {
+    "cmMsgId": 215008,
+    "smMsgId": 15008,
+    "comment": "妖盟成员跑商威望信息",
+    "cmMethod": "SkyTradeUnionFameReq",
+    "smMethod": "SkyTradeUnionFameResp"
+  },
+  {
+    "cmMsgId": 215009,
+    "smMsgId": 15009,
+    "comment": "领取到港事件奖励",
+    "cmMethod": "SkyTradeGetRewardReq",
+    "smMethod": "SkyTradeGetRewardResp"
+  },
+  {
+    "cmMsgId": 215010,
+    "smMsgId": 15010,
+    "comment": "请求战报",
+    "cmMethod": "SkyTradeReportReq",
+    "smMethod": "SkyTradeReportResp"
+  },
+  {
+    "cmMsgId": 215011,
+    "smMsgId": 15011,
+    "comment": "获取日志",
+    "cmMethod": "SkyTradePortLogReq",
+    "smMethod": "SkyTradeLogResp"
+  },
+  {
+    "cmMsgId": 215012,
+    "smMsgId": 15012,
+    "comment": "天地灵石信息",
+    "cmMethod": "SkyTradeSparInfoReq",
+    "smMethod": "SkyTradeSparInfoResp"
+  },
+  {
+    "cmMsgId": 215013,
+    "smMsgId": 15013,
+    "comment": "领取天地灵石等级奖励",
+    "cmMethod": "SkyTradeGetSparPowerReq",
+    "smMethod": "SkyTradeGetSparPowerResp"
+  },
+  {
+    "cmMsgId": 215014,
+    "smMsgId": 15014,
+    "comment": "领取天地灵石盟友奖励",
+    "cmMethod": "SkyTradeGetWelfareReq",
+    "smMethod": "SkyTradeGetWelfareResp"
+  },
+  {
+    "cmMsgId": 215015,
+    "smMsgId": 15015,
+    "comment": "发送灵液",
+    "cmMethod": "SkyTradeSendWelfareReq",
+    "smMethod": "SkyTradeSendWelfareResp"
+  },
+  {
+    "cmMsgId": 215016,
+    "smMsgId": 15016,
+    "comment": "灵液记录",
+    "cmMethod": "SkyTradeWelfareRecordReq",
+    "smMethod": "SkyTradeWelfareRecordResp"
+  },
+  {
+    "cmMsgId": 215017,
+    "smMsgId": 15017,
+    "comment": "挑战界面心跳",
+    "cmMethod": "SkyTradeChallengeHeartBeatReq",
+    "smMethod": "SkyTradeChallengeHeartBeatResp"
+  },
+  {
+    "cmMsgId": 215018,
+    "smMsgId": 15018,
+    "comment": "使用道具补充挑战次数",
+    "cmMethod": "SkyTradeUseRobItemReq",
+    "smMethod": "SkyTradeUseRobItemResp"
+  },
+  {
+    "cmMsgId": 215019,
+    "smMsgId": 15019,
+    "comment": "请求详细战报信息",
+    "cmMethod": "SkyTradeReportDetailReq",
+    "smMethod": "SkyTradeReportDetailResp"
+  },
+  {
+    "cmMsgId": 215020,
+    "smMsgId": 15020,
+    "comment": "竞猜结果",
+    "cmMethod": "SkyTradeGuessPlayersReq",
+    "smMethod": "SkyTradeGuessPlayersResp"
+  },
+  {
+    "cmMsgId": 215021,
+    "smMsgId": 15021,
+    "comment": "请求竞猜界面数据",
+    "cmMethod": "SkyTradeGuessDataReq",
+    "smMethod": "SkyTradeGuessDataResp"
+  },
+  {
+    "cmMsgId": 215022,
+    "smMsgId": 15022,
+    "comment": "设置竞猜选择",
+    "cmMethod": "SkyTradeGuessSelectReq",
+    "smMethod": "SkyTradeGuessSelectResp"
+  },
+  {
+    "cmMsgId": 215023,
+    "smMsgId": 15023,
+    "comment": "领取竞猜奖励",
+    "cmMethod": "SkyTradeGuessRewardReq",
+    "smMethod": "SkyTradeGuessRewardResp"
+  },
+  {
+    "cmMsgId": 215024,
+    "smMsgId": 15024,
+    "comment": "请求上报所在地点稀缺货物",
+    "cmMethod": "SkyTradeReportGoodsReq",
+    "smMethod": "SkyTradeReportGoodsResp"
+  },
+  {
+    "cmMsgId": 215025,
+    "smMsgId": 15025,
+    "comment": "请求刷新货物库存",
+    "cmMethod": "SkyTradeResetStockReq",
+    "smMethod": "SkyTradeResetStockResp"
+  },
+  {
+    "cmMsgId": 215026,
+    "smMsgId": 15026,
+    "comment": "红点详情",
+    "cmMethod": "SkyTradeRedPointReq",
+    "smMethod": "SkyTradeRedPointResp"
+  },
+  {
+    "cmMsgId": 215027,
+    "smMsgId": 15027,
+    "comment": "妖盟分段为伤害信息",
+    "cmMethod": "SkyTradeUnionGroupDamageReq",
+    "smMethod": "SkyTradeUnionGroupDamageResp"
+  },
+  {
+    "cmMsgId": 215201,
+    "smMsgId": 15201,
+    "comment": "支付宝广告礼包-触发",
+    "cmMethod": "ADGiftTriggerReq",
+    "smMethod": "ADGiftTriggerResp"
+  },
+  {
+    "cmMsgId": 215202,
+    "smMsgId": 15202,
+    "comment": "支付宝广告礼包-领取奖励",
+    "cmMethod": "ADGiftGetRewardReq",
+    "smMethod": "ADGiftGetRewardResp"
+  },
+  {
+    "cmMsgId": 215801,
+    "smMsgId": 15801,
+    "comment": "家园-进入",
+    "cmMethod": "YardEnterReq",
+    "smMethod": "YardEnterResp"
+  },
+  {
+    "cmMsgId": 215802,
+    "smMsgId": 15802,
+    "comment": "家园-战斗解锁区域",
+    "cmMethod": "YardBattleReq",
+    "smMethod": "YardBattleResp"
+  },
+  {
+    "cmMsgId": 215803,
+    "smMsgId": 15803,
+    "comment": "家园-建筑摆放",
+    "cmMethod": "YardPosActionReq",
+    "smMethod": "YardPosActionResp"
+  },
+  {
+    "cmMsgId": 215804,
+    "smMsgId": 15804,
+    "comment": "家园升级",
+    "cmMethod": "YardLevelUpReq",
+    "smMethod": "YardLevelUpResp"
+  },
+  {
+    "cmMsgId": 215805,
+    "smMsgId": 15805,
+    "comment": "家园-清理杂物",
+    "cmMethod": "YardClearReq",
+    "smMethod": "YardClearResp"
+  },
+  {
+    "cmMsgId": 215806,
+    "smMsgId": 15806,
+    "comment": "家园请求",
+    "cmMethod": "YardInviteReq",
+    "smMethod": "YardInviteResp"
+  },
+  {
+    "cmMsgId": 215807,
+    "smMsgId": 15807,
+    "comment": "进入兑换商店",
+    "cmMethod": "YardEnterShopReq",
+    "smMethod": "YardEnterShopResp"
+  },
+  {
+    "cmMsgId": 215808,
+    "smMsgId": 15808,
+    "comment": "刷新兑换商店",
+    "cmMethod": "YardRefreshShopReq",
+    "smMethod": "YardRefreshShopResp"
+  },
+  {
+    "cmMsgId": 215821,
+    "smMsgId": 15821,
+    "comment": "羁绊共鸣升级",
+    "cmMethod": "YardSkillCombineLvUpReq",
+    "smMethod": "YardSkillCombineLvUpResp"
+  },
+  {
+    "cmMsgId": 215822,
+    "smMsgId": 15822,
+    "comment": "抽取建筑",
+    "cmMethod": "YardDrawReq",
+    "smMethod": "YardDrawResp"
+  },
+  {
+    "cmMsgId": 215823,
+    "smMsgId": 15823,
+    "comment": "建筑升级",
+    "cmMethod": "BuildUpLevelReq",
+    "smMethod": "BuildUpLevelResp"
+  },
+  {
+    "cmMsgId": 215824,
+    "smMsgId": 15824,
+    "comment": "装饰建筑解锁",
+    "cmMethod": "BuildUnlockReq",
+    "smMethod": "BuildUnlockResp"
+  },
+  {
+    "cmMsgId": 215825,
+    "smMsgId": 15825,
+    "comment": "建筑生产",
+    "cmMethod": "YardBuildMakeReq",
+    "smMethod": "YardBuildMakeResp"
+  },
+  {
+    "cmMsgId": 215826,
+    "smMsgId": 15826,
+    "comment": "桃子协助",
+    "cmMethod": "YardBuildHelpReq",
+    "smMethod": "YardBuildhHelpResp"
+  },
+  {
+    "cmMsgId": 215827,
+    "smMsgId": 15827,
+    "comment": "建筑领奖",
+    "cmMethod": "YardBuildGainRewardReq",
+    "smMethod": "YardBuildGainRewardResp"
+  },
+  {
+    "cmMsgId": 215828,
+    "smMsgId": 15828,
+    "comment": "建筑升级加速",
+    "cmMethod": "YardBuildSpeedUpReq",
+    "smMethod": "YardBuildhSpeedUpResp"
+  },
+  {
+    "cmMsgId": 215829,
+    "smMsgId": 15829,
+    "comment": "妖盟协助列表请求",
+    "cmMethod": "GetYardUnionHelpDataListReq",
+    "smMethod": "GetYardUnionHelpDataListResp"
+  },
+  {
+    "cmMsgId": 215830,
+    "smMsgId": 15830,
+    "comment": "请求妖盟协助",
+    "cmMethod": "RequestYardUnionHelpReq",
+    "smMethod": "RequestYardUnionHelpResp"
+  },
+  {
+    "cmMsgId": 215831,
+    "smMsgId": 15831,
+    "comment": "协助他人",
+    "cmMethod": "YardUnionHelpReq",
+    "smMethod": "YardUnionHelpResp"
+  },
+  {
+    "cmMsgId": 215833,
+    "smMsgId": 15833,
+    "comment": "家园装饰建筑一键升级",
+    "cmMethod": "YardOneKeyLevelUpReq",
+    "smMethod": "YardOneKeyLevelUpResp"
+  },
+  {
+    "cmMsgId": 215834,
+    "smMsgId": 15834,
+    "comment": "桃树协助列表",
+    "cmMethod": "YardPeachRecordListReq",
+    "smMethod": "YardPeachRecordListResp"
+  },
+  {
+    "cmMsgId": 215835,
+    "smMsgId": 15835,
+    "comment": "产物商人信息",
+    "cmMethod": "YardMerchantInfoReq",
+    "smMethod": "YardMerchantInfoResp"
+  },
+  {
+    "cmMsgId": 215836,
+    "smMsgId": 15836,
+    "comment": "产物出售",
+    "cmMethod": "YardMerchantExchangeReq",
+    "smMethod": "YardMerchantExchangeResp"
+  },
+  {
+    "cmMsgId": 215837,
+    "smMsgId": 15837,
+    "comment": "留言板开关",
+    "cmMethod": "YardChatSwitchReq",
+    "smMethod": "YardChatSwitchResp"
+  },
+  {
+    "cmMsgId": 215839,
+    "smMsgId": 15839,
+    "comment": "留言操作",
+    "cmMethod": "YardChatActionReq",
+    "smMethod": "YardChatActionResp"
+  },
+  {
+    "cmMsgId": 215840,
+    "smMsgId": 15840,
+    "comment": "留言",
+    "cmMethod": "YardChatRecordReq",
+    "smMethod": "YardChatRecordResp"
+  },
+  {
+    "cmMsgId": 215841,
+    "smMsgId": 15841,
+    "comment": "留言板信息",
+    "cmMethod": "YardChatRecordListReq",
+    "smMethod": "YardChatRecordListResp"
+  },
+  {
+    "cmMsgId": 215842,
+    "smMsgId": 15842,
+    "comment": "点赞",
+    "cmMethod": "YardGiveLikeReq",
+    "smMethod": "YardGiveLikeResp"
+  },
+  {
+    "cmMsgId": 215852,
+    "smMsgId": 15852,
+    "comment": "家园举报",
+    "cmMethod": "YardReportReq",
+    "smMethod": "YardReportResp"
+  },
+  {
+    "cmMsgId": 215910,
+    "smMsgId": 15910,
+    "comment": "申请、撤销",
+    "cmMethod": "ShuraBattleApplyReq",
+    "smMethod": "ShuraBattleApplyResp"
+  },
+  {
+    "cmMsgId": 216001,
+    "smMsgId": 16001,
+    "comment": "进入三界征途界面",
+    "cmMethod": "EnterPlanesTrialReq",
+    "smMethod": "EnterPlanesTrialRsp"
+  },
+  {
+    "cmMsgId": 216002,
+    "smMsgId": 16002,
+    "comment": "组队内部请求",
+    "cmMethod": "EnterPlanesTrialTeamReq",
+    "smMethod": "EnterPlanesTrialTeamRsp"
+  },
+  {
+    "cmMsgId": 216003,
+    "smMsgId": 16003,
+    "comment": "组队页面请求",
+    "cmMethod": "PlanesTrialTeamStartReq",
+    "smMethod": "PlanesTrialTeamStartRsp"
+  },
+  {
+    "cmMsgId": 216004,
+    "smMsgId": 16004,
+    "comment": "创建队伍",
+    "cmMethod": "PlanesTrialCreateTeamReq",
+    "smMethod": "PlanesTrialCreateTeamRsp"
+  },
+  {
+    "cmMsgId": 216005,
+    "smMsgId": 16005,
+    "comment": "获取队伍列表",
+    "cmMethod": "PlanesTrialGetTeamListReq",
+    "smMethod": "PlanesTrialGetTeamListRsp"
+  },
+  {
+    "cmMsgId": 216006,
+    "smMsgId": 16006,
+    "comment": "查找队伍",
+    "cmMethod": "PlanesTrialGetTeamInfoReq",
+    "smMethod": "PlanesTrialGetTeamInfoRsp"
+  },
+  {
+    "cmMsgId": 216007,
+    "smMsgId": 16007,
+    "comment": "三界征途-申请加入队伍",
+    "cmMethod": "PlanesTrialJoinTeamReq",
+    "smMethod": "PlanesTrialJoinTeamRsp"
+  },
+  {
+    "cmMsgId": 216008,
+    "smMsgId": 16008,
+    "comment": "取消加入队伍",
+    "cmMethod": "PlanesTrialCancelTeamApplyReq",
+    "smMethod": "PlanesTrialCancelTeamApplyRsp"
+  },
+  {
+    "cmMsgId": 216009,
+    "smMsgId": 16009,
+    "comment": "同意申请",
+    "cmMethod": "PlanesTrialApplyJoinTeamAgreeReq",
+    "smMethod": "PlanesTrialApplyJoinTeamAgreeRsp"
+  },
+  {
+    "cmMsgId": 216010,
+    "smMsgId": 16010,
+    "comment": "一键拒绝",
+    "cmMethod": "PlanesTrialApplyJoinTeamRefusedReq",
+    "smMethod": "PlanesTrialApplyJoinTeamRefusedRsp"
+  },
+  {
+    "cmMsgId": 216011,
+    "smMsgId": 16011,
+    "comment": "退出队伍",
+    "cmMethod": "PlanesTrialQuitTeamReq",
+    "smMethod": "PlanesTrialQuitTeamRsp"
+  },
+  {
+    "cmMsgId": 216012,
+    "smMsgId": 16012,
+    "comment": "踢出队伍",
+    "cmMethod": "PlanesTrialKickOutTeamReq",
+    "smMethod": "PlanesTrialKickOutTeamRsp"
+  },
+  {
+    "cmMsgId": 216013,
+    "smMsgId": 16013,
+    "comment": "转让队长",
+    "cmMethod": "PlanesTrialChangeLeaderReq",
+    "smMethod": "PlanesTrialChangeLeaderRsp"
+  },
+  {
+    "cmMsgId": 216014,
+    "smMsgId": 16014,
+    "comment": "开始准备",
+    "cmMethod": "PlanesTrialTeamPrepareReq",
+    "smMethod": "PlanesTrialTeamPrepareRsp"
+  },
+  {
+    "cmMsgId": 216015,
+    "smMsgId": 16015,
+    "comment": "匹配",
+    "cmMethod": "PlanesTrialMatchMemberReq",
+    "smMethod": "PlanesTrialMatchMemberRsp"
+  },
+  {
+    "cmMsgId": 216016,
+    "smMsgId": 16016,
+    "comment": "开始战斗",
+    "cmMethod": "PlanesTrialStartBattleReq",
+    "smMethod": "PlanesTrialStartBattleRsp"
+  },
+  {
+    "cmMsgId": 216017,
+    "smMsgId": 16017,
+    "comment": "请求玩家数据",
+    "cmMethod": "PlanesTrialGetPlayerInfoReq",
+    "smMethod": "PlanesTrialGetPlayerInfoRsp"
+  },
+  {
+    "cmMsgId": 216019,
+    "smMsgId": 16019,
+    "comment": "战斗回放",
+    "cmMethod": "PlanesTrialGetBattleVideoReq",
+    "smMethod": "PlanesTrialGetBattleVideoRsp"
+  },
+  {
+    "cmMsgId": 216020,
+    "smMsgId": 16020,
+    "comment": "获取boss信息",
+    "cmMethod": "PlanesTrialGetBossInfoReq",
+    "smMethod": "PlanesTrialGetBossInfoRsp"
+  },
+  {
+    "cmMsgId": 216021,
+    "smMsgId": 16021,
+    "comment": "三界征途-获取挑战次数",
+    "cmMethod": "PlanesTrialChallengeTimeReq",
+    "smMethod": "PlanesTrialChallengeTimeRsp"
+  },
+  {
+    "cmMsgId": 216022,
+    "smMsgId": 16022,
+    "comment": "开始匹配",
+    "cmMethod": "PlanesTrialStartMatchReq",
+    "smMethod": "PlanesTrialStartMatchRsp"
+  },
+  {
+    "cmMsgId": 216023,
+    "smMsgId": 16023,
+    "comment": "邀请",
+    "cmMethod": "PlanesTrialInviteReq",
+    "smMethod": "PlanesTrialInviteRsp"
+  },
+  {
+    "cmMsgId": 216024,
+    "smMsgId": 16024,
+    "comment": "离开系统",
+    "cmMethod": "LeavePlanesTrialReq",
+    "smMethod": "LeavePlanesTrialRsp"
+  },
+  {
+    "cmMsgId": 216025,
+    "smMsgId": 16025,
+    "comment": "获取boss妖力",
+    "cmMethod": "PlanesTrialGetBossPowerReq",
+    "smMethod": "PlanesTrialGetBossPowerRsp"
+  },
+  {
+    "cmMsgId": 216026,
+    "smMsgId": 16026,
+    "comment": "队长跳过战斗",
+    "cmMethod": "PlanesTrialSkipBattleReq",
+    "smMethod": "PlanesTrialSkipBattleRsp"
+  },
+  {
+    "cmMsgId": 216027,
+    "smMsgId": 16027,
+    "comment": "队长开始选buff",
+    "cmMethod": "PlanesTrialStartSelectBuffReq",
+    "smMethod": "PlanesTrialStartSelectBuffRsp"
+  },
+  {
+    "cmMsgId": 216028,
+    "smMsgId": 16028,
+    "comment": "选buff",
+    "cmMethod": "PlanesTrialSelectBuffReq",
+    "smMethod": "PlanesTrialSelectBuffRsp"
+  },
+  {
+    "cmMsgId": 216029,
+    "smMsgId": 16029,
+    "comment": "保存选择选项",
+    "cmMethod": "PlanesTrialSetBuffPreferenceReq",
+    "smMethod": "PlanesTrialSetBuffPreferenceRsp"
+  },
+  {
+    "cmMsgId": 216030,
+    "smMsgId": 16030,
+    "comment": "查看自己选的buff",
+    "cmMethod": "PlanesTrialGetSelectedBuffReq",
+    "smMethod": "PlanesTrialGetSelectedBuffRsp"
+  },
+  {
+    "cmMsgId": 216031,
+    "smMsgId": 16031,
+    "comment": "领取成就奖励",
+    "cmMethod": "PlanesTrialGetAchievementRewardReq",
+    "smMethod": "PlanesTrialGetAchievementRewardRsp"
+  },
+  {
+    "cmMsgId": 216033,
+    "smMsgId": 16033,
+    "comment": "查看预设buff",
+    "cmMethod": "PlanesTrialGetBuffPreferenceReq",
+    "smMethod": "PlanesTrialGetBuffPreferenceRsp"
+  },
+  {
+    "cmMsgId": 216034,
+    "smMsgId": 16034,
+    "comment": "获取分身数据",
+    "cmMethod": "PlanesTrialGetGodBodyDataReq",
+    "smMethod": "PlanesTrialGetGodBodyDataResp"
+  },
+  {
+    "cmMsgId": 216035,
+    "smMsgId": 16035,
+    "comment": "获取大奖信息",
+    "cmMethod": "PlanesTrialGetGrandPrizeInfoReq",
+    "smMethod": "PlanesTrialGetGrandPrizeInfoResp"
+  },
+  {
+    "cmMsgId": 216036,
+    "smMsgId": 16036,
+    "comment": "领取大奖",
+    "cmMethod": "PlanesTrialReceiveGrandPrizeReq",
+    "smMethod": "PlanesTrialReceiveGrandPrizeResp"
+  },
+  {
+    "cmMsgId": 216053,
+    "smMsgId": 16053,
+    "comment": "进入布阵",
+    "cmMethod": "PlanesTrialEnterBattleReq",
+    "smMethod": "PlanesTrialEnterBattleResp"
+  },
+  {
+    "cmMsgId": 216054,
+    "smMsgId": 16054,
+    "comment": "进入切换分身界面",
+    "cmMethod": "PlanesTrialEnterSwitchSeparationReq",
+    "smMethod": "PlanesTrialEnterSwitchSeparationRsp"
+  },
+  {
+    "cmMsgId": 216055,
+    "smMsgId": 16055,
+    "comment": "切换上阵的分身",
+    "cmMethod": "PlanesTrialSwitchSeparationReq",
+    "smMethod": "PlanesTrialSwitchSeparationRsp"
+  },
+  {
+    "cmMsgId": 216056,
+    "smMsgId": 16056,
+    "comment": "查看上阵分身详细数据",
+    "cmMethod": "PlanesTrialSeparationDetailReq",
+    "smMethod": "PlanesTrialSeparationDetailRsp"
+  },
+  {
+    "cmMsgId": 216057,
+    "smMsgId": 16057,
+    "comment": "变更参战玩家位置",
+    "cmMethod": "PlanesTrialChangePosReq",
+    "smMethod": "PlanesTrialChangePosRsp"
+  },
+  {
+    "cmMsgId": 216058,
+    "smMsgId": 16058,
+    "comment": "进行战斗",
+    "cmMethod": "PlanesTrialDoBattleReq",
+    "smMethod": "PlanesTrialDoBattleRsp"
+  },
+  {
+    "cmMsgId": 216072,
+    "smMsgId": 16072,
+    "comment": "更新绑定数据",
+    "cmMethod": "PlanesTrialUpdateLockDataReq",
+    "smMethod": "PlanesTrialUpdateLockDataResp"
+  },
+  {
+    "cmMsgId": 216088,
+    "smMsgId": 16088,
+    "comment": "获取被压制属性",
+    "cmMethod": "PlayerRestrainInfoMsgReq",
+    "smMethod": "PlayerRestrainInfoMsgResp"
+  },
+  {
+    "cmMsgId": 216089,
+    "smMsgId": 16089,
+    "comment": "获取秘境人数请求",
+    "cmMethod": "getPlanesTrialTrialMemberCountReq",
+    "smMethod": "getPlanesTrialTrialMemberCountResp"
+  },
+  {
+    "cmMsgId": 216090,
+    "smMsgId": 16090,
+    "comment": "获取排行榜",
+    "cmMethod": "PlanesTrialRankGetReq",
+    "smMethod": "PlanesTrialRankGetResp"
+  },
+  {
+    "cmMsgId": 216091,
+    "smMsgId": 16091,
+    "comment": "心跳包",
+    "cmMethod": "PlanesTrialHeartbeatReq",
+    "smMethod": "PlanesTrialHeartbeatResp"
+  },
+  {
+    "cmMsgId": 216092,
+    "smMsgId": 16092,
+    "comment": "获取自选奖励信息",
+    "cmMethod": "PlanesTrialGetSelectRewardDetailReq",
+    "smMethod": "PlanesTrialGetSelectRewardDetailResp"
+  },
+  {
+    "cmMsgId": 216093,
+    "smMsgId": 16093,
+    "comment": "选择奖励",
+    "cmMethod": "PlanesTrialSelectRewardReq",
+    "smMethod": "PlanesTrialSelectRewardResp"
+  },
+  {
+    "cmMsgId": 216094,
+    "smMsgId": 16094,
+    "comment": "查看关卡录像数据",
+    "cmMethod": "PlanesTrialVideoInfoReq",
+    "smMethod": "PlanesTrialVideoInfoRsp"
+  },
+  {
+    "cmMsgId": 216095,
+    "smMsgId": 16095,
+    "comment": "播放关卡录像",
+    "cmMethod": "PlanesTrialPlayVideoReq",
+    "smMethod": "PlanesTrialPlayVideoRsp"
+  },
+  {
+    "cmMsgId": 216096,
+    "smMsgId": 16096,
+    "comment": "播放关卡录像",
+    "cmMethod": "PlanesTrialCloseSettleScreenReq",
+    "smMethod": "PlanesTrialCloseSettleScreenResp"
+  },
+  {
+    "cmMsgId": 216201,
+    "smMsgId": 16201,
+    "comment": "妖盟寻宝地图互动",
+    "cmMethod": "UnionTreasureDrawChipReq",
+    "smMethod": "UnionTreasureDrawChipResp"
+  },
+  {
+    "cmMsgId": 216202,
+    "smMsgId": 16202,
+    "comment": "妖盟寻宝索要",
+    "cmMethod": "UnionTreasureAskForReq",
+    "smMethod": "UnionTreasureAskForResp"
+  },
+  {
+    "cmMsgId": 216203,
+    "smMsgId": 16203,
+    "comment": "妖盟寻宝碎片赠送",
+    "cmMethod": "UnionTreasureSendChipReq",
+    "smMethod": "UnionTreasureSendChipResp"
+  },
+  {
+    "cmMsgId": 216205,
+    "smMsgId": 16205,
+    "comment": "妖盟寻宝遗迹互动",
+    "cmMethod": "UnionTreasureBattleRelicReq",
+    "smMethod": "UnionTreasureBattleRelicResp"
+  },
+  {
+    "cmMsgId": 216206,
+    "smMsgId": 16206,
+    "comment": "妖盟寻宝遗迹挖宝",
+    "cmMethod": "UnionTreasureHuntTreasureReq",
+    "smMethod": "UnionTreasureHuntTreasureResp"
+  },
+  {
+    "cmMsgId": 216207,
+    "smMsgId": 16207,
+    "comment": "妖盟寻宝进入界面",
+    "cmMethod": "UnionTreasureEnterReq",
+    "smMethod": "UnionTreasureEnterResp"
+  },
+  {
+    "cmMsgId": 216209,
+    "smMsgId": 16209,
+    "comment": "妖盟寻宝获得碎片",
+    "cmMethod": "UnionTreasureGetGiveChipReq",
+    "smMethod": "UnionTreasureGetGiveChipResp"
+  },
+  {
+    "cmMsgId": 216213,
+    "smMsgId": 16213,
+    "comment": "妖盟寻宝遗迹数据请求",
+    "cmMethod": "UnionTreasureAskForRelicReq",
+    "smMethod": "UnionTreasureAskForRelicResp"
+  },
+  {
+    "cmMsgId": 216216,
+    "smMsgId": 16216,
+    "comment": "妖盟寻宝分享协助",
+    "cmMethod": "UnionTreasureShareRelicReq",
+    "smMethod": "UnionTreasureShareRelicResp"
+  },
+  {
+    "cmMsgId": 216218,
+    "smMsgId": 16218,
+    "comment": "妖盟寻宝遗迹激活碎片",
+    "cmMethod": "UnionTreasureFillChipReq",
+    "smMethod": "UnionTreasureFillChipResp"
+  },
+  {
+    "cmMsgId": 216222,
+    "smMsgId": 16222,
+    "comment": "妖盟寻宝遗迹消息过期",
+    "cmMethod": "checkMessageValidReq",
+    "smMethod": "checkMessageValidResp"
+  },
+  {
+    "cmMsgId": 216223,
+    "smMsgId": 16223,
+    "comment": "妖盟寻宝战斗记录",
+    "cmMethod": "UnionTreasureGetBattleRecordReq",
+    "smMethod": "UnionTreasureGetBattleRecordResp"
+  },
+  {
+    "cmMsgId": 216224,
+    "smMsgId": 16224,
+    "comment": "妖盟寻宝赠送请求",
+    "cmMethod": "UnionTreasureGetCollectGiveMsgReq",
+    "smMethod": "UnionTreasureGetCollectGiveMsgResp"
+  },
+  {
+    "cmMsgId": 216225,
+    "smMsgId": 16225,
+    "comment": "妖盟寻宝退出请求",
+    "cmMethod": "UnionTreasureExitReq",
+    "smMethod": "UnionTreasureExitResp"
+  },
+  {
+    "cmMsgId": 216701,
+    "smMsgId": 16701,
+    "comment": "美团订阅成功",
+    "cmMethod": "MeiTuanSubscribeSucceedReq",
+    "smMethod": "MeiTuanSubscribeSucceedResp"
+  },
+  {
+    "cmMsgId": 216702,
+    "smMsgId": 16702,
+    "comment": "美团订阅领取",
+    "cmMethod": "MeiTuanSubscribeRewardReq",
+    "smMethod": "MeiTuanSubscribeRewardResp"
+  },
+  {
+    "cmMsgId": 216801,
+    "smMsgId": 16801,
+    "comment": "美团二楼登录",
+    "cmMethod": "MeiTuanDailyLoginReq",
+    "smMethod": "MeiTuanDailyLoginResp"
+  },
+  {
+    "cmMsgId": 216802,
+    "smMsgId": 16802,
+    "comment": "美团登录领取",
+    "cmMethod": "MeiTuanDailyRewardReq",
+    "smMethod": "MeiTuanDailyRewardResp"
+  },
+  {
+    "cmMsgId": 217001,
+    "smMsgId": 17001,
+    "comment": "仙玉宝府进入请求",
+    "cmMethod": "YueBaoEnterReq",
+    "smMethod": "YueBaoEnterResp"
+  },
+  {
+    "cmMsgId": 217002,
+    "smMsgId": 17002,
+    "comment": "仙玉宝府存储",
+    "cmMethod": "YueBaoDepositReq",
+    "smMethod": "YueBaoDepositResp"
+  },
+  {
+    "cmMsgId": 217003,
+    "smMsgId": 17003,
+    "comment": "仙玉宝府互动请求",
+    "cmMethod": "YueBaoInteractReq",
+    "smMethod": "YueBaoInteractResp"
+  },
+  {
+    "cmMsgId": 217701,
+    "smMsgId": 17701,
+    "comment": "同步直播状态",
+    "cmMethod": "LiveShowNotifyReqMsg",
+    "smMethod": "LiveShowNotifyRespMsg"
+  }
+]

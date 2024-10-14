@@ -1,0 +1,10 @@
+package com.yq.msg.CityMsg;
+
+option go_package = "github.com/imzhongqi/xddq-go/pkg/game/protocol/pb;pb";
+
+message LiveShowNotifyReqMsg {
+  required int32 type = 1;
+}
+message LiveShowNotifyRespMsg {
+  required int32 ret = 1;
+}
